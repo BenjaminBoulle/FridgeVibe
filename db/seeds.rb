@@ -34,9 +34,9 @@ user3 = User.create(first_name: 'Gideon',
                     password: 'qwertz')
 
 user4 = User.create(first_name: 'Arda',
-                    last_name: 'Cansizoğlu',
-                    email: 'ardacansizoğlu@gmail.com',
-                    password: 'azerty')
+                    last_name: 'Cansizoglu',
+                    email: 'ardacansizoglu@gmail.com',
+                    password: 'qwerty')
 
 user_admin.photo.attach(io: admin, filename: "admin.jpg", content_type: "image/jpeg")
 user1.photo.attach(io: benjamin, filename: "benjamin.jpg", content_type: "image/jpeg")
@@ -45,19 +45,24 @@ user3.photo.attach(io: gideon, filename: "gideon.jpg", content_type: "image/jpeg
 user4.photo.attach(io: arda, filename: "arda.jpg", content_type: "image/jpeg")
 
 my_fridge_user_admin = Fridge.create(user: user_admin, my_fridge: true)
-away_fridge_user_admin = Fridge.create(user: user_admin, my_fridge: false)
+# away_fridge_user_admin =
+Fridge.create(user: user_admin, my_fridge: false)
 
 my_fridge_user1 = Fridge.create(user: user1, my_fridge: true)
-away_fridge_user1 = Fridge.create(user: user1, my_fridge: false)
+# away_fridge_user1 =
+Fridge.create(user: user1, my_fridge: false)
 
 my_fridge_user2 = Fridge.create(user: user2, my_fridge: true)
-away_fridge_user2 = Fridge.create(user: user2, my_fridge: false)
+# away_fridge_user2 =
+Fridge.create(user: user2, my_fridge: false)
 
 my_fridge_user3 = Fridge.create(user: user3, my_fridge: true)
-away_fridge_user3 = Fridge.create(user: user3, my_fridge: false)
+# away_fridge_user3 =
+Fridge.create(user: user3, my_fridge: false)
 
 my_fridge_user4 = Fridge.create(user: user4, my_fridge: true)
-away_fridge_user4 = Fridge.create(user: user4, my_fridge: false)
+# away_fridge_user4 =
+Fridge.create(user: user4, my_fridge: false)
 
 ingredient1 = Ingredient.create(name: "Egg", quantity: "3", expiration_date: Date.today, fridge: my_fridge_user_admin)
 picture_ingredient1 = URI.open("https://www.curtze.com/images/salmon-hero.png")
