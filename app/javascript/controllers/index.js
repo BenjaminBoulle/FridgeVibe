@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import FridgeOpeningController from "./fridge_opening_controller"
+application.register("fridge-opening", FridgeOpeningController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
