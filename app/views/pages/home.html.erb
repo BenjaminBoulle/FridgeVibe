@@ -1,29 +1,23 @@
+<div id = "FridgeBack">
+  <div class="linklogin1">
+    <%= link_to new_user_session_path,class:"linklogin" do %>
+      <i class=“fa-solid fa-fingerprint”></i>
+      Login
+    <% end %>
+  </div>
 
-
- <div id = "FridgeBack">
-    <div class="linklogin1">
-      <%= link_to new_user_session_path,class:"linklogin" do %>
-                  <i class=“fa-solid fa-fingerprint”></i>
-                  Login
-                  <% end %>
-
-     </div>
-
-    <div class="signin1">
-          <%= link_to new_user_registration_path,class:"signin" do %>
-          Sign in
-          <% end %>
-      </div>
-    <div id = bigDoor>
-      <div id = "bigDoorBack">
-
-                </div>
-            </div>
-            <div id = "smallDoor">
-
-            </div>
+  <div class="signin1">
+    <%= link_to new_user_registration_path,class:"signin" do %>
+      Sign in
+    <% end %>
+  </div>
+  <div id = bigDoor>
+    <div id = "bigDoorBack">
+    </div>
+  </div>
+  <div id = "smallDoor">
+  </div>
 </div>
 
 <%= render "shared/banner"%>
 <%= render "shared/cards" %>
-
