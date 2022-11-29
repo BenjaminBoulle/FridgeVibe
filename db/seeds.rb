@@ -14,9 +14,9 @@ arda = URI.open("https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_2
 admin = URI.open("https://i.pinimg.com/originals/e8/3e/fc/e83efc660ae1fd1d420dacb58d00d953.jpg")
 
 user_admin = User.create(first_name: 'Bob',
-                         last_name: 'Boulle',
-                         email: 'bob@gmail.com',
-                         password: 'azerty')
+                    last_name: 'Boulle',
+                    email: 'bob@gmail.com',
+                    password: 'azerty')
 
 user1 = User.create(first_name: 'Benjamin',
                     last_name: 'Boulle',
