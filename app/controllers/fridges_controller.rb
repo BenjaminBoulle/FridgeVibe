@@ -5,5 +5,6 @@ class FridgesController < ApplicationController
 
   def show
     @fridge = Fridge.find(params[:id])
+    @ingredients = Ingredient.where(fridge: @fridge)
   end
 end

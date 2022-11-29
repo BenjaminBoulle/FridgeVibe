@@ -1,2 +1,17 @@
-<h1>Welcome to the fridges #show</h1>
-<h2><%= @fridge %></h2>
+<h2> <%= current_user.first_name %>'s Fridge </h2>
+
+  <% @ingredients.each do |ingredient| %>
+    <div class="d-flex">
+      <div>
+        <%= cl_image_tag ingredient.photo.key, height: 200, width: 200, crop: :fill %>
+      </div>
+      <div>
+        <p><%= ingredient.name %></p>
+        <p><%= ingredient.quantity %></p>
+        <p><%= ingredient.expiration_date %></p>
+      </div>
+    </div>
+  <% end  %>
+  <%= link_to new_ingredient_path do %>
+    add ingredientes
+  <% end %>
