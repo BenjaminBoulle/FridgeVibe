@@ -8,7 +8,7 @@ class RecipesController < ApplicationController
   end
 
   def edit
-    @rrecipe = Recipe.find(params[:id])
+    @recipe = Recipe.find(params[:id])
   end
 
   def create
