@@ -3,5 +3,5 @@ class Ingredient < ApplicationRecord
 
   has_one_attached :photo
 
-  validates :name, :expiration_date, presence: true
+  validates :name, :expiration_date, :quantity, presence: true
 end
