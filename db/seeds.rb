@@ -3,6 +3,7 @@
 
 require "open-uri"
 
+Recipe.destroy_all
 Ingredient.destroy_all
 Fridge.destroy_all
 User.destroy_all

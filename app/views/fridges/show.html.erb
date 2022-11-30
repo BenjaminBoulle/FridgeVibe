@@ -10,7 +10,7 @@
         <p>Quantity: <%= ingredient.quantity %></p>
         <p>Expiration Date: <%= ingredient.expiration_date %></p>
       </div>
-      <%= link_to edit_fridge_ingredient_path(ingredient) do %>
+      <%= link_to edit_fridge_ingredient_path(@fridge, ingredient) do %>
         Edit ingredientes
         <i class="fa-solid fa-pen-to-square"></i>
       <% end %>
@@ -20,3 +20,4 @@
     Add ingredientes
     <i class="fa-solid fa-plus"></i>
   <% end %>
+
