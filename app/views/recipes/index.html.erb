@@ -1,1 +1,5 @@
-<h1>Welcome to the recipes #index</h1>
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li><%= recipe.name %></li>
+  <% end %>
+</ul>

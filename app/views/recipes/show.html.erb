@@ -1,1 +1,7 @@
-<h1>Welcome to the recipes #show</h1>
+<h2><%= @recipe.name %></h2>
+<p><%= @recipe.ingredients %></p>
+<p><%= @recipe.description %></p>
+<%= link_to "Delete Your Recipe",
+  recipe_path(@recipe),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>

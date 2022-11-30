@@ -1,1 +1,6 @@
-<h1>Welcome to the recipes #new</h1>
+<%= simple_form_for(@recipe) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :ingredients%>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>
