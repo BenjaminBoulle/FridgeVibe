@@ -7,11 +7,16 @@
       </div>
       <div>
         <p><%= ingredient.name %></p>
-        <p><%= ingredient.quantity %></p>
-        <p><%= ingredient.expiration_date %></p>
+        <p>Quantity: <%= ingredient.quantity %></p>
+        <p>Expiration Date: <%= ingredient.expiration_date %></p>
       </div>
+      <%= link_to edit_fridge_ingredient_path(ingredient) do %>
+        Edit ingredientes
+        <i class="fa-solid fa-pen-to-square"></i>
+      <% end %>
     </div>
   <% end  %>
-  <%= link_to new_ingredient_path do %>
-    add ingredientes
+  <%= link_to new_fridge_ingredient_path(@fridge) do %>
+    Add ingredientes
+    <i class="fa-solid fa-plus"></i>
   <% end %>

@@ -1,6 +1,4 @@
-<h1>Welcome to the ingredients #new</h1>
-
-<%= simple_form_for @ingredient do |f| %>
+<%= simple_form_for [@fridge, @ingredient] do |f| %>
   <%= f.input :name %>
   <%= f.input :expiration_date %>
   <%= f.input :photo, as: :file %>

@@ -124,6 +124,10 @@ ingredient14 = Ingredient.create(name: "Yoghurt", quantity: "12", expiration_dat
 picture_ingredient14 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient14.photo.attach(io: picture_ingredient14, filename: "snow.png", content_type: "image/png")
 
+ingredient32 = Ingredient.create(name: "Nem", quantity: "1200", expiration_date: Date.today + 12, fridge: my_fridge_user2)
+picture_ingredient32 = URI.open("https://chefonefoods.com/wp-content/uploads/2016/09/Pork-Egg-Roll.png")
+ingredient32.photo.attach(io: picture_ingredient32, filename: "nem.png", content_type: "image/png")
+
 ingredient15 = Ingredient.create(name: "Ham", quantity: "1 kg", expiration_date: Date.today + 6, fridge: my_fridge_user2)
 picture_ingredient15 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient15.photo.attach(io: picture_ingredient15, filename: "snow.png", content_type: "image/png")
