@@ -1,6 +1,5 @@
-<h1>Welcome to the ingredients #new</h1>
 
-<%= simple_form_for @ingredient , data: { controller: 'flatpickr' } do |f| %>
+<%= simple_form_for [@fridge, @ingredient], data: { controller: 'flatpickr' } do |f| %>
   <%= f.input :name %>
   <%= f.input :expiration_date, as: :string, input_html: { data: { flatpickr_target: "expirationDate" } }  %>
   <%= f.input :photo, as: :file %>
