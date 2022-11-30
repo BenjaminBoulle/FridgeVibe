@@ -14,7 +14,7 @@ class RecipesController < ApplicationController
   def edit
     @recipe = Recipe.find(params[:id])
   end
-
+#sdjvghjshv,jsdhv,kshjvshv,sdhvs
   def create
     @recipe = Recipe.new(recipe_params)
     @recipe.user = current_user
