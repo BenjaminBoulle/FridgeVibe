@@ -38,7 +38,7 @@ user4 = User.create(first_name: 'Arda',
                     email: 'ardacansizoglu@gmail.com',
                     password: 'qwerty')
 
-user_admin.photo.attach(io: admin, filename: "admin.jpg", content_type: "image/jpeg")
+user_admin.photo.attach(io: admin, filename: "admin.jpg", content_type: "image/jpg")
 user1.photo.attach(io: benjamin, filename: "benjamin.jpg", content_type: "image/jpeg")
 user2.photo.attach(io: arthur, filename: "arthur.jpg", content_type: "image/jpeg")
 user3.photo.attach(io: gideon, filename: "gideon.jpg", content_type: "image/jpeg")
