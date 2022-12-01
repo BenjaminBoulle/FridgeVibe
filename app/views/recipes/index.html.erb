@@ -4,3 +4,9 @@
     <li><%= link_to recipe.name, recipe_path(recipe) %></li>
   <% end %>
 </ul>
+
+<p>
+  <%= link_to new_recipe_path(@recipe), class: "btn btn-primary" do%>
+    Create Your Recipe
+  <% end %>
+</p>

@@ -9,8 +9,11 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.recipe = @recipe
     @review.user = current_user
-    @review.save
-    redirect_to recipe_path(@recipe)
+    if @review.save
+      redirect_to recipe_path(@recipe)
+    else
+      render :new
+    end
   end
 
   def destroy
@@ -26,6 +29,6 @@ class ReviewsController < ApplicationController
   end
 
   def review_params
-    params.require(:review).permit(:content)
+    params.require(:review).permit(:content, :rating)
   end
 end

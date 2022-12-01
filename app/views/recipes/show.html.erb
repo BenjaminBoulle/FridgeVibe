@@ -8,31 +8,41 @@
 </p>
 <p><%= @recipe.description %></p>
 
-  <p>
-  <%= link_to "Delete Your Recipe",
-    recipe_path(@recipe),
+<p>
+  <%= link_to "Delete Your Recipe", recipe_path(@recipe), class: "btn btn-primary",
     data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
   %>
 </p>
-<p>
-  <%= link_to new_recipe_review_path(@recipe) do%>
-    Add a review
-  <% end %>
-</p>
+
+<br>
+<%= link_to "Back to recipes", recipes_path, class: "btn btn-primary" %>
+
+
 <div class="reviewbox">
-  <p><strong>Reviews</strong></p>
+  <p><strong>REVIEWS</strong></p>
   <ul class="list-group">
     <% @recipe.reviews.each do |review| %>
 
       <li class="list-group-item">
         <%= review.content %>
+        <%= review.user.first_name %> <%= review.user.last_name %>
+        <% review.rating.times do %>
+          <%= "⭐" %>
+        <% end %>
       </li>
 
+
+
+      <p>
       <% if current_user == review.user %>
-        <%= link_to "Delete Your Review", review_path(review),
+        <%= link_to "Delete Your Review", review_path(review), class: "btn btn-primary",
         data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
       <% end %>
+      </p>
 
     <% end %>
+        <p>
+      <%= link_to 'Add a review', new_recipe_review_path(@recipe), class: "btn btn-primary"%>
+      </p>
   </ul>
 </div>
