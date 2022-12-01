@@ -66,7 +66,7 @@ my_fridge_user4 = Fridge.create(user: user4, my_fridge: true)
 # away_fridge_user4 =
 Fridge.create(user: user4, my_fridge: false)
 
-###INGREDIENTS
+### INGREDIENTS
 
 ingredient1 = Ingredient.create(name: "Egg", quantity: "3", expiration_date: Date.today, fridge: my_fridge_user_admin)
 picture_ingredient1 = URI.open("https://bcegg.com/wp-content/themes/bcegg-consumer/dist/images/icons/dots/egg.png")
@@ -195,6 +195,45 @@ ingredient29.photo.attach(io: picture_ingredient29, filename: "snow.png", conten
 ingredient30 = Ingredient.create(name: "Pepper", quantity: "7", expiration_date: Date.today + 40, fridge: my_fridge_user4)
 picture_ingredient30 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient30.photo.attach(io: picture_ingredient30, filename: "snow.png", content_type: "image/png")
+
+###############################################################################################################
+
+ingredient32 = Ingredient.create(name: "Olive oil", quantity: "1 l", expiration_date: Date.today + 300, fridge: my_fridge_user_admin)
+picture_ingredient32 = URI.open("https://bulknaturaloils.com/media/catalog/product/cache/5b89197651ea0053483b6b3397eafb60/o/l/olive-pure-470_3_1_8.png")
+ingredient32.photo.attach(io: picture_ingredient32, filename: "Olive oil.png", content_type: "image/png")
+
+ingredient33 = Ingredient.create(name: "Pasta", quantity: "3 kg", expiration_date: Date.today + 100, fridge: my_fridge_user_admin)
+picture_ingredient33 = URI.open("https://www.soubry.be/storage/files/2523f79d-06f1-4d68-a3e0-c6a14660cb0a/product_large_volkoren-spaghetti.webp")
+ingredient33.photo.attach(io: picture_ingredient33, filename: "Pasta.png", content_type: "image/png")
+
+ingredient34 = Ingredient.create(name: "Bread", quantity: "4", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
+picture_ingredient34 = URI.open("https://panamarbakery.com/public/Image/2021/3/161547107712959normal_Galeria.png")
+ingredient34.photo.attach(io: picture_ingredient34, filename: "Bread.png", content_type: "image/png")
+
+ingredient35 = Ingredient.create(name: "Mayonnaise", quantity: "750 ml", expiration_date: Date.today + 80, fridge: my_fridge_user_admin)
+picture_ingredient35 = URI.open("https://www.belgian-sauces.com/uploads/2015/02/mayonnaise-oeuf-belgium-550ml-full.png")
+ingredient35.photo.attach(io: picture_ingredient35, filename: "Mayonnaise.png", content_type: "image/png")
+
+ingredient36 = Ingredient.create(name: "Butter", quantity: "500 gr", expiration_date: Date.today + 9, fridge: my_fridge_user_admin)
+picture_ingredient36 = URI.open("https://cdn.shopify.com/s/files/1/0588/7236/5211/products/cultured-butter-sea-salt-featured_1_x1880.png?v=1661805910")
+ingredient36.photo.attach(io: picture_ingredient36, filename: "Butter.png", content_type: "image/png")
+
+ingredient37 = Ingredient.create(name: "Parmesan", quantity: "278 gr", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient37 = URI.open("https://www.nzmp.com/content/dam/nzmp/global/images/product-shots/product-page-master/product-images-grey-background/tile-800x600-_0007_Parmesan-Block-large-shaving.png")
+ingredient37.photo.attach(io: picture_ingredient37, filename: "Parmesan.png", content_type: "image/png")
+
+ingredient38 = Ingredient.create(name: "Cheddar", quantity: "969 gr", expiration_date: Date.today + 50, fridge: my_fridge_user_admin)
+picture_ingredient38 = URI.open("https://www.kaas.nl/wp-content/uploads/2020/03/130778_Cheddar-Rood-1.png")
+ingredient38.photo.attach(io: picture_ingredient38, filename: "Cheddar.png", content_type: "image/png")
+
+ingredient39 = Ingredient.create(name: "American cheese", quantity: "1 kg", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
+picture_ingredient39 = URI.open("https://homshop.app/wp-content/uploads/2019/04/american.png")
+ingredient39.photo.attach(io: picture_ingredient39, filename: "American cheese.png", content_type: "image/png")
+
+
+
+
+
 
 ### RECIPES
 
