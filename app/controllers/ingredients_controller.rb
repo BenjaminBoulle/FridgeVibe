@@ -29,7 +29,6 @@ class IngredientsController < ApplicationController
     @ingredient = Ingredient.find(params[:id])
     @ingredient.update(ingredient_params)
     redirect_to fridge_path(@ingredient.fridge)
-
   end
 
   private
