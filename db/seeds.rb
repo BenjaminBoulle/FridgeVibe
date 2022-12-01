@@ -68,7 +68,7 @@ Fridge.create(user: user4, my_fridge: false)
 
 ### INGREDIENTS
 
-ingredient1 = Ingredient.create(name: "Egg", quantity: "3", expiration_date: Date.today, fridge: my_fridge_user_admin)
+ingredient1 = Ingredient.create(name: "Egg", quantity: "3", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
 picture_ingredient1 = URI.open("https://bcegg.com/wp-content/themes/bcegg-consumer/dist/images/icons/dots/egg.png")
 ingredient1.photo.attach(io: picture_ingredient1, filename: "egg.png", content_type: "image/png")
 
@@ -76,7 +76,7 @@ ingredient2 = Ingredient.create(name: "Salmon", quantity: "1.5 kg", expiration_d
 picture_ingredient2 = URI.open("https://www.curtze.com/images/salmon-hero.png")
 ingredient2.photo.attach(io: picture_ingredient2, filename: "salmon.png", content_type: "image/jpeg")
 
-ingredient3 = Ingredient.create(name: "Sweet potatoes", quantity: "3", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+ingredient3 = Ingredient.create(name: "Sweet potatoes", quantity: "3", expiration_date: Date.today + 25, fridge: my_fridge_user_admin)
 picture_ingredient3 = URI.open("https://res.cloudinary.com/hksqkdlah/image/upload/37117_sil-sweetpotato-hannah-1.png")
 ingredient3.photo.attach(io: picture_ingredient3, filename: "sweet_potatoes.png", content_type: "image/png")
 
@@ -140,8 +140,8 @@ ingredient16 = Ingredient.create(name: "Mozarella", quantity: "6 balls", expirat
 picture_ingredient16 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient16.photo.attach(io: picture_ingredient16, filename: "snow.png", content_type: "image/png")
 
-ingredient17 = Ingredient.create(name: "Basil", quantity: "1 plant", expiration_date: Date.today + 30, fridge: my_fridge_user2)
-picture_ingredient17 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
+ingredient17 = Ingredient.create(name: "Basil", quantity: "1 plant", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient17 = URI.open("https://cdn.shopify.com/s/files/1/0245/1010/3615/products/Basil_1c9cb179-248a-46ce-b153-b22a84de5f92_1080x.png?v=1582011356")
 ingredient17.photo.attach(io: picture_ingredient17, filename: "snow.png", content_type: "image/png")
 
 ingredient18 = Ingredient.create(name: "Fresh pasta", quantity: "4 kg", expiration_date: Date.today + 6, fridge: my_fridge_user2)
@@ -218,22 +218,17 @@ ingredient36 = Ingredient.create(name: "Butter", quantity: "500 gr", expiration_
 picture_ingredient36 = URI.open("https://cdn.shopify.com/s/files/1/0588/7236/5211/products/cultured-butter-sea-salt-featured_1_x1880.png?v=1661805910")
 ingredient36.photo.attach(io: picture_ingredient36, filename: "Butter.png", content_type: "image/png")
 
-ingredient37 = Ingredient.create(name: "Parmesan", quantity: "278 gr", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+ingredient37 = Ingredient.create(name: "Parmesan", quantity: "278 gr", expiration_date: Date.today + 15, fridge: my_fridge_user_admin)
 picture_ingredient37 = URI.open("https://www.nzmp.com/content/dam/nzmp/global/images/product-shots/product-page-master/product-images-grey-background/tile-800x600-_0007_Parmesan-Block-large-shaving.png")
 ingredient37.photo.attach(io: picture_ingredient37, filename: "Parmesan.png", content_type: "image/png")
 
-ingredient38 = Ingredient.create(name: "Cheddar", quantity: "969 gr", expiration_date: Date.today + 50, fridge: my_fridge_user_admin)
+ingredient38 = Ingredient.create(name: "Cheddar", quantity: "969 gr", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
 picture_ingredient38 = URI.open("https://www.kaas.nl/wp-content/uploads/2020/03/130778_Cheddar-Rood-1.png")
 ingredient38.photo.attach(io: picture_ingredient38, filename: "Cheddar.png", content_type: "image/png")
 
 ingredient39 = Ingredient.create(name: "American cheese", quantity: "1 kg", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
 picture_ingredient39 = URI.open("https://homshop.app/wp-content/uploads/2019/04/american.png")
 ingredient39.photo.attach(io: picture_ingredient39, filename: "American cheese.png", content_type: "image/png")
-
-
-
-
-
 
 ### RECIPES
 
@@ -263,9 +258,9 @@ recipe1.photo.attach(io: picture_recipe1, filename: "recipe1.jpg", content_type:
 
 recipe2 = Recipe.create!(name: "Pesto Pasta Caprese Salad", ingredients:
   "1 ½ cups rotini pasta,
-  3 tablespoons pesto, or to taste,
+  3 tablespoons pesto or to taste,
   1 tablespoon extra-virgin olive oil,
-  ¼ teaspoon salt, or to taste,
+  ¼ teaspoon salt or to taste,
   ¼ teaspoon granulated garlic,
   ⅛ teaspoon ground black pepper,
   ½ cup halved grape tomatoes,
@@ -283,9 +278,9 @@ recipe3 = Recipe.create!(name: "Creamy Penne Pasta Primavera", ingredients:
   "2 cups penne pasta,
   2 teaspoons olive oil,
   1 pound fresh asparagus, trimmed and cut into 2-inch pieces,
-  3 carrots, cut into strips,
-  2 cups cherry tomatoes, halved,
-  1 clove garlic, minced, or more to taste,
+  3 carrots cut into strips,
+  2 cups cherry tomatoes halved,
+  1 clove garlic minced or more to taste,
   1 cup grated Parmesan cheese,
   1 cup heavy whipping cream,
   ¼ teaspoon ground black pepper",
@@ -323,7 +318,7 @@ recipe4.photo.attach(io: picture_recipe4, filename: "recipe4.jpg", content_type:
 recipe5 = Recipe.create!(name: "Pasta and Garlic", ingredients:
   "1 ½ pounds pasta,
     ¼ cup olive oil,
-    2 cloves garlic, crushed, or more to taste,
+    2 cloves garlic crushed, or more to taste,
     salt and pepper to taste,
     ¼ cup grated Parmesan cheese",
     user: user_admin,
@@ -350,13 +345,12 @@ recipe6 = Recipe.create(name: "Gourmet Grilled Cheese Sandwiches", ingredients:
 picture_recipe6 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081975.jpg")
 recipe6.photo.attach(io: picture_recipe6, filename: "recipe6.jpg", content_type: "image/jpg")
 
-
 recipe7 = Recipe.create!(name: "Elvis' Grilled Cheese Sandwich", ingredients:
   "2 slices bacon,
   1 tablespoon smooth peanut butter,
   2 slices soft white bread,
   1 slice American cheese,
-  1 tablespoon butter, softened",
+  1 tablespoon butter softened",
   user: user_admin,
   author: "Ricky Cooks", cuisine: "american", cook_time: 20, prep_time: 5,
   description: "Step 1: Place the bacon in a large, deep skillet, and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate.
@@ -366,9 +360,9 @@ picture_recipe7 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=htt
 recipe7.photo.attach(io: picture_recipe7, filename: "recipe7.jpg", content_type: "image/jpg")
 
 recipe8 = Recipe.create!(name: "Inside-Out Grilled Cheese Sandwich", ingredients:
-  "2 tablespoons butter, divided,
+  "2 tablespoons butter divided,
     2 slices white bread,
-    ½ cup shredded extra sharp Cheddar cheese, divided",
+    ½ cup shredded extra sharp Cheddar cheese divided",
     user: user_admin,
     author: "Chef John", cuisine: "american", cook_time: 10, prep_time: 5,
     description: "Step 1: Melt 1 1/2 tablespoons butter in a nonstick skillet over medium-low heat. Place bread slices in the skillet on top of the melted butter.
@@ -383,8 +377,8 @@ recipe9 = Recipe.create!(name: "Spicy Grilled Cheese Sandwich", ingredients:
     4 slices white bread,
     2 slices American cheese,
     1 roma (plum) tomato, thinly sliced,
-    ¼ small onion, chopped,
-    1 jalapeno pepper, chopped",
+    ¼ small onion chopped,
+    1 jalapeno pepper chopped",
     user: user_admin,
     author: "PATELGURL", cuisine: "american", cook_time: 3, prep_time: 2,
     description: "Step 1: Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread.
@@ -394,7 +388,8 @@ picture_recipe9 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=htt
 recipe9.photo.attach(io: picture_recipe9, filename: "recipe9.jpg", content_type: "image/jpg")
 
 recipe10 = Recipe.create!(name: "Grilled Cheese Sandwich", ingredients: "4 slices white bread,
-  3 tablespoons butter, divided, 2 slices Cheddar cheese",
+  3 tablespoons butter divided,
+  2 slices Cheddar cheese",
   user: user_admin,
   author: "sal", cuisine: "american", cook_time: 15, prep_time: 5,
   description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese.
@@ -402,3 +397,38 @@ recipe10 = Recipe.create!(name: "Grilled Cheese Sandwich", ingredients: "4 slice
 )
 picture_recipe10 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2016%2F10%2F2206436_Grilled-Cheese-Sandwich_Photo-by-Buckwheat-Queen.jpg")
 recipe10.photo.attach(io: picture_recipe10, filename: "recipe10.jpg", content_type: "image/jpg")
+
+recipe11 = Recipe.create!(name: "Hachis Parmentier",
+                          ingredients: "1kg Potatoes,
+                                        1kg Minced pork and beef,
+                                        1kg Spinach,
+                                        Cream,
+                                        Cheese",
+                          user: user_admin,
+                          author: "bob",
+                          cuisine: "don't know",
+                          cook_time: 15,
+                          prep_time: 5,
+                          description: "cook everything the wright way",
+                          rating: 4.77
+)
+picture_recipe11 = URI.open("https://www.curiouscuisiniere.com/wp-content/uploads/2019/10/French-Hachis-Parmentier-Potato-and-Beef-Casserole-8667-450-1.jpg")
+recipe11.photo.attach(io: picture_recipe11, filename: "recipe10.jpg", content_type: "image/jpg")
+
+recipe12 = Recipe.create!(name: "Grilled Salmon",
+                          ingredients: "1kg Salmon,
+                                        1 spoon Olive Oil,
+                                        Salt,
+                                        Pepper",
+                          user: user_admin,
+                          author: "bob",
+                          cuisine: "don't know",
+                          cook_time: 15,
+                          prep_time: 5,
+                          description: "This recipe for grilled salmon doesn’t call for fancy marinades or mercurial methods. All that’s needed is quality ingredients and a hot grill.
+                                        The main question is, which salmon is best?
+                                        I prefer wild-caught salmon because it has more flavor, but if you’re dealing with eaters who are mild fish fans, a quality farm-raised salmon will have a more mellow flavor. Like any protein, higher fat fish yields a more buttery bite. Salmon caught in the wild have to work harder than farm-raised, so they tend to be leaner and more fish-like in taste.",
+                          rating: 4.77
+)
+picture_recipe12 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
+recipe12.photo.attach(io: picture_recipe12, filename: "recipe10.jpg", content_type: "image/jpg")
