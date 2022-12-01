@@ -1,6 +1,11 @@
-<p><strong>Reviews</strong></p>
 <h2><%= @recipe.name %></h2>
-<p><%= @recipe.ingredients %></p>
+<p>
+  <ul>
+    <%@recipe.ingredients.split(',').each do |ingredient| %>
+      <li> <%= ingredient %> </li>
+    <% end %>
+  </ul>
+</p>
 <p><%= @recipe.description %></p>
 
   <p>
