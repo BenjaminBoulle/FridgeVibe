@@ -1,8 +1,12 @@
 .container_sign_up {
-background-color:  white;
+margin-top: 30px;
 padding-right: 10px;
 padding-left: 10px;
 height: 800px;
+background-color: white;
+border-top-left-radius: 90px;
+
+
 }
 
 .sign_upbutton{
@@ -84,12 +88,16 @@ height: 800px;
 .H2 {
   text-align: center;
   padding-top: 10px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-text-decoration: underline;
-margin-bottom: 40px
-
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
 }
 
 .comeback{
   border-style: solid;
+}
+
+.background{
+  background-color: blue;
+  height: 800px;
+
 }
