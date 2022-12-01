@@ -2,5 +2,7 @@ class Review < ApplicationRecord
   belongs_to :recipe
   belongs_to :user
 
-  validates :content, presence: true
+  RATING = ['1', '2', '3', '4', '5']
+
+  validates :content, :rating, presence: true
 end
