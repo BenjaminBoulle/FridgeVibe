@@ -14,6 +14,10 @@
         Edit ingredientes
         <i class="fa-solid fa-pen-to-square"></i>
       <% end %>
+      <%= link_to "Delete",
+          ingredient_path(ingredient),
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+       %>
     </div>
   <% end  %>
   <%= link_to new_fridge_ingredient_path(@fridge) do %>
@@ -24,4 +28,3 @@
     SHUFFLE!!
     <i class="fa-solid fa-plus"></i>
   <% end %>
-
