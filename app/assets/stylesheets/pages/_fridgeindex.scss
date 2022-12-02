@@ -1,0 +1,32 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fridge-card {
+  background-color: rgba(86,124,123, 0.6);
+  background-image: url(Fridge2.png);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width:300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color:white;
+  font-size: 25px;
+  display: flex;
+  flex:center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 25px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.flex-container {
+  padding-top: 25px;
+}
