@@ -10,6 +10,7 @@
               <p>Quantity: <%= ingredient.quantity %></p>
               <p class="expirationdate">Expiration Date: <%= ingredient.expiration_date %></p>
             </div>
+
               <div class="logo">
                   <div class="editbutton">
                     <%= link_to edit_fridge_ingredient_path(@fridge, ingredient),id:"edit" do %>
@@ -21,10 +22,11 @@
                     <i class="fa-solid fa-trash"></i>
                   <% end %>
               </div>
+
             </div>
           </div>
-        </div>
       </div>
+    </div>
         <% end  %>
                 <%= link_to new_fridge_ingredient_path(@fridge), id: "jhjhjh" do %>
           <div class="addlink">
@@ -34,6 +36,7 @@
               </div>
             <% end %>
           </div>
+
                 <div class="shuffle_btn">
                   <div class=shuffleAll>
                   <%= link_to recipes_path,id:"shuffle" do %>
@@ -42,4 +45,5 @@
                   <% end %>
                   </div>
                 </div>
+
 </div>

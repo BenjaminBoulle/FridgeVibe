@@ -1,21 +1,31 @@
 <div class="backgroundhomefridge">
   <h1 class="h2homefridge">Our suggestions:</h1>
-
-  <div class="containerhomefridge">
-    <ul>
-      <% @recipes.each do |recipe| %>
-        <li><%= link_to recipe.name, recipe_path(recipe) %></li>
-      <% end %>
-    </ul>
-
-    <div class="addlink" >
-      <div class="adding">
-        <p>
-          <%= link_to new_recipe_path(@recipe), id: "jhjhjh" do%>
-            Create your own recipe +
+  <% @recipes.each do |recipe| %>
+    <div class="containerhomefridge">
+      <div class="d-flex">
+        <div class="picturefridge">
+          <% if recipe.photo.attached? %>
+            <%= cl_image_tag recipe.photo.key, height:145, width: 135, crop: :fill %>
           <% end %>
-        </p>
+        </div>
+        <div class="textnext">
+          <div class="littletext">
+            <p class="ingname"><%= recipe.name %></p>
+            <p><%= recipe.rating %></p>
+            <p><%= recipe.author %></p>
+            <p><%= link_to "View details", recipe_path(recipe), id:"edit" %>
+          </div>
+        </div>
       </div>
+    </div>
+  <% end %>
+  <div class="addlink" >
+    <div class="adding">
+      <p>
+        <%= link_to new_recipe_path(@recipe), id: "jhjhjh" do%>
+          Create your own recipe +
+        <% end %>
+      </p>
     </div>
   </div>
 </div>
