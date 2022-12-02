@@ -1,4 +1,5 @@
 <div class="backgroundhomefridge">
+
   <h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
   <% @ingredients.each do |ingredient| %>
     <div class="containerhomefridge">
@@ -21,6 +22,7 @@
                 ingredient_path(ingredient),
                 data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
               %>
+
             </div>
             <% end %>
           </div>
