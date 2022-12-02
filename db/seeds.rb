@@ -487,7 +487,7 @@ recipe13 = Recipe.create!(name: "Pasta basil",
                           description: "cook everything good",
                           rating: 4.77)
 
-picture_recipe13 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
+picture_recipe13 = URI.open("https://www.halfbakedharvest.com/wp-content/uploads/2019/05/20-Minute-Garlic-Basil-Brown-Butter-Pasta-1.jpg")
 recipe13.photo.attach(io: picture_recipe13, filename: "recipe10.jpg", content_type: "image/jpg")
 
 recipe14 = Recipe.create!(name: "Salmon Omelette ",
@@ -503,7 +503,7 @@ recipe14 = Recipe.create!(name: "Salmon Omelette ",
                           description: "Omelette good good",
                           rating: 4.77)
 
-picture_recipe14 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
+picture_recipe14 = URI.open("https://food-images.files.bbci.co.uk/food/recipes/smokedsalmonomelette_93229_16x9.jpg")
 recipe14.photo.attach(io: picture_recipe14, filename: "recipe10.jpg", content_type: "image/jpg")
 
 recipe15 = Recipe.create!(name: "Frites de Sweet Potatoes",
@@ -518,7 +518,7 @@ recipe15 = Recipe.create!(name: "Frites de Sweet Potatoes",
                           description: "frites miam miam good",
                           rating: 4.77)
 
-picture_recipe15 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
+picture_recipe15 = URI.open("https://images.radio-canada.ca/v1/alimentation/recette/16x9/patate-douce-frite.jpg")
 recipe15.photo.attach(io: picture_recipe15, filename: "recipe10.jpg", content_type: "image/jpg")
 
 recipe16 = Recipe.create!(name: "Grilled Cheese Sandwich",
@@ -533,7 +533,7 @@ recipe16 = Recipe.create!(name: "Grilled Cheese Sandwich",
                           description: "Miam Mial",
                           rating: 4.77)
 
-picture_recipe16 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
+picture_recipe16 = URI.open("https://therecipecritic.com/wp-content/uploads/2022/08/grilledcheese-1.jpg")
 recipe16.photo.attach(io: picture_recipe16, filename: "recipe10.jpg", content_type: "image/jpg")
 
 recipe17 = Recipe.create!(name: "Fondue un peu speciale",
@@ -552,7 +552,7 @@ recipe17 = Recipe.create!(name: "Fondue un peu speciale",
                           description: "Don't eat it, I don't think it will taste that good RIP",
                           rating: 4.77)
 
-picture_recipe17 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
+picture_recipe17 = URI.open("https://assets.afcdn.com/recipe/20161130/59380_w1024h768c1cx2808cy1872.webp")
 recipe17.photo.attach(io: picture_recipe17, filename: "recipe10.jpg", content_type: "image/jpg")
 
 recipe18 = Recipe.create!(name: "Grilled Salmon",
