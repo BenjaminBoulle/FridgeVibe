@@ -3,11 +3,8 @@
   <% @recipes.each do |recipe| %>
     <div class="containerhomefridge">
       <div class="d-flex">
-        <div class="picturefridge">
-          <% if recipe.photo.attached? %>
-            <%= cl_image_tag recipe.photo.key, height:145, width: 135, crop: :fill %>
-          <% end %>
-        </div>
+      <%= cl_image_tag recipe.photo.key, height:145, width: 135, crop: :fill, class: "pictag"%>
+
         <div class="textnext">
           <div class="littletext">
             <p class="ingname"><%= recipe.name %></p>

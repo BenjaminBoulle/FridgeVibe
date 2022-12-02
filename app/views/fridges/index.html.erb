@@ -1,5 +1,19 @@
-<% @fridges.each do |fridge| %>
-  <%= link_to fridge_path(fridge) do %>
-    <%= image_tag("fridge.png", size: "300x600")  %>
-  <% end %>
-<% end %>
+<div class="backgroundhomefridge">
+  <div class="containerhomefridge">
+    <div class="flex-container">
+      <div class="cards">
+        <% @fridges.each do |fridge| %>
+          <%= link_to fridge_path(fridge) do %>
+            <div class="fridge-card">
+              <% if fridge.my_fridge %>
+                Home Fridge
+              <%else%>
+                Away Fridge
+              <%end%>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
