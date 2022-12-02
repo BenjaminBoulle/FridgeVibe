@@ -6,6 +6,8 @@
   margin-left: 15px;
   margin-right: 15px;
   box-shadow: 20px 20px 50px rgb(216,222,224);
+  width: 90%;
+
 }
 
 .textnext{
@@ -14,7 +16,7 @@
 }
 
 .picturefridge{
-  transform: translate(-10px, -15px);
+  transform: translate(-12px, -15px);
   background-color: rgb(216,222,224);
   height: 150px;
   width: 140px;
@@ -22,7 +24,10 @@
   border-radius: 20px;
 }
  .backgroundhomefridge{
-  background-color:rgb(249,243,243);
+  background-color:rgb(249, 245, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
  }
 
  .h2homefridge{
@@ -31,6 +36,7 @@
 	font-size: 50px;
   padding-top: 40px;
   padding-bottom: 40px;
+  background: linear-gradient( rgb(86,124,123),rgb(249, 245, 243));
  }
 
  .littletext{
@@ -50,10 +56,7 @@
   margin-top: -10px;
  }
 
- .editbutton{
-  text-align: end;
-  transform: translate(-30px, 0px);
- }
+
 
  .addlink{
   display: flex;
@@ -73,11 +76,13 @@
   box-shadow: 20px 20px 50px rgb(216,222,224);
   justify-content: center;
   align-items: center;
+
  }
 
  .adding{
   border-radius: 10px;
   background-color:  rgb(86,124,123) ;
+  width: 350px;
  }
 
 
@@ -89,6 +94,57 @@
   color: rgb(86,124,123);
  }
 
- #edit{
+ #edit i{
   color: rgb(86,124,123);
+  font-size: 2em;
  }
+
+
+
+
+ .shuffleAll{
+
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 20px;
+}
+
+
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+#delete_btn{
+  color: rgb(86,124,123);
+  font-size: 2em;
+  transform: translate(0px, -50px)
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
