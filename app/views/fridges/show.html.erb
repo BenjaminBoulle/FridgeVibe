@@ -1,28 +1,29 @@
+<h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
 <div class="backgroundhomefridge">
-  <h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
   <% @ingredients.each do |ingredient| %>
     <div class="containerhomefridge">
       <div class="d-flex">
-        <div class="picturefridge">
-          <%= cl_image_tag ingredient.photo.key, height:145, width: 135, crop: :fill %>
-        </div>
+          <%= cl_image_tag ingredient.photo.key, height:145, width: 135, crop: :fill, class:"picturefridge" %>
           <div class="textnext">
             <div class="littletext">
               <p class="ingname"><%= ingredient.name %></p>
               <p>Quantity: <%= ingredient.quantity %></p>
               <p class="expirationdate">Expiration Date: <%= ingredient.expiration_date %></p>
             </div>
-                <%= link_to edit_fridge_ingredient_path(@fridge, ingredient),id:"edit" do %>
-            <div class="editbutton">
-              <i class="fa-solid fa-pen-to-square"></i>
+
+              <div class="logo">
+                  <div class="editbutton">
+                    <%= link_to edit_fridge_ingredient_path(@fridge, ingredient),id:"edit" do %>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <% end %>
+                  </div>
+                <div class="deletebtn">
+                  <%= link_to ingredient_path(ingredient), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},id:"delete_btn" do %>
+                    <i class="fa-solid fa-trash"></i>
+                  <% end %>
+              </div>
+
             </div>
-            <div class="deletebtn">
-              <%= link_to "Delete",
-                ingredient_path(ingredient),
-                data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-              %>
-            </div>
-            <% end %>
           </div>
       </div>
     </div>
@@ -33,10 +34,16 @@
                   Add ingredientes
                   <i class="fa-solid fa-plus"></i>
               </div>
+            <% end %>
           </div>
-                <% end %>
-        <%= link_to recipes_path,id:"shuffle" do %>
-          SHUFFLE
-          <i class="fa-solid fa-plus"></i>
-        <% end %>
+
+                <div class="shuffle_btn">
+                  <div class=shuffleAll>
+                  <%= link_to recipes_path,id:"shuffle" do %>
+                    SHUFFLE
+                  <i class="fa-solid fa-shuffle"></i>
+                  <% end %>
+                  </div>
+                </div>
+
 </div>
