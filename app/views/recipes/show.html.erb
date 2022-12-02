@@ -6,8 +6,10 @@
     <% end %>
   </ul>
 </p>
-<p>Description: <%= @recipe.description %></p>
-<p>Cuisine: <%= @recipe.cuisine %></p>
+
+<p><% @recipe.description.split('.').each do |description| %></p>
+      <li> <%= description %> </li>
+    <% end %>
 
 <p>
   <%= link_to "Delete Your Recipe", recipe_path(@recipe), class: "btn btn-primary",

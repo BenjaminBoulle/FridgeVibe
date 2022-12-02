@@ -6,46 +6,39 @@
         <div class="picturefridge">
           <%= cl_image_tag ingredient.photo.key, height:145, width: 135, crop: :fill %>
         </div>
-        <div class="textnext">
-          <div class="littletext">
-            <p class="ingname"><%= ingredient.name %></p>
-            <p>Quantity: <%= ingredient.quantity %></p>
-            <p class="expirationdate">Expiration Date: <%= ingredient.expiration_date %></p>
-          </div>
-          <%= link_to "Delete",
-              ingredient_path(ingredient),
-              data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-          %>
-          <%= link_to edit_fridge_ingredient_path(@fridge, ingredient),id:"edit" do %>
+          <div class="textnext">
+            <div class="littletext">
+              <p class="ingname"><%= ingredient.name %></p>
+              <p>Quantity: <%= ingredient.quantity %></p>
+              <p class="expirationdate">Expiration Date: <%= ingredient.expiration_date %></p>
+            </div>
+                <%= link_to edit_fridge_ingredient_path(@fridge, ingredient),id:"edit" do %>
             <div class="editbutton">
               <i class="fa-solid fa-pen-to-square"></i>
             </div>
-          <% end %>
+            <div class="deletebtn">
+              <%= link_to "Delete",
+                ingredient_path(ingredient),
+                data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+              %>
+
+            </div>
+            <% end %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end  %>
-  <div class="addlink">
-    <div class="adding">
-      <%= link_to new_fridge_ingredient_path(@fridge), id: "jhjhjh" do %>
-        Add ingredientes!
-        <i class="fa-solid fa-plus"></i>
-      <% end %>
-    </div>
+        <% end  %>
+                <%= link_to new_fridge_ingredient_path(@fridge), id: "jhjhjh" do %>
+          <div class="addlink">
+              <div class="adding">
+                  Add ingredientes
+                  <i class="fa-solid fa-plus"></i>
+              </div>
+          </div>
+                <% end %>
+        <%= link_to recipes_path,id:"shuffle" do %>
+          SHUFFLE
+          <i class="fa-solid fa-plus"></i>
+        <% end %>
   </div>
-  <%= link_to recipes_path,id:"shuffle" do %>
-    SHUFFLE!!
-    <i class="fa-solid fa-plus"></i>
-  <% end %>
-
-
-  <%= link_to new_fridge_ingredient_path(@fridge) do %>
-    Add ingredientes!
-    <i class="fa-solid fa-plus"></i>
-  <% end %>
-  <%= link_to recipes_path do %>
-    SHUFFLE
-    <i class="fa-solid fa-plus"></i>
-  <% end %>
-
 </div>
