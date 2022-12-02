@@ -57,20 +57,20 @@ class RecipesController < ApplicationController
     ingredients.each do |ingredient|
       stripped_ingredients << ingredient.strip
     end
-    p stripped_ingredients
-    return stripped_ingredients
+    # stripped_ingredients_downcase = stripped_ingredients.map(&:downcase)
+    return stripped_ingredients#_downcase
   end
 
   # making an array of all the ingredients in the fridge and sorting them by expiration date
 
   def fridge_ingredients
-    fridge = current_user.fridges.find_by(my_fridge: true)
     ingredients = []
     ingredients_sorted = fridge.ingredients.order(:expiration_date)
     ingredients_sorted.each do |ingredient|
       ingredients << ingredient.name
     end
-    return ingredients
+    # ingredients_downcase = ingredients.map(&:downcase)
+    return ingredients#_downcase
   end
 
   # method to check if all the ingredients are in the recipe
@@ -98,6 +98,7 @@ class RecipesController < ApplicationController
 
   def score_ingredient(ingredient)
     if ingredient.nil?
+      p
       score = 360**-1
     else
       score = (ingredient.expiration_date.mjd - Date.today.mjd)**-1
@@ -115,24 +116,44 @@ class RecipesController < ApplicationController
     end
     recipe_hash_sorted = recipe_hash.sort_by { |_key, value| -value }
     recipe_sorted = []
+    puts recipe_hash_sorted
     recipe_hash_sorted.each do |key, _value|
       recipe_sorted << key
     end
-    puts recipe_hash_sorted
     return recipe_sorted
   end
 
   # give a score to a recipe
 
   def score_recipe(recipe)
-    fridge = current_user.fridges.find_by(my_fridge: true)
+    # fridge = current_user.fridges.find_by(my_fridge: true)
     fridge_ingr = fridge.ingredients.order(:expiration_date)
+    #######
+    p "this is my fridge mufasa"
+    fridge.ingredients.order(:expiration_date).each do |element|
+      p element.name
+    end
+    ############
     score = 0
     ingredients = take_ingredients(recipe)
+    p "these are my ingredients"
+    p ingredients
     ingredients.each do |ingredient|
+      p fridge_ingr.find_by(name: ingredient)
+      p ingredient
+      p score_ingredient(fridge_ingr.find_by(name: ingredient))
+      p "score from #{ingredient}"
+      p score
       score += score_ingredient(fridge_ingr.find_by(name: ingredient))
     end
+    p "eeeeeeeeeeeeeeeeeend"
+    p score
     final_score = (score / ingredients.length)
+    p final_score
     return final_score
+  end
+
+  def fridge
+    @fridge ||= Fridge.find(params[:fridge_id])
   end
 end
