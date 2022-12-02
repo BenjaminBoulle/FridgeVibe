@@ -1,7 +1,8 @@
 class RecipesController < ApplicationController
   def index
-    score
-    @recipes = verifying_recipe
+    puts order_recipes
+    @recipes = order_recipes
+    # @recipes = Recipe.all
   end
 
   def show
@@ -81,21 +82,53 @@ class RecipesController < ApplicationController
       recipe_ingredients = take_ingredients(recipe)
       good_recipes << recipe if ingredients_in?(recipe_ingredients)
     end
-    # good_recipes.each do |recipe|
-    #   p recipe.name
-    # end
-    return good_recipes
+    # return good_recipes
+    return recipes
   end
 
   # give a score to the ingredients
 
-  def score
+  def score_ingredient(ingredient)
+    if ingredient.nil?
+      score = 360**-1
+    else
+      score = (ingredient.expiration_date.mjd - Date.today.mjd)**-1
+    end
+    return score * 10
+  end
+
+  # order recipes by score
+
+  def order_recipes
+    good_recipes = verifying_recipe
+    recipe_hash = {}
+    good_recipes.each do |recipe|
+      recipe_hash[recipe] = score_recipe(recipe)
+    end
+    recipe_hash_sorted = recipe_hash.sort_by { |_key, value| -value }
+    recipe_sorted = []
+    recipe_hash_sorted.each do |key, _value|
+      recipe_sorted << key
+    end
+    puts recipe_hash_sorted
+    return recipe_sorted
+  end
+
+  # give a score to a recipe
+
+  def score_recipe(recipe)
     fridge = current_user.fridges.find_by(my_fridge: true)
     fridge_ingr = fridge.ingredients.order(:expiration_date)
-    p "scooooooooooooooore"
-    p fridge_ingr
-    fridge_ingr.each do |ingredient|
-      p(ingredient.expiration_date.mjd - Date.today.mjd)
+    score = 0
+    ingredients = take_ingredients(recipe)
+    ingredients.each do |ingredient|
+      # if fridge_ingr.find_by(name: ingredient).nil?
+      #   score += 1
+      # else
+        score += score_ingredient(fridge_ingr.find_by(name: ingredient))
+      # end
     end
+    final_score = (score / ingredients.length)
+    return final_score
   end
 end

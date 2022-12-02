@@ -525,3 +525,16 @@ recipe18 = Recipe.create!(name: "Grilled Salmon",
 
 picture_recipe18 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
 recipe18.photo.attach(io: picture_recipe18, filename: "recipe10.jpg", content_type: "image/jpg")
+
+recipe19 = Recipe.create!(name: "Hachis Parmentier",
+                          ingredients: "Potatoes,Minced pork and beef,Spinach,Cream,Cheese",
+                          user: user_admin,
+                          author: "bob",
+                          cuisine: "don't know",
+                          cook_time: 15,
+                          prep_time: 5,
+                          description: "cook everything the wright way",
+                          rating: 4.77)
+
+picture_recipe19 = URI.open("https://www.curiouscuisiniere.com/wp-content/uploads/2019/10/French-Hachis-Parmentier-Potato-and-Beef-Casserole-8667-450-1.jpg")
+recipe19.photo.attach(io: picture_recipe19, filename: "recipe10.jpg", content_type: "image/jpg")

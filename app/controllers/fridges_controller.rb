@@ -20,6 +20,6 @@ class FridgesController < ApplicationController
 
   def show
     @fridge = Fridge.find(params[:id])
-    @ingredients = Ingredient.where(fridge: @fridge)
+    @ingredients = Ingredient.where(fridge: @fridge).order(:expiration_date)
   end
 end
