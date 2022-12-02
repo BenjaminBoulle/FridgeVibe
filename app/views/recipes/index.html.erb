@@ -1,12 +1,21 @@
-<h1>welcome to the recipe #index</h1>
-<ul>
-  <% @recipes.each do |recipe| %>
-    <li><%= link_to recipe.name, recipe_path(recipe) %></li>
-  <% end %>
-</ul>
+<div class="backgroundhomefridge">
+  <h1 class="h2homefridge">Our suggestions:</h1>
 
-<p>
-  <%= link_to new_recipe_path(@recipe), class: "btn btn-primary" do%>
-    Create Your Recipe
-  <% end %>
-</p>
+  <div class="containerhomefridge">
+    <ul>
+      <% @recipes.each do |recipe| %>
+        <li><%= link_to recipe.name, recipe_path(recipe) %></li>
+      <% end %>
+    </ul>
+
+    <div class="addlink" >
+      <div class="adding">
+        <p>
+          <%= link_to new_recipe_path(@recipe), id: "jhjhjh" do%>
+            Create your own recipe +
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

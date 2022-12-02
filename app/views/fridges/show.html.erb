@@ -4,9 +4,9 @@
         <div class="containerhomefridge">
               <div class="d-flex">
                 <div class="picturefridge">
-                    <%= cl_image_tag ingredient.photo.key, height:145, width: 135, crop: :fill %>
+                  <%= cl_image_tag ingredient.photo.key, height:145, width: 135, crop: :fill %>
                 </div>
-              <div class="textnext">
+                <div class="textnext">
                     <div class="littletext">
                       <p class="ingname"><%= ingredient.name %></p>
                       <p>Quantity: <%= ingredient.quantity %></p>
