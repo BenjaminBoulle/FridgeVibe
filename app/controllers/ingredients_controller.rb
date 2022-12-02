@@ -11,7 +11,6 @@ class IngredientsController < ApplicationController
     @fridge = @ingredient.fridge
     if @ingredient.save
       if @ingredient.photo.attached? == false
-        # default_ingredient = URI.open("https://avatars.githubusercontent.com/u/115448260?v=4")
         @ingredient.photo.attach(io: URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1669818876/pict-dinner_q1pwkw.png"), filename: "pict-dinner.png", content_type: "image/png")
       end
       redirect_to fridge_path(@ingredient.fridge)

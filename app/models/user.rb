@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_one_attached :photo
   has_many :reviews
+  has_many :fridges
 
   validates :email, presence: true
   validates :email, uniqueness: true
