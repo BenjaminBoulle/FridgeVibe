@@ -7,11 +7,12 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :fridges, only: %i[index show] do
     resources :ingredients
+    resources :recipes, only: :index
   end
-  resources :ingredients, only: %i[destroy]
+  resources :ingredients, only: :destroy
 
-  resources :recipes do
+  resources :recipes, except: :index do
     resources :reviews, only: %i[index new create]
   end
-  resources :reviews, only: %i[destroy]
+  resources :reviews, only: :destroy
 end
