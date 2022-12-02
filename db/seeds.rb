@@ -242,202 +242,202 @@ ingredient39.photo.attach(io: picture_ingredient39, filename: "American cheese.p
 ### RECIPES
 puts "creating recipes..."
 
-# recipe1 = Recipe.create!(name: "Baked Mac and Cheese for One",
-#                          ingredients: "3 tablespoons uncooked macaroni, pasta,
-#                                        1 tablespoon, butter,
-#                                        1 tablespoon all-purpose, flour,
-#                                        ¼ teaspoon, salt,
-#                                        1 pinch, pepper,
-#                                        ⅛ teaspoon, onion powder,
-#                                        ½ cup, milk,
-#                                        ⅓ cup shredded, Cheddar cheese,
-#                                        ⅛ teaspoon ground, mustard,
-#                                        1 dash, Worcestershire sauce,
-#                                        1 dash, hot sauce,
-#                                        1 teaspoon, bread,
-#                                        1 tablespoon shredded, Cheddar cheese",
-#                          user: user_admin,
-#                          author: "amydoll",
-#                          cuisine: "american",
-#                          cook_time: 20,
-#                          prep_time: 10,
-#                          description: "Step 1: Preheat an oven to 200 degrees C. Grease an oven-proof soup crock or 1 cup baking dish.
-#                                        Step 2: Fill a small saucepan with water, and bring to a boil. Stir in the macaroni; boil until cooked but still firm to the bite, about 8 minutes. Drain well, and reserve.
-#                                        Step 3: In the same saucepan, melt the butter over medium-high heat. Stir in the flour, salt, pepper, onion powder, and milk; whisk until smooth. Cook, stirring, for 2 minutes. Reduce heat to low, and whisk in 1/3 cup cheese, mustard, Worcestershire sauce, and hot sauce. Stir in the cooked macaroni. Spoon the macaroni and cheese into the prepared dish. Sprinkle with bread crumbs and 1 tablespoon cheddar cheese.
-#                                        Step 4: Bake, uncovered, until the cheese is melted and the macaroni is heated through, about 10 minutes.",
-#                          rating: 4.4)
-# picture_recipe1 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4516736.jpg")
-# recipe1.photo.attach(io: picture_recipe1, filename: "recipe1.jpg", content_type: "image/jpg")
+recipe1 = Recipe.create!(name: "Baked Mac and Cheese for One",
+                         ingredients: "3 tablespoons uncooked macaroni, pasta,
+                                       1 tablespoon, butter,
+                                       1 tablespoon all-purpose, flour,
+                                       ¼ teaspoon, salt,
+                                       1 pinch, pepper,
+                                       ⅛ teaspoon, onion powder,
+                                       ½ cup, milk,
+                                       ⅓ cup shredded, Cheddar cheese,
+                                       ⅛ teaspoon ground, mustard,
+                                       1 dash, Worcestershire sauce,
+                                       1 dash, hot sauce,
+                                       1 teaspoon, bread,
+                                       1 tablespoon shredded, Cheddar cheese",
+                         user: user_admin,
+                         author: "amydoll",
+                         cuisine: "american",
+                         cook_time: 20,
+                         prep_time: 10,
+                         description: "Step 1: Preheat an oven to 200 degrees C. Grease an oven-proof soup crock or 1 cup baking dish.
+                                       Step 2: Fill a small saucepan with water, and bring to a boil. Stir in the macaroni; boil until cooked but still firm to the bite, about 8 minutes. Drain well, and reserve.
+                                       Step 3: In the same saucepan, melt the butter over medium-high heat. Stir in the flour, salt, pepper, onion powder, and milk; whisk until smooth. Cook, stirring, for 2 minutes. Reduce heat to low, and whisk in 1/3 cup cheese, mustard, Worcestershire sauce, and hot sauce. Stir in the cooked macaroni. Spoon the macaroni and cheese into the prepared dish. Sprinkle with bread crumbs and 1 tablespoon cheddar cheese.
+                                       Step 4: Bake, uncovered, until the cheese is melted and the macaroni is heated through, about 10 minutes.",
+                         rating: 4.4)
+picture_recipe1 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4516736.jpg")
+recipe1.photo.attach(io: picture_recipe1, filename: "recipe1.jpg", content_type: "image/jpg")
 
-# recipe2 = Recipe.create!(name: "Pesto Pasta Caprese Salad",
-#                          ingredients: "1 ½ cups rotini, pasta,
-#                                        3 tablespoons, pesto,
-#                                        1 tablespoon extra-virgin, olive oil,
-#                                        ¼ teaspoon, salt,
-#                                        ¼ teaspoon granulated, garlic,
-#                                        ⅛ teaspoon, pepper,
-#                                        ½ cup halved, grape tomatoes,
-#                                        ½ cup small (pearlini) fresh balls, mozzarella ,
-#                                        2 leaves fresh finely shredded leaves, basil",
-#                          user: user_admin,
-#                          author: "thedailygourmet",
-#                          cuisine: "italian",
-#                          cook_time: 10,
-#                          prep_time: 10,
-#                          description: "Step 1: Bring a large pot of lightly salted water to a boil; cook the rotini at a boil until tender yet firm to the bite, about 8 minutes; drain.
-#                                        Step 2: Mix pesto, olive oil, salt, granulated garlic, and black pepper in a bowl; add rotini. Toss to coat. Fold in tomatoes, mozzarella, and fresh basil.",
-#                          rating: 4.6)
-# picture_recipe2 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4794067.jpg")
-# recipe2.photo.attach(io: picture_recipe2, filename: "recipe2.jpg", content_type: "image/jpg")
+recipe2 = Recipe.create!(name: "Pesto Pasta Caprese Salad",
+                         ingredients: "1 ½ cups rotini, pasta,
+                                       3 tablespoons, pesto,
+                                       1 tablespoon extra-virgin, olive oil,
+                                       ¼ teaspoon, salt,
+                                       ¼ teaspoon granulated, garlic,
+                                       ⅛ teaspoon, pepper,
+                                       ½ cup halved, grape tomatoes,
+                                       ½ cup small (pearlini) fresh balls, mozzarella ,
+                                       2 leaves fresh finely shredded leaves, basil",
+                         user: user_admin,
+                         author: "thedailygourmet",
+                         cuisine: "italian",
+                         cook_time: 10,
+                         prep_time: 10,
+                         description: "Step 1: Bring a large pot of lightly salted water to a boil; cook the rotini at a boil until tender yet firm to the bite, about 8 minutes; drain.
+                                       Step 2: Mix pesto, olive oil, salt, granulated garlic, and black pepper in a bowl; add rotini. Toss to coat. Fold in tomatoes, mozzarella, and fresh basil.",
+                         rating: 4.6)
+picture_recipe2 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4794067.jpg")
+recipe2.photo.attach(io: picture_recipe2, filename: "recipe2.jpg", content_type: "image/jpg")
 
-# recipe3 = Recipe.create!(name: "Creamy Penne Pasta Primavera",
-#                          ingredients: "2 cups penne, pasta,
-#                                        2 teaspoons, olive oil,
-#                                        1 pound trimmed and cut into 2-inch pieces, asparagus,
-#                                        3 cut into strips, carrots,
-#                                        2 cups halved, cherry tomatoes,
-#                                        1 clove minced or more to taste, garlic,
-#                                        1 cup grated, Parmesan,
-#                                        1 cup heavy, whipped cream,
-#                                        ¼ teaspoon ground, pepper",
-#                          user: user_admin,
-#                          author: "gretchen",
-#                          cuisine: "italian",
-#                          cook_time: 20,
-#                          prep_time: 15,
-#                          description: "Step 1: Bring a large pot of lightly salted water to a boil; add penne and cook, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain.
-#                                        Step 2: Heat olive oil in a large skillet over medium heat-high heat; saute asparagus and carrots until tender yet firm to the bite, about 5 minutes. Add tomatoes and garlic; saute until garlic is fragrant, about 1 minute.
-#                                        Step 3: Stir Parmesan cheese, cream, and black pepper into vegetable mixture until cheese melts and sauce is smooth, 2 to 3 minutes. Add pasta to sauce and toss to coat.",
-#                          rating: 4.5)
-# picture_recipe3 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1126428.jpg")
-# recipe3.photo.attach(io: picture_recipe3, filename: "recipe3.jpg", content_type: "image/jpg")
+recipe3 = Recipe.create!(name: "Creamy Penne Pasta Primavera",
+                         ingredients: "2 cups penne, pasta,
+                                       2 teaspoons, olive oil,
+                                       1 pound trimmed and cut into 2-inch pieces, asparagus,
+                                       3 cut into strips, carrots,
+                                       2 cups halved, cherry tomatoes,
+                                       1 clove minced or more to taste, garlic,
+                                       1 cup grated, Parmesan,
+                                       1 cup heavy, whipped cream,
+                                       ¼ teaspoon ground, pepper",
+                         user: user_admin,
+                         author: "gretchen",
+                         cuisine: "italian",
+                         cook_time: 20,
+                         prep_time: 15,
+                         description: "Step 1: Bring a large pot of lightly salted water to a boil; add penne and cook, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain.
+                                       Step 2: Heat olive oil in a large skillet over medium heat-high heat; saute asparagus and carrots until tender yet firm to the bite, about 5 minutes. Add tomatoes and garlic; saute until garlic is fragrant, about 1 minute.
+                                       Step 3: Stir Parmesan cheese, cream, and black pepper into vegetable mixture until cheese melts and sauce is smooth, 2 to 3 minutes. Add pasta to sauce and toss to coat.",
+                         rating: 4.5)
+picture_recipe3 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1126428.jpg")
+recipe3.photo.attach(io: picture_recipe3, filename: "recipe3.jpg", content_type: "image/jpg")
 
-# recipe4 = Recipe.create!(name: "Tomato and Garlic Pasta",
-#                          ingredients: "2 pounds, tomatoes,
-#                                        1 (8 ounce) package angel hair, pasta,
-#                                        1 tablespoon, olive oil,
-#                                        4 cloves crushed, garlic,
-#                                        1 tablespoon tomato ,paste,
-#                                        a pinch, salt,
-#                                        ground, pepper,
-#                                        1 tablespoon chopped fresh, basil,
-#                                        ¼ cup grated, Parmesan",
-#                          user: user_admin,
-#                          author: "ALMA-LOU",
-#                          cuisine: "italian",
-#                          cook_time: 30,
-#                          prep_time: 15,
-#                          description: "Step 1 : Place tomatoes in a large pot and cover with cold water. Bring just to a boil. Pour off water, and cover again with cold water. Peel the skin off tomatoes and cut into small pieces.
-#                                        Step 2: Bring a large pot of lightly salted water to a boil. Cook angel hair pasta in the boiling water, stirring occasionally, until tender yet firm to the bite, 4 to 5 minutes.
-#                                        Step 3: Meanwhile, heat olive oil in a large skillet or pan, making sure there is enough to cover the bottom of the pan, and sauté garlic until opaque but not browned. Stir in tomato paste. Immediately stir in the tomatoes, salt, and pepper. Reduce heat, and simmer until pasta is ready, adding basil at the end.
-#                                        Step 4: Drain pasta, do not rinse in cold water. Toss with a bit of olive oil, then mix into the sauce.
-#                                        Step 5: Reduce heat as low as possible. Keep warm, uncovered, for about 10 minutes when it is ready to serve. Garnish generously with fresh Parmesan cheese.",
-#                          rating: 4.4)
-# picture_recipe4 = URI.open("https://www.allrecipes.com/thmb/Pqd5cmqNpCSO6oqxiSzIYcZ4dFc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/837215-3fd78897006b4046a3babf9e5f05237b.jpg")
-# recipe4.photo.attach(io: picture_recipe4, filename: "recipe4.jpg", content_type: "image/jpg")
+recipe4 = Recipe.create!(name: "Tomato and Garlic Pasta",
+                         ingredients: "2 pounds, tomatoes,
+                                       1 (8 ounce) package angel hair, pasta,
+                                       1 tablespoon, olive oil,
+                                       4 cloves crushed, garlic,
+                                       1 tablespoon tomato ,paste,
+                                       a pinch, salt,
+                                       ground, pepper,
+                                       1 tablespoon chopped fresh, basil,
+                                       ¼ cup grated, Parmesan",
+                         user: user_admin,
+                         author: "ALMA-LOU",
+                         cuisine: "italian",
+                         cook_time: 30,
+                         prep_time: 15,
+                         description: "Step 1 : Place tomatoes in a large pot and cover with cold water. Bring just to a boil. Pour off water, and cover again with cold water. Peel the skin off tomatoes and cut into small pieces.
+                                       Step 2: Bring a large pot of lightly salted water to a boil. Cook angel hair pasta in the boiling water, stirring occasionally, until tender yet firm to the bite, 4 to 5 minutes.
+                                       Step 3: Meanwhile, heat olive oil in a large skillet or pan, making sure there is enough to cover the bottom of the pan, and sauté garlic until opaque but not browned. Stir in tomato paste. Immediately stir in the tomatoes, salt, and pepper. Reduce heat, and simmer until pasta is ready, adding basil at the end.
+                                       Step 4: Drain pasta, do not rinse in cold water. Toss with a bit of olive oil, then mix into the sauce.
+                                       Step 5: Reduce heat as low as possible. Keep warm, uncovered, for about 10 minutes when it is ready to serve. Garnish generously with fresh Parmesan cheese.",
+                         rating: 4.4)
+picture_recipe4 = URI.open("https://www.allrecipes.com/thmb/Pqd5cmqNpCSO6oqxiSzIYcZ4dFc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/837215-3fd78897006b4046a3babf9e5f05237b.jpg")
+recipe4.photo.attach(io: picture_recipe4, filename: "recipe4.jpg", content_type: "image/jpg")
 
-# recipe5 = Recipe.create!(name: "Pasta and Garlic",
-#                          ingredients: "1 ½ pounds, pasta,
-#                                        ¼ cup, olive oil,
-#                                        2 cloves or more to taste crushed, garlic,
-#                                        a pinch, salt,
-#                                        a pinch, pepper,
-#                                        ¼ cup grated, Parmesan",
-#                          user: user_admin,
-#                          author: "Josie Strazzulla",
-#                          cuisine: "italian",
-#                          cook_time: 10,
-#                          prep_time: 5,
-#                          description: "Step 1: In a large pot of salted water boil pasta until al dente. Drain well.
-#                                        Step 2: In a small saucepan heat oil slightly, add garlic. Saute garlic until it is lightly browned. Be careful not to burn garlic.
-#                                        Step 3: Combine pasta and garlic, salt and pepper to taste. Top with Parmesan or Romano cheese and serve.",
-#                          rating: 4.32)
-# picture_recipe5 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1110792.jpg")
-# recipe5.photo.attach(io: picture_recipe5, filename: "recipe5.jpg", content_type: "image/jpg")
+recipe5 = Recipe.create!(name: "Pasta and Garlic",
+                         ingredients: "1 ½ pounds, pasta,
+                                       ¼ cup, olive oil,
+                                       2 cloves or more to taste crushed, garlic,
+                                       a pinch, salt,
+                                       a pinch, pepper,
+                                       ¼ cup grated, Parmesan",
+                         user: user_admin,
+                         author: "Josie Strazzulla",
+                         cuisine: "italian",
+                         cook_time: 10,
+                         prep_time: 5,
+                         description: "Step 1: In a large pot of salted water boil pasta until al dente. Drain well.
+                                       Step 2: In a small saucepan heat oil slightly, add garlic. Saute garlic until it is lightly browned. Be careful not to burn garlic.
+                                       Step 3: Combine pasta and garlic, salt and pepper to taste. Top with Parmesan or Romano cheese and serve.",
+                         rating: 4.32)
+picture_recipe5 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1110792.jpg")
+recipe5.photo.attach(io: picture_recipe5, filename: "recipe5.jpg", content_type: "image/jpg")
 
-# recipe6 = Recipe.create!(name: "Gourmet Grilled Cheese Sandwiches",
-#                          ingredients: "1 (3 ounce) package, cream cheese,
-#                                        ¾ cup, mayonnaise,
-#                                        8 ounces shredded, Colby-Monterey Jack cheese,
-#                                        ¾ teaspoon, garlic salt,
-#                                        8 slices, French bread,
-#                                        2 tablespoons, butter",
-#                          user: user_admin,
-#                          author: "SARAHGRETZMIER",
-#                          cuisine: "american",
-#                          cook_time: 8,
-#                          prep_time: 12,
-#                          description: "Step 1: In a medium bowl, combine cream cheese, mayonnaise, shredded cheese and garlic salt. Beat until smooth.
-#                                        Step 2: Preheat a large skillet over medium heat. Spread cheese mixture on 4 slices of bread, then top with the other 4 bread slices. Lightly butter both sides of each sandwich. Place sandwiches in skillet, and grill until golden brown on both sides, about 4 minutes per side.",
-#                          rating: 3.9)
-# picture_recipe6 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081975.jpg")
-# recipe6.photo.attach(io: picture_recipe6, filename: "recipe6.jpg", content_type: "image/jpg")
+recipe6 = Recipe.create!(name: "Gourmet Grilled Cheese Sandwiches",
+                         ingredients: "1 (3 ounce) package, cream cheese,
+                                       ¾ cup, mayonnaise,
+                                       8 ounces shredded, Colby-Monterey Jack cheese,
+                                       ¾ teaspoon, garlic salt,
+                                       8 slices, French bread,
+                                       2 tablespoons, butter",
+                         user: user_admin,
+                         author: "SARAHGRETZMIER",
+                         cuisine: "american",
+                         cook_time: 8,
+                         prep_time: 12,
+                         description: "Step 1: In a medium bowl, combine cream cheese, mayonnaise, shredded cheese and garlic salt. Beat until smooth.
+                                       Step 2: Preheat a large skillet over medium heat. Spread cheese mixture on 4 slices of bread, then top with the other 4 bread slices. Lightly butter both sides of each sandwich. Place sandwiches in skillet, and grill until golden brown on both sides, about 4 minutes per side.",
+                         rating: 3.9)
+picture_recipe6 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081975.jpg")
+recipe6.photo.attach(io: picture_recipe6, filename: "recipe6.jpg", content_type: "image/jpg")
 
-# recipe7 = Recipe.create!(name: "Elvis' Grilled Cheese Sandwich",
-#                          ingredients: "2 slices, bacon,
-#                                        1 tablespoon smooth, peanut butter,
-#                                        2 slices soft, bread,
-#                                        1 slice, American cheese,
-#                                        1 tablespoon softened, butter",
-#                          user: user_admin,
-#                          author: "Ricky Cooks",
-#                          cuisine: "american",
-#                          cook_time: 20,
-#                          prep_time: 5,
-#                          description: "Step 1: Place the bacon in a large, deep skillet, and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate.
-#                                        Step 2: Spread peanut butter on a slice of white bread, and cover with cheese slice and bacon. Top with the other piece of bread. Spread butter on both sides of the sandwich, and pan-fry in a skillet over medium heat until the bread is golden brown and the cheese has melted, 2 to 3 minutes per side. Serve hot.",
-#                          rating: 4)
-# picture_recipe7 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F729312.jpg")
-# recipe7.photo.attach(io: picture_recipe7, filename: "recipe7.jpg", content_type: "image/jpg")
+recipe7 = Recipe.create!(name: "Elvis' Grilled Cheese Sandwich",
+                         ingredients: "2 slices, bacon,
+                                       1 tablespoon smooth, peanut butter,
+                                       2 slices soft, bread,
+                                       1 slice, American cheese,
+                                       1 tablespoon softened, butter",
+                         user: user_admin,
+                         author: "Ricky Cooks",
+                         cuisine: "american",
+                         cook_time: 20,
+                         prep_time: 5,
+                         description: "Step 1: Place the bacon in a large, deep skillet, and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate.
+                                       Step 2: Spread peanut butter on a slice of white bread, and cover with cheese slice and bacon. Top with the other piece of bread. Spread butter on both sides of the sandwich, and pan-fry in a skillet over medium heat until the bread is golden brown and the cheese has melted, 2 to 3 minutes per side. Serve hot.",
+                         rating: 4)
+picture_recipe7 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F729312.jpg")
+recipe7.photo.attach(io: picture_recipe7, filename: "recipe7.jpg", content_type: "image/jpg")
 
-# recipe8 = Recipe.create!(name: "Inside-Out Grilled Cheese Sandwich",
-#                          ingredients: "2 tablespoons divided, butter,
-#                                        2 slices, bread,
-#                                        ½ cup shredded extra sharp divided, Cheddar",
-#                          user: user_admin,
-#                          author: "Chef John",
-#                          cuisine: "american",
-#                          cook_time: 10,
-#                          prep_time: 5,
-#                          description: "Step 1: Melt 1 1/2 tablespoons butter in a nonstick skillet over medium-low heat. Place bread slices in the skillet on top of the melted butter.
-#                                        Step 2: Spread about 1/4 cup Cheddar cheese on one slice of bread; place the other slice of bread, butter-side up, on top of the cheese. Spread about 2 tablespoons of cheese on top of the sandwich.
-#                                        Step 3: Melt remaining 1/2 tablespoon butter in the skillet next to the sandwich. Flip the sandwich onto the melted butter so that the cheese-side is facing down. Spread remaining cheese on top of the sandwich. Cook sandwich until cheese on the bottom is crispy and caramelized, 3 to 4 minutes. Flip sandwich and cook until cheese is crispy and caramelized on the other side, another 3 to 4 minutes.",
-#                          rating: 4.65)
-# picture_recipe8 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4462829.jpg")
-# recipe8.photo.attach(io: picture_recipe8, filename: "recipe8.jpg", content_type: "image/jpg")
+recipe8 = Recipe.create!(name: "Inside-Out Grilled Cheese Sandwich",
+                         ingredients: "2 tablespoons divided, butter,
+                                       2 slices, bread,
+                                       ½ cup shredded extra sharp divided, Cheddar",
+                         user: user_admin,
+                         author: "Chef John",
+                         cuisine: "american",
+                         cook_time: 10,
+                         prep_time: 5,
+                         description: "Step 1: Melt 1 1/2 tablespoons butter in a nonstick skillet over medium-low heat. Place bread slices in the skillet on top of the melted butter.
+                                       Step 2: Spread about 1/4 cup Cheddar cheese on one slice of bread; place the other slice of bread, butter-side up, on top of the cheese. Spread about 2 tablespoons of cheese on top of the sandwich.
+                                       Step 3: Melt remaining 1/2 tablespoon butter in the skillet next to the sandwich. Flip the sandwich onto the melted butter so that the cheese-side is facing down. Spread remaining cheese on top of the sandwich. Cook sandwich until cheese on the bottom is crispy and caramelized, 3 to 4 minutes. Flip sandwich and cook until cheese is crispy and caramelized on the other side, another 3 to 4 minutes.",
+                         rating: 4.65)
+picture_recipe8 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4462829.jpg")
+recipe8.photo.attach(io: picture_recipe8, filename: "recipe8.jpg", content_type: "image/jpg")
 
-# recipe9 = Recipe.create!(name: "Spicy Grilled Cheese Sandwich",
-#                          ingredients: "2 tablespoons, butter,
-#                                        4 slices, bread,
-#                                        2 slices, American cheese,
-#                                        1 roma (plum) thinly sliced ,tomato,
-#                                        ¼ small chopped, Onion,
-#                                        1 jalapeno chopped, Pepper ",
-#                          user: user_admin,
-#                          author: "PATELGURL",
-#                          cuisine: "american",
-#                          cook_time: 3,
-#                          prep_time: 2,
-#                          description: "Step 1: Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread.
-#                                        Step 2: Place both pieces buttered side down in the skillet. Lay a slice of cheese on each one, and top with slices of tomato, onion and jalapeno. Butter one side of the remaining slices of bread, and place on top buttered side up. When the bottom of the sandwiches are toasted, flip and fry until brown on the other side.",
-#                          rating: 4.63)
-# picture_recipe9 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081856.jpg")
-# recipe9.photo.attach(io: picture_recipe9, filename: "recipe9.jpg", content_type: "image/jpg")
+recipe9 = Recipe.create!(name: "Spicy Grilled Cheese Sandwich",
+                         ingredients: "2 tablespoons, butter,
+                                       4 slices, bread,
+                                       2 slices, American cheese,
+                                       1 roma (plum) thinly sliced ,tomato,
+                                       ¼ small chopped, Onion,
+                                       1 jalapeno chopped, Pepper ",
+                         user: user_admin,
+                         author: "PATELGURL",
+                         cuisine: "american",
+                         cook_time: 3,
+                         prep_time: 2,
+                         description: "Step 1: Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread.
+                                       Step 2: Place both pieces buttered side down in the skillet. Lay a slice of cheese on each one, and top with slices of tomato, onion and jalapeno. Butter one side of the remaining slices of bread, and place on top buttered side up. When the bottom of the sandwiches are toasted, flip and fry until brown on the other side.",
+                         rating: 4.63)
+picture_recipe9 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081856.jpg")
+recipe9.photo.attach(io: picture_recipe9, filename: "recipe9.jpg", content_type: "image/jpg")
 
-# recipe10 = Recipe.create!(name: "Grilled Cheese Sandwich",
-#                           ingredients: "4 slices, bread,
-#                                         3 tablespoons, butter,
-#                                         2 slices, Cheddar cheese",
-#                           user: user_admin,
-#                           author: "sal",
-#                           cuisine: "american",
-#                           cook_time: 15,
-#                           prep_time: 5,
-#                           description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese.
-#                                         Step 2: Cook until lightly browned on one side; flip over and continue cooking until cheese is melted. Repeat with remaining 2 slices of bread, butter, and slice of cheese.",
-#                           rating: 4.77)
-# picture_recipe10 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2016%2F10%2F2206436_Grilled-Cheese-Sandwich_Photo-by-Buckwheat-Queen.jpg")
-# recipe10.photo.attach(io: picture_recipe10, filename: "recipe10.jpg", content_type: "image/jpg")
+recipe10 = Recipe.create!(name: "Grilled Cheese Sandwich",
+                          ingredients: "4 slices, bread,
+                                        3 tablespoons, butter,
+                                        2 slices, Cheddar cheese",
+                          user: user_admin,
+                          author: "sal",
+                          cuisine: "american",
+                          cook_time: 15,
+                          prep_time: 5,
+                          description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese.
+                                        Step 2: Cook until lightly browned on one side; flip over and continue cooking until cheese is melted. Repeat with remaining 2 slices of bread, butter, and slice of cheese.",
+                          rating: 4.77)
+picture_recipe10 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2016%2F10%2F2206436_Grilled-Cheese-Sandwich_Photo-by-Buckwheat-Queen.jpg")
+recipe10.photo.attach(io: picture_recipe10, filename: "recipe10.jpg", content_type: "image/jpg")
 
 # recipe11 = Recipe.create!(name: "Hachis Parmentier",
 #                           ingredients: "1kg, Potatoes,
