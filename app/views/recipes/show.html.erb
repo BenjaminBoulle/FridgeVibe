@@ -6,7 +6,8 @@
     <% end %>
   </ul>
 </p>
-<p><%= @recipe.description %></p>
+<p>Description: <%= @recipe.description %></p>
+<p>Cuisine: <%= @recipe.cuisine %></p>
 
 <p>
   <%= link_to "Delete Your Recipe", recipe_path(@recipe), class: "btn btn-primary",

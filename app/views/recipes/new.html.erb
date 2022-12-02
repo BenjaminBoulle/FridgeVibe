@@ -2,5 +2,22 @@
   <%= f.input :name %>
   <%= f.input :ingredients%>
   <%= f.input :description %>
-  <%= f.submit %>
+
+<%= simple_form_for [@recipe] do |f| %>
+  <%= f.input :cook_time %>
+  <%= f.input :prep_time %>
+  <%= f.input :cuisine, collection: ["Mexican Cuisine",
+                                    "Turkish Cuisine",
+                                    "Thai  Cuisine",
+                                    "Chinese Cuisine",
+                                    "Japanese Cuisine",
+                                    "Indian Cuisine",
+                                    "Italian Cuisine",
+                                    "Greek Cuisine",
+                                    "Spanish Cuisine",
+                                    "Lebanese Cuisine"],
+              label: "Choose your cuisine" %>
+  <%= f.input :rating %>
+  <%= f.submit "Submit Cuisine", class: "btn btn-primary" %>
+<% end%>
 <% end %>
