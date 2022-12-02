@@ -2,7 +2,6 @@ class RecipesController < ApplicationController
   def index
     puts order_recipes
     @recipes = order_recipes
-    # @recipes = Recipe.all
   end
 
   def show
@@ -50,7 +49,16 @@ class RecipesController < ApplicationController
   # create an array with all the ingredients of a recipe
 
   def take_ingredients(recipe)
-    recipe.ingredients.split(',')
+    ingredients = []
+    recipe.ingredients.split(',').each_with_index do |ingredient, index|
+      ingredients << ingredient if index.odd?
+    end
+    stripped_ingredients = []
+    ingredients.each do |ingredient|
+      stripped_ingredients << ingredient.strip
+    end
+    p stripped_ingredients
+    return stripped_ingredients
   end
 
   # making an array of all the ingredients in the fridge and sorting them by expiration date
@@ -122,11 +130,7 @@ class RecipesController < ApplicationController
     score = 0
     ingredients = take_ingredients(recipe)
     ingredients.each do |ingredient|
-      # if fridge_ingr.find_by(name: ingredient).nil?
-      #   score += 1
-      # else
-        score += score_ingredient(fridge_ingr.find_by(name: ingredient))
-      # end
+      score += score_ingredient(fridge_ingr.find_by(name: ingredient))
     end
     final_score = (score / ingredients.length)
     return final_score
