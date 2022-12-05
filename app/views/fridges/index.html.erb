@@ -1,17 +1,23 @@
-<div class="backgroundhomefridge">
-  <div class="containerhomefridge">
-    <div class="flex-container">
-      <div class="cards">
-        <% @fridges.each do |fridge| %>
-          <%= link_to fridge_path(fridge) do %>
-            <div class="fridge-card">
-              <% if fridge.my_fridge %>
-                Home Fridge
-              <%else%>
-                Away Fridge
-              <%end%>
-            </div>
-          <% end %>
+<h1 class="text-center">choose your fridge</h1>
+
+<div class="flex-container">
+  <div data-controller="switch">
+    <label class="switch">
+      <input checked type="checkbox" id="togBtn" data-switch-target="the_switch" data-action="click->switch#switch_content">
+      <div class="slider round">
+        <span class="on">home</span>
+        <span class="off">away</span>
+      </div>
+    </label>
+    <div>
+      <div data-switch-target="home_fridge">
+        <%= link_to fridge_path(@fridges[0]), id: "home-fridge" do %>
+          HOME FRIDGE
+        <% end %>
+      </div>
+      <div data-switch-target="away_fridge" class="d-none">
+        <%= link_to fridge_path(@fridges[1]), id: "away-fridge" do %>
+          AWAY FRIDGE
         <% end %>
       </div>
     </div>

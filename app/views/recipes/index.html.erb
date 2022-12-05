@@ -1,4 +1,7 @@
 <div class="backgroundhomefridge">
+  <%= link_to fridge_path(@fridge) do%>
+    <i class="fa-solid fa-backward" id="crimson"></i>
+  <% end %>
   <h1 class="h2homefridge">Our suggestions:</h1>
   <% @recipes.each do |recipe| %>
     <div class="containerhomefridge">

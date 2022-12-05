@@ -1,5 +1,8 @@
 <h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
 <div class="backgroundhomefridge">
+  <%= link_to fridges_path do%>
+    <i class="fa-solid fa-backward"></i>
+  <% end %>
   <% @ingredients.each do |ingredient| %>
     <div class="containerhomefridge">
       <div class="d-flex">

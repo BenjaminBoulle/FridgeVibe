@@ -18,3 +18,6 @@ application.register("hello", HelloController)
 
 import StarRatingController from "./star_rating_controller"
 application.register("star-rating", StarRatingController)
+
+import SwitchController from "./switch_controller"
+application.register("switch", SwitchController)
