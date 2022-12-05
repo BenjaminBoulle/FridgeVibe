@@ -1,8 +1,10 @@
 <h2><%= @recipe.name %></h2>
 <p>
   <ul>
-    <%@recipe.ingredients.split(',').each do |ingredient| %>
-      <li> <%= ingredient %> </li>
+    <%@ingredients.each_with_index do |ingredient, index| %>
+      <% if index.odd? %>
+        <li> <%= @ingredients[index - 1] %> of <%= ingredient %> </li>
+      <% end %>
     <% end %>
   </ul>
 </p>
@@ -13,11 +15,6 @@
       <li> <%= description %> </li>
     <% end %>
   </ul>
-</p>
-<p>
-  <%= link_to recipe_path(@recipe), class: "btn btn-primary", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
-    Delete Your Recipe
-  <% end %>
 </p>
 
 <br>

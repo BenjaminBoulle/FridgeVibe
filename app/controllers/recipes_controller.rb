@@ -6,6 +6,7 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    @ingredients = @recipe.ingredients.split(',')
     @fridge = fridge
   end
 
@@ -60,8 +61,7 @@ class RecipesController < ApplicationController
     ingredients.each do |ingredient|
       stripped_ingredients << ingredient.strip
     end
-    # stripped_ingredients_downcase = stripped_ingredients.map(&:downcase)
-    return stripped_ingredients#_downcase
+    return stripped_ingredients
   end
 
   # making an array of all the ingredients in the fridge and sorting them by expiration date
@@ -72,8 +72,7 @@ class RecipesController < ApplicationController
     ingredients_sorted.each do |ingredient|
       ingredients << ingredient.name
     end
-    # ingredients_downcase = ingredients.map(&:downcase)
-    return ingredients#_downcase
+    return ingredients
   end
 
   # method to check if all the ingredients are in the recipe
