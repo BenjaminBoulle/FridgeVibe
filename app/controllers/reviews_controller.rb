@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_recipe, only: %i[new create]
+  before_action :set_fridge, only: %i[new create]
 
   def new
     @review = Review.new
@@ -10,7 +11,7 @@ class ReviewsController < ApplicationController
     @review.recipe = @recipe
     @review.user = current_user
     if @review.save
-      redirect_to recipe_path(@recipe)
+      redirect_to fridge_recipe_path(@fridge, @recipe)
     else
       render :new
     end
@@ -23,6 +24,10 @@ class ReviewsController < ApplicationController
   end
 
   private
+
+  def set_fridge
+    @fridge = Fridge.find(params[:fridge_id])
+  end
 
   def set_recipe
     @recipe = Recipe.find(params[:recipe_id])
