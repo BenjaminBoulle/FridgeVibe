@@ -2,11 +2,9 @@
   <%= f.input :name %>
   <%= f.input :ingredients%>
   <%= f.input :description %>
-
-<%= simple_form_for [@recipe] do |f| %>
   <%= f.input :cook_time %>
   <%= f.input :prep_time %>
-  <%= f.input :cuisine, collection: ["Mexican Cuisine",
+  <%= f.input :cuisine,collection: ["Mexican Cuisine",
                                     "Turkish Cuisine",
                                     "Thai  Cuisine",
                                     "Chinese Cuisine",
@@ -15,9 +13,7 @@
                                     "Italian Cuisine",
                                     "Greek Cuisine",
                                     "Spanish Cuisine",
-                                    "Lebanese Cuisine"],
-              label: "Choose your cuisine" %>
-  <%= f.input :rating %>
-  <%= f.submit "Submit Recipe", class: "btn btn-primary" %>
-<% end%>
+                                    "Lebanese Cuisine"]%>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit "Submit Recipe", class: "btn btn-danger" %>
 <% end %>
