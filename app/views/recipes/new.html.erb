@@ -2,18 +2,9 @@
   <%= f.input :name %>
   <%= f.input :ingredients%>
   <%= f.input :description %>
-  <%= f.input :cook_time %>
-  <%= f.input :prep_time %>
-  <%= f.input :cuisine,collection: ["Mexican Cuisine",
-                                    "Turkish Cuisine",
-                                    "Thai  Cuisine",
-                                    "Chinese Cuisine",
-                                    "Japanese Cuisine",
-                                    "Indian Cuisine",
-                                    "Italian Cuisine",
-                                    "Greek Cuisine",
-                                    "Spanish Cuisine",
-                                    "Lebanese Cuisine"]%>
+  <%= f.input :cook_time, placeholder: '0' %>
+  <%= f.input :prep_time, placeholder: '0' %>
+  <%= f.input :cuisine,collection: Recipe::CUISINE%>
   <%= f.input :photo, as: :file %>
   <%= f.submit "Submit Recipe", class: "btn btn-danger" %>
 <% end %>

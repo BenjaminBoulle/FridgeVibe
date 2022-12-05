@@ -1,7 +1,7 @@
 class Ingredient < ApplicationRecord
   attr_accessor :amount, :type
 
-  TYPE = %w[g kg cl l pack plant]
+  TYPE = ['g', 'kg', 'ml', 'cl', 'l', 'pack', 'plant', 'slices']
   belongs_to :fridge
 
   has_one_attached :photo
