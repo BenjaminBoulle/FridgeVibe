@@ -1,0 +1,86 @@
+
+#ingredient_name{
+  border-radius: 30px;
+  border-style: solid;
+  color: black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgba(0, 0, 0, 0.337);
+
+  border-width: 2px;
+}
+
+#ingredient_quantity{
+  border-radius: 30px;
+  border-style: solid;
+  border-color: rgba(86,124,123, 0.6);
+}
+
+#ingredient_expiration_date{
+  border-radius: 30px;
+  border-style: solid;
+  border-color: rgba(86,124,123, 0.6);
+}
+
+#ingredient_photo{
+  border-radius: 30px;
+}
+
+
+.btn{
+
+  background-color: rgba(86,124,123, 0.6);
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 20px;
+}
+
+
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.image_backgound{
+  background-image: url(peasbg.jpg);
+min-height: calc(100vh - 89px);
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputback{
+  padding-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  margin-top: -30px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
