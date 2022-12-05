@@ -3,12 +3,15 @@
     <%= simple_form_for [@fridge, @ingredient], data: { controller: 'flatpickr' } do |f| %>
       <%= f.input :name, placeholder: "name", label: false %>
       <%= f.input :quantity, placeholder: "Quantity", label: false %>
-      <%= f.input :amount%>
-      <%= f.input :type, collection: Ingredient::TYPE %>
+     <div class="amount">
+        <%= f.input :amount,placeholder: "amount",label: false %>
+        <%= f.input :type, collection: Ingredient::TYPE, prompt: "type",label: false %>
+      </div>
       <%= f.input :expiration_date, as: :string, input_html: { data: { flatpickr_target: "expirationDate" } },placeholder: "expiration date", label: false %>
       <%= f.input :photo, as: :file, id:'inside' %>
-
+    <div class="createbtn">
       <%= f.button :submit %>
+    </div>
     <% end %>
   </div>
 </div>
