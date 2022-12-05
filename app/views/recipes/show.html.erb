@@ -1,27 +1,30 @@
-<h2><%= @recipe.name %></h2>
-<p>
-  <ul>
-    <%@ingredients.each_with_index do |ingredient, index| %>
-      <% if index.odd? %>
-        <li> <%= @ingredients[index - 1] %> of <%= ingredient %> </li>
-      <% end %>
-    <% end %>
-  </ul>
-</p>
+<%= cl_image_tag @recipe.photo.key, height:250, width: 390, crop: :fill%>
+<h2 class="recipeh2"><%= @recipe.name %></h2>
+<div class="ingredients">
+  <h3 class="h3ingredient"> What needed ?</h3>
+    <p>
+      <ul>
+        <%@ingredients.each_with_index do |ingredient, index| %>
+          <% if index.odd? %>
+            <li> <%= @ingredients[index - 1] %> of <%= ingredient %> </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </p>
+</div>
 
-<p>
-  <ul>
-    <% @recipe.description.split('.').each do |description| %>
-      <li> <%= description %> </li>
-    <% end %>
-  </ul>
-</p>
+<div class="preparation">
+  <p>
+    <h3 class=preph3>Preparation</h3>
+    <ul>
+      <% @recipe.description.split('.').each do |description| %>
+        <li> <%= description %> </li>
+      <% end %>
+    </ul>
+  </p>
+</div>
 
 <br>
-<%= link_to fridge_recipes_path(@fridge), class: "btn btn-primary" do %>
-  Back to recipes
-<% end %>
-
 <div class="reviewbox">
   <p><strong>REVIEWS</strong></p>
   <ul class="list-group">
@@ -48,3 +51,7 @@
     </p>
   </ul>
 </div>
+
+<%= link_to fridge_recipes_path(@fridge), class: "btn btn-primary" do %>
+  Back to recipes
+<% end %>
