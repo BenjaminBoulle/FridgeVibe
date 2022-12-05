@@ -1,8 +1,13 @@
-<%= simple_form_for [@fridge, @ingredient], data: { controller: 'flatpickr' } do |f| %>
-  <%= f.input :name %>
-  <%= f.input :quantity %>
-  <%= f.input :expiration_date, as: :string, input_html: { data: { flatpickr_target: "expirationDate" } }  %>
-  <%= f.input :photo, as: :file %>
-
-  <%= f.button :submit %>
-<% end %>
+<div class="editback">
+  <div class="inputback">
+  <%= simple_form_for [@fridge, @ingredient], data: { controller: 'flatpickr' } do |f| %>
+    <%= f.input :name ,label:false%>
+    <%= f.input :quantity ,label:false%>
+    <%= f.input :expiration_date, as: :string, input_html: { data: { flatpickr_target: "expirationDate" } },label:false  %>
+    <%= f.input :photo, as: :file %>
+    <div class=updatebtn>
+      <%= f.button :submit %>
+    </div>
+  <% end %>
+  </div>
+</div>
