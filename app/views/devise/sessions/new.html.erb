@@ -1,37 +1,54 @@
+<div class="landing_banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/premium-photo/food-cooking-background-grey-stone-rustic-table-with-fresh-ingredients-vegetables-herbs-spices-olive-oil-kitchen-spoon-from-with-space-text_92134-2352.jpg?w=2000);">
+  <div class="container">
+    <h1>Welcome to FridgeVibe.</h1>
+    <span class="banner_text" data-controller="typed"></span>
+  </div>
+</div>
 
-<div id = "FridgeBack">
-    <div class="linklogin1">
+<div class="flex-container-landing">
 
-      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
-        <div class="form-inputs">
-          <%= f.input :email,
-                      label: false,
-                      required: false,
-                      autofocus: true,
-                      input_html: { autocomplete: "email" },
-                      placeholder: "Your Email" %>
-          <%= f.input :password,
-                      label: false,
-                      required: false,
-                      input_html: { autocomplete: "current-password" },
-                      placeholder: "Your Password"%>
-          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-          <%= link_to "Forgot your password?", new_password_path(resource_name) %>
-        </div>
+  <div class="flex-item-landing">
+    <div class="card-category-landing">
+    <h2>Why use FridgeVibe?</h2>
+    <p>Digitalize your fridge in order to track when your ingredients will expire and get recipe suggestions to try out new dishes with what you have at home. Sign up or log in below:</p>
+    </div>
+  </div>
 
-          <div class="form-actions">
-            <%= f.button :submit, "Log in",class:"login_button" %>
-          </div>
-      </div>
-      <div class="signin1">
-         <%= link_to "Sign up", new_registration_path(resource_name),class:"sign_up_button" %>
-      </div>
-      <% end %>
-      <div id = bigDoor>
-        <div id = "bigDoorBack">
-        </div>
-      </div>
-            <div id = "smallDoor">
+  <div class="flex-item-landing">
+    <div id = "FridgeBack">
+        <div class="linklogin1">
+
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+            <div class="form-inputs">
+              <%= f.input :email,
+                          label: false,
+                          required: false,
+                          autofocus: true,
+                          input_html: { autocomplete: "email" },
+                          placeholder: "Your Email" %>
+              <%= f.input :password,
+                          label: false,
+                          required: false,
+                          input_html: { autocomplete: "current-password" },
+                          placeholder: "Your Password"%>
+              <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+              <%= link_to "Forgot your password?", new_password_path(resource_name) %>
             </div>
 
+              <div class="form-actions">
+                <%= f.button :submit, "Log in",class:"login_button" %>
+              </div>
+          </div>
+          <div class="signin1">
+            <%= link_to "Sign up", new_registration_path(resource_name),class:"sign_up_button" %>
+          </div>
+          <% end %>
+          <div id = bigDoor>
+            <div id = "bigDoorBack">
+            </div>
+          </div>
+                <div id = "smallDoor">
+                </div>
+    </div>
+  </div>
 </div>

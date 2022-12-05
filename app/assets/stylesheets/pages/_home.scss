@@ -1,9 +1,9 @@
 // Specific CSS for your home-page
 
 #FridgeBack{
-  position:absolute;
-  left:50%; top:50%;
-  transform:translate(-50%, -50%);
+  // position:absolute;
+  // left:50%; top:50%;
+  // transform:translate(-50%, -50%);
   width:22em; height:650px;
   background:linear-gradient(to bottom, #eee 14%, white 14%, white 17%, #eee 17%, #eee 34%, white 34%, white 37%, #eee 37%, #eee 54%, white 54%, white 57%, #eee 57%, #eee 67%, white 67%, white 70%, #bbbbbb 70%, #bbbbbb 72%, #e5e5e8 74%);
   perspective:800px;
@@ -181,4 +181,62 @@ a{
 
 .form-check{
   margin-top: 30px;
+}
+
+.flex-container-landing {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-landing {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.landing_banner {
+  background-size: cover;
+  background-image: url("https://img.freepik.com/premium-photo/food-cooking-background-grey-stone-rustic-table-with-fresh-ingredients-vegetables-herbs-spices-olive-oil-kitchen-spoon-from-with-space-text_92134-2352.jpg?w=2000");
+  background-position: center;
+  padding: 150px 0;
+}
+
+.landing_banner h1 {
+  margin: 0;
+  color:white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.banner_text {
+  font-size: 30px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.card-category-landing {
+  background-size: cover;
+  background-position: center;
+  height: 330px;
+  width: 100%;
+  background-color: white;
+  color: rgb(86,124,123);
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 1em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 37px;
+  padding: 22px;
+}
+
+.card-category-landing h2{
+  font-weight: bold;
+}
+
+.typed-cursor{
+  font-size: 30px;
+  color: white;
+  opacity: .7;
 }

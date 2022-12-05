@@ -1,7 +1,25 @@
 <h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
 <div class="backgroundhomefridge">
+
   <%= link_to fridges_path do%>
     <i class="fa-solid fa-backward"></i>
+
+  <div class="shuffle_btn">
+    <div class=shuffleAll>
+      <%= link_to fridge_recipes_path(@fridge),id:"shuffle" do %>
+       SHUFFLE
+      <i class="fa-solid fa-shuffle"></i>
+      <% end %>
+    </div>
+  </div>
+  <%= link_to new_fridge_ingredient_path(@fridge), id: "jhjhjh" do %>
+    <div class="addlink">
+      <div class="adding">
+        Add ingredientes
+        <i class="fa-solid fa-plus"></i>
+      </div>
+    </div>
+
   <% end %>
   <% @ingredients.each do |ingredient| %>
     <div class="containerhomefridge">
@@ -29,20 +47,4 @@
       </div>
     </div>
   <% end  %>
-  <%= link_to new_fridge_ingredient_path(@fridge), id: "jhjhjh" do %>
-    <div class="addlink">
-      <div class="adding">
-        Add ingredientes
-        <i class="fa-solid fa-plus"></i>
-      </div>
-    </div>
-  <% end %>
-  <div class="shuffle_btn">
-    <div class=shuffleAll>
-      <%= link_to fridge_recipes_path(@fridge),id:"shuffle" do %>
-       SHUFFLE
-      <i class="fa-solid fa-shuffle"></i>
-      <% end %>
-    </div>
-  </div>
 </div>

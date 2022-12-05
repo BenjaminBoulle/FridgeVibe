@@ -21,3 +21,7 @@ application.register("star-rating", StarRatingController)
 
 import SwitchController from "./switch_controller"
 application.register("switch", SwitchController)
+
+import TypedController from './typed_controller';
+application.register("typed", TypedController)
+
