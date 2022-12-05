@@ -27,7 +27,7 @@
   <ul class="list-group">
     <% @recipe.reviews.each do |review| %>
       <li class="list-group-item">
-        <%= review.content %>
+        "<%= review.content %>" by
         <%= review.user.first_name %> <%= review.user.last_name %>
         <% review.rating.times do %>
           <%= "⭐" %>
