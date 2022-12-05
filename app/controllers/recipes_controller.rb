@@ -6,6 +6,8 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    @ingredients = @recipe.ingredients.split(',')
+    @fridge = fridge
   end
 
   def new
@@ -22,7 +24,7 @@ class RecipesController < ApplicationController
     if @recipe.save
       redirect_to recipes_path
     else
-      render :new
+      render 'new', status: :unprocessable_entity
     end
   end
 
@@ -35,13 +37,15 @@ class RecipesController < ApplicationController
   def destroy
     @recipe = Recipe.find(params[:id])
     @recipe.destroy
-    redirect_to recipes_path, status: :see_other
+    p "destroyed the recipe"
+    redirect_to fridge_recipes_path(fridge), status: :see_other
+    p "PATH FOUND"
   end
 
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :description, :ingredients, :cook_time, :prep_time, :cuisine,:rating)
+    params.require(:recipe).permit(:name, :description, :ingredients, :cook_time, :prep_time, :cuisine, :photo)
   end
 
   ##############################################################################
@@ -57,8 +61,7 @@ class RecipesController < ApplicationController
     ingredients.each do |ingredient|
       stripped_ingredients << ingredient.strip
     end
-    # stripped_ingredients_downcase = stripped_ingredients.map(&:downcase)
-    return stripped_ingredients#_downcase
+    return stripped_ingredients
   end
 
   # making an array of all the ingredients in the fridge and sorting them by expiration date
@@ -69,8 +72,7 @@ class RecipesController < ApplicationController
     ingredients_sorted.each do |ingredient|
       ingredients << ingredient.name
     end
-    # ingredients_downcase = ingredients.map(&:downcase)
-    return ingredients#_downcase
+    return ingredients
   end
 
   # method to check if all the ingredients are in the recipe
@@ -101,7 +103,14 @@ class RecipesController < ApplicationController
       p
       score = 360**-1
     else
-      score = (ingredient.expiration_date.mjd - Date.today.mjd)**-1
+      mjd_dif = (ingredient.expiration_date.mjd - Date.today.mjd)
+      if mjd_dif.zero?
+        score = 2
+      elsif mjd_dif.negative?
+        score = 0
+      else
+        score = mjd_dif**-1
+      end
     end
     return score * 10
   end
@@ -129,27 +138,27 @@ class RecipesController < ApplicationController
     # fridge = current_user.fridges.find_by(my_fridge: true)
     fridge_ingr = fridge.ingredients.order(:expiration_date)
     #######
-    p "this is my fridge mufasa"
-    fridge.ingredients.order(:expiration_date).each do |element|
-      p element.name
-    end
+    # p "this is my fridge mufasa"
+    # fridge.ingredients.order(:expiration_date).each do |element|
+    #   p element.name
+    # end
     ############
     score = 0
     ingredients = take_ingredients(recipe)
-    p "these are my ingredients"
-    p ingredients
+    # p "these are my ingredients"
+    # p ingredients
     ingredients.each do |ingredient|
-      p fridge_ingr.find_by(name: ingredient)
-      p ingredient
-      p score_ingredient(fridge_ingr.find_by(name: ingredient))
-      p "score from #{ingredient}"
-      p score
+      # p fridge_ingr.find_by(name: ingredient)
+      # p ingredient
+      # p score_ingredient(fridge_ingr.find_by(name: ingredient))
+      # p "score from #{ingredient}"
+      # p score
       score += score_ingredient(fridge_ingr.find_by(name: ingredient))
     end
-    p "eeeeeeeeeeeeeeeeeend"
-    p score
+    # p "eeeeeeeeeeeeeeeeeend"
+    # p score
     final_score = (score / ingredients.length)
-    p final_score
+    # p final_score
     return final_score
   end
 

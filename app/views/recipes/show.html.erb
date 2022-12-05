@@ -1,31 +1,31 @@
 <h2><%= @recipe.name %></h2>
 <p>
   <ul>
-    <%@recipe.ingredients.split(',').each do |ingredient| %>
-      <li> <%= ingredient %> </li>
+    <%@ingredients.each_with_index do |ingredient, index| %>
+      <% if index.odd? %>
+        <li> <%= @ingredients[index - 1] %> of <%= ingredient %> </li>
+      <% end %>
     <% end %>
   </ul>
 </p>
 
-<p><% @recipe.description.split('.').each do |description| %></p>
+<p>
+  <ul>
+    <% @recipe.description.split('.').each do |description| %>
       <li> <%= description %> </li>
     <% end %>
-
-<p>
-  <%= link_to "Delete Your Recipe", recipe_path(@recipe), class: "btn btn-primary",
-    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-  %>
+  </ul>
 </p>
 
 <br>
-<%= link_to "Back to recipes", recipes_path, class: "btn btn-primary" %>
-
+<%= link_to fridge_recipes_path(@fridge), class: "btn btn-primary" do %>
+  Back to recipes
+<% end %>
 
 <div class="reviewbox">
   <p><strong>REVIEWS</strong></p>
   <ul class="list-group">
     <% @recipe.reviews.each do |review| %>
-
       <li class="list-group-item">
         <%= review.content %>
         <%= review.user.first_name %> <%= review.user.last_name %>
@@ -33,19 +33,18 @@
           <%= "⭐" %>
         <% end %>
       </li>
-
-
-
       <p>
-      <% if current_user == review.user %>
-        <%= link_to "Delete Your Review", review_path(review), class: "btn btn-primary",
-        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-      <% end %>
+        <% if current_user == review.user %>
+          <%= link_to review_path(review), class: "btn btn-primary", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+            Delete Your Review
+          <% end %>
+        <% end %>
       </p>
-
     <% end %>
-        <p>
-      <%= link_to 'Add a review', new_recipe_review_path(@recipe), class: "btn btn-primary"%>
-      </p>
+    <p>
+      <%= link_to  new_fridge_recipe_review_path(@fridge, @recipe), class: "btn btn-primary" do %>
+        Add a review
+      <% end %>
+    </p>
   </ul>
 </div>

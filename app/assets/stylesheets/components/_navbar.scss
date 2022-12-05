@@ -12,7 +12,24 @@
 }
 
 .logo-pic{
-  width: 100px!important;
+  width: 80px!important;
   height: 60px;
   border-radius: 10px;
+  margin-right: 0em;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
+
+.collapse:not(.show) {
+  display: block;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.container-fluid {
+  flex-wrap: nowrap !important;
 }
