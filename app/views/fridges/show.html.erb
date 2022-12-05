@@ -1,5 +1,9 @@
 <h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
 <div class="backgroundhomefridge">
+
+  <%= link_to fridges_path do%>
+    <i class="fa-solid fa-backward"></i>
+
   <div class="shuffle_btn">
     <div class=shuffleAll>
       <%= link_to fridge_recipes_path(@fridge),id:"shuffle" do %>
@@ -15,6 +19,7 @@
         <i class="fa-solid fa-plus"></i>
       </div>
     </div>
+
   <% end %>
   <% @ingredients.each do |ingredient| %>
     <div class="containerhomefridge">
