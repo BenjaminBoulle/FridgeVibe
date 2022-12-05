@@ -2,18 +2,19 @@
   <h1 class="h2homefridge">Our suggestions:</h1>
   <% @recipes.each do |recipe| %>
     <div class="containerhomefridge">
-      <div class="d-flex">
-      <%= cl_image_tag recipe.photo.key, height:145, width: 135, crop: :fill, class: "pictag"%>
-
-        <div class="textnext">
-          <div class="littletext">
-            <p class="ingname"><%= recipe.name %></p>
-            <p><%= recipe.rating %></p>
-            <p><%= recipe.author %></p>
-            <p><%= link_to "View details", recipe_path(recipe), id:"edit" %>
+      <%= link_to fridge_recipe_path(@fridge, recipe), id:"edit" do %>
+        <div class="d-flex">
+        <%= cl_image_tag recipe.photo.key, height:145, width: 135, crop: :fill, class: "pictag"%>
+          <div class="textnext">
+            <div class="littletext">
+              <p class="ingname"><%= recipe.name %></p>
+              <p><%= recipe.rating %></p>
+              <p><%= recipe.author %></p>
+              <p> View details</p>
+            </div>
           </div>
         </div>
-      </div>
+      <% end %>
     </div>
   <% end %>
   <div class="addlink" >

@@ -7,6 +7,7 @@ class IngredientsController < ApplicationController
 
   def create
     @ingredient = Ingredient.new(ingredient_params)
+    @ingredient.quantity = "#{params['ingredient']['amount']}#{params['ingredient']['type']}"
     @ingredient.fridge = Fridge.find(params[:fridge_id])
     @fridge = @ingredient.fridge
     if @ingredient.save
