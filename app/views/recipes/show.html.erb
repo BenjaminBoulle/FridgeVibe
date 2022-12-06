@@ -26,24 +26,31 @@
 
 <br>
 <div class="reviewbox">
-  <p><strong>REVIEWS</strong></p>
-  <ul class="list-group">
-    <% @recipe.reviews.each do |review| %>
-      <li class="list-group-item">
-        "<%= review.content %>" by
-        <%= review.user.first_name %> <%= review.user.last_name %>
-        <% review.rating.times do %>
-          <%= "⭐" %>
-        <% end %>
-      </li>
-      <p>
-        <% if current_user == review.user %>
-          <%= link_to review_path(review), class: "btn btn-primary", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
-            Delete Your Review
-          <% end %>
-        <% end %>
-      </p>
+  <p class="text-center1"><strong>REVIEWS</strong></p>
+    <ul class="list-group">
+      <% @recipe.reviews.each do |review| %>
+        <li class="list-group-item">
+          "<%= review.content %>" by
+          <%= review.user.first_name %> <%= review.user.last_name %>
+          <div class="stars_trash">
+              <p class="stars_review">
+                <% review.rating.times do %>
+                  <i class="fa-solid fa-star"></i>
+                <% end %>
+              </p>
+            <div class="button_delete">
+              <p>
+                <% if current_user == review.user %>
+                  <%= link_to review_path(review), class: "button_delete_review", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+                    <i class="fa-solid fa-trash"></i>
+                  <% end %>
+                <% end %>
+              </p>
+          </div>
+        </div>
+        </li>
       <% end %>
+      </div>
     </div>
 
   <div class="bothbutton">
@@ -56,5 +63,4 @@
         <% end %>
       </p>
     </ul>
-
   </div>

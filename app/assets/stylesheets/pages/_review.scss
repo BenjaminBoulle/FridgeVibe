@@ -17,7 +17,7 @@
   padding-left: 10px;
   padding-right: 10px;
   width: 300px;
-  
+
 }
 
 #review_content{
@@ -37,6 +37,7 @@
   justify-content: center;
   font-family: monospace;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .submitreview{
@@ -47,4 +48,50 @@
 .stars{
   display: flex;
   justify-content: center;
+}
+
+.button_delete{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.list-group-item{
+  margin-top: 30px;
+  min-width: 100px;
+  background: transparent;
+  border: none;
+  overflow-wrap: break-word;
+}
+
+.reviewbox{
+  border-style: solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.stars_review{
+  color:rgb(86,124,123);
+  margin-top: 5px;
+  display: fle;
+}
+
+.text-center1{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.button_delete_review{
+  color: black;
+
+}
+
+.stars_trash{
+  display: flex;
+  justify-content: space-between;
 }
