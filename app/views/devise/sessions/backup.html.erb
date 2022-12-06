@@ -1,30 +1,22 @@
-<div class="landing-layout">
-  <div class="landing_banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/premium-photo/food-cooking-background-grey-stone-rustic-table-with-fresh-ingredients-vegetables-herbs-spices-olive-oil-kitchen-spoon-from-with-space-text_92134-2352.jpg?w=2000);">
-    <div class="container">
-      <h1>Welcome to FridgeVibe.</h1>
-      <%# <span class="banner_text" data-controller="typed"></span> %>
-      <span class="banner_text">change me later</span>
-    </div>
+<div class="landing_banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/premium-photo/food-cooking-background-grey-stone-rustic-table-with-fresh-ingredients-vegetables-herbs-spices-olive-oil-kitchen-spoon-from-with-space-text_92134-2352.jpg?w=2000);">
+  <div class="container">
+    <h1>Welcome to FridgeVibe.</h1>
+    <span class="banner_text" data-controller="typed"></span>
+  </div>
+</div>
+
+<div class="flex-container-landing">
+
+  <div class="scroll_link">
+    <a class="fa-solid fa-circle-down" href="#bottom">log in</a>
   </div>
 
   <div class="flex-item-landing">
     <div class="card-category-landing">
       <h2>Why use FridgeVibe?</h2>
-      <p>Digitalize your fridge in order to track when your ingredients will expire and get recipe suggestions to try out new dishes with what you have at home.</p>
+      <p>Digitalize your fridge in order to track when your ingredients will expire and get recipe suggestions to try out new dishes with what you have at home. Sign up or log in below:</p>
     </div>
   </div>
-
-  <div class="scroll_link">
-    <a href="#bottom" class="scroll_link_anchor">
-      <p>sign up</p>
-      <i class="fa-solid fa-chevron-down"></i>
-    </a>
-  </div>
-
-
-</div>
-
-<div class="flex-container-landing">
 
   <div class="flex-item-landing">
     <div id = "FridgeBack" data-controller="fridge-opening">
@@ -35,6 +27,7 @@
               <%= f.input :email,
                           label: false,
                           required: false,
+                          autofocus: true,
                           input_html: { autocomplete: "email" },
                           placeholder: "Your Email" %>
               <%= f.input :password,
@@ -62,6 +55,5 @@
                 </div>
     </div>
   </div>
-  
+  <p id="bottom"></p>
 </div>
-<p id="bottom"></p>
