@@ -11,21 +11,22 @@
       </label>
     </div>
       <div data-switch-target="home_fridge", class="fridge-ben">
-        <div id="cest-pour-les-frigos">
+        <div class="cest-pour-les-frigos">
           <%= link_to fridge_path(@fridges[0]), id: "home-fridge" do %>
-            <%= image_tag "home_fridge.png", class: "fridge-image" %>
+            <%= image_tag "home_fridge10.png", class: "fridge-image" %>
           <% end %>
         </div>
-        <div id="home-fridge-description">
+        <div class="fridge-description">
           The home fridge is your permanent record of what ingredients you have. Keep it up to date for your benefit.
         </div>
+      </div>
       <div data-switch-target="away_fridge" class="d-none fridge-ben">
-        <div id="cest-pour-les-frigos">
+        <div class="cest-pour-les-frigos">
           <%= link_to fridge_path(@fridges[1]), id: "away-fridge" do %>
-            <%= image_tag "away_fridge.png", class: "fridge-image" %>
+            <%= image_tag "away_fridge10.png", class: "fridge-image" %>
           <% end %>
         </div>
-        <div id="away-fridge-description">
+        <div class="fridge-description">
           Use this empty fridge whenever you are away from home in order to get creative new recipe ideas.
         </div>
       </div>

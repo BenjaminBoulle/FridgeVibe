@@ -13,14 +13,14 @@ export default class extends Controller {
     console.log("heyhey")
     if (this.the_switchTarget.checked) {
       this.home_fridgeTarget.classList.remove("d-none")
-      this.home_fridgeTarget.classList.add("d-flex")
-      this.away_fridgeTarget.classList.remove("d-flex")
+      this.home_fridgeTarget.classList.add("d-block")
+      this.away_fridgeTarget.classList.remove("d-block")
       this.away_fridgeTarget.classList.add("d-none")
     } else {
-      this.home_fridgeTarget.classList.remove("d-flex")
+      this.home_fridgeTarget.classList.remove("d-block")
       this.home_fridgeTarget.classList.add("d-none")
       this.away_fridgeTarget.classList.remove("d-none")
-      this.away_fridgeTarget.classList.add("d-flex")
+      this.away_fridgeTarget.classList.add("d-block")
     }
   }
 
