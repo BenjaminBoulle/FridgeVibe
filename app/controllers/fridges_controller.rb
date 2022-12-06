@@ -1,10 +1,10 @@
 class FridgesController < ApplicationController
   def index
+    if current_user.fridges.empty?
+      create(true)
+      create(false)
+    end
     @fridges = Fridge.where(user: current_user)
-    # check if the user has fridges
-    # if yes show fridges
-    # else create methode twice
-    
   end
 
   def new
@@ -16,10 +16,9 @@ class FridgesController < ApplicationController
     @fridges = Fridge.find(params[:id])
   end
 
-  def create
-    @fridge = Fridge.new(fridge_params)
+  def create(my_fridge)
+    @fridge = Fridge.new(user: current_user, my_fridge: my_fridge)
     @fridge.save
-    redirect_to fridge_path(@fridge)
   end
 
   def show
