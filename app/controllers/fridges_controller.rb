@@ -1,6 +1,10 @@
 class FridgesController < ApplicationController
   def index
     @fridges = Fridge.where(user: current_user)
+    # check if the user has fridges
+    # if yes show fridges
+    # else create methode twice
+    
   end
 
   def new
