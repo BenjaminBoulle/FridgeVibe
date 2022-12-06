@@ -2,15 +2,21 @@
 <div class="backgroundhomefridge">
   <%= link_to fridges_path do%>
     <i class="fa-solid fa-backward"></i>
-    <% end %>
+  <% end %>
   <div class="shuffle_btn">
     <div class=shuffleAll>
       <%= link_to fridge_recipes_path(@fridge),id:"shuffle" do %>
-       SHUFFLE
-      <i class="fa-solid fa-shuffle"></i>
+        SHUFFLE
+        <i class="fa-solid fa-shuffle"></i>
       <% end %>
     </div>
   </div>
+
+  <%= link_to fridge_coustom_path(@fridge), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+    Empty Fridge
+    <i class="fa-solid fa-trash"></i>
+  <% end %>
+
   <%= link_to new_fridge_ingredient_path(@fridge), id: "jhjhjh" do %>
     <div class="addlink">
       <div class="adding">
@@ -45,5 +51,5 @@
         </div>
       </div>
     </div>
-  <% end  %>
+  <% end %>
 </div>

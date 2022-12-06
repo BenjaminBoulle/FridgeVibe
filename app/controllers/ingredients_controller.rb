@@ -32,6 +32,12 @@ class IngredientsController < ApplicationController
     redirect_to fridge_path(@ingredient.fridge)
   end
 
+  def destroy_all
+    @ingredients = Ingredient.where(fridge_id: params[:fridge_id])
+    @ingredients.destroy_all
+    redirect_to fridge_path(params[:fridge_id]), status: :see_other
+  end
+
   def destroy
     @ingredient = Ingredient.find(params[:id])
     @ingredient.destroy

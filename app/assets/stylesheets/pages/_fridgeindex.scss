@@ -99,12 +99,26 @@ input:checked + .slider .off
 }
 
 .fridge-image {
-  width: 160px;
+  width: 200px;
   // height: auto;
 }
 
 .fridge-ben {
   justify-content: center;
   margin-top: 20px;
+}
 
+.flex-ben {
+  display: flex;
+}
+
+#home-fridge-description {
+  border-right: 2px solid rgb(94,123,123);
+  padding-right: 5px;
+  text-align: right;
+}
+
+#away-fridge-description {
+  border-left: 2px solid rgb(94,123,123);
+  padding-left: 5px;
 }

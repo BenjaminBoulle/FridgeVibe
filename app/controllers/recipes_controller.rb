@@ -37,9 +37,7 @@ class RecipesController < ApplicationController
   def destroy
     @recipe = Recipe.find(params[:id])
     @recipe.destroy
-    p "destroyed the recipe"
     redirect_to fridge_recipes_path(fridge), status: :see_other
-    p "PATH FOUND"
   end
 
   private
@@ -100,7 +98,6 @@ class RecipesController < ApplicationController
 
   def score_ingredient(ingredient)
     if ingredient.nil?
-      p
       score = 360**-1
     else
       mjd_dif = (ingredient.expiration_date.mjd - Date.today.mjd)

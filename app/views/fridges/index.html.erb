@@ -1,5 +1,4 @@
 <h1 class="text-center title">choose your fridge</h1>
-
 <div class="flex-container">
   <div data-controller="switch">
     <label class="switch">
@@ -19,6 +18,14 @@
         <%= link_to fridge_path(@fridges[1]), id: "away-fridge" do %>
           <%= image_tag "away_fridge.png", class: "fridge-image" %>
         <% end %>
+      </div>
+    </div>
+    <div class="flex-ben">
+      <div id="home-fridge-description">
+        The home fridge is your permanent record of what ingredients you have. Keep it up to date for your benefit.
+      </div>
+      <div id="away-fridge-description">
+        Use this empty fridge whenever you are away from home in order to get creative new recipe ideas.
       </div>
     </div>
   </div>
