@@ -1,7 +1,7 @@
 <%= cl_image_tag @recipe.photo.key, height:250, width: 390, crop: :fill%>
 <h2 class="recipeh2"><%= @recipe.name %></h2>
 <div class="ingredients">
-  <h3 class="h3ingredient"> What needed ?</h3>
+  <h3 class="h3ingredient"> What's needed ?</h3>
     <p>
       <ul>
         <%@ingredients.each_with_index do |ingredient, index| %>
@@ -43,15 +43,18 @@
           <% end %>
         <% end %>
       </p>
-    <% end %>
-    <p>
-      <%= link_to  new_fridge_recipe_review_path(@fridge, @recipe), class: "btn btn-primary" do %>
-        Add a review
       <% end %>
-    </p>
-  </ul>
-</div>
+    </div>
 
-<%= link_to fridge_recipes_path(@fridge), class: "btn btn-primary" do %>
-  Back to recipes
-<% end %>
+  <div class="bothbutton">
+      <%= link_to fridge_recipes_path(@fridge), class: "backrecipes" do %>
+        Back to recipes
+      <% end %>
+      <p>
+        <%= link_to  new_fridge_recipe_review_path(@fridge, @recipe), class: "addreview" do %>
+          Add a review
+        <% end %>
+      </p>
+    </ul>
+
+  </div>
