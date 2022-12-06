@@ -1,0 +1,50 @@
+.container_review{
+  background: linear-gradient( rgb(86,124,123),rgb(249, 245, 243));
+  min-height: calc(100vh - 89px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content_review{
+  padding-top: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  margin-top: -30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 300px;
+  
+}
+
+#review_content{
+  border-radius: 10px;
+  height: 150px;
+}
+
+#review_rating{
+  border-radius: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.h2review{
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  margin-bottom: 30px;
+}
+
+.submitreview{
+  display: flex;
+  justify-content: center;
+}
+
+.stars{
+  display: flex;
+  justify-content: center;
+}

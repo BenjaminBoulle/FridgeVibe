@@ -10,12 +10,14 @@
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
+  font-family: monospace;
 }
 
 .h3ingredient{
   margin-top: 5px;
   display: flex;
   justify-content: center;
+  font-family: monospace;
 }
 
 .preparation{
@@ -24,9 +26,74 @@
   margin-right: 10px;
   margin-top: 10px;
   border-radius: 5px;
+  font-family: monospace;
 }
 
 .preph3{
   display: flex;
   justify-content: center;
+  font-family: monospace;
+}
+
+.bothbutton{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 50px;
+}
+
+.backrecipes{
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+.addreview{
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.reviewbox{
+  border-style: solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+
 }
