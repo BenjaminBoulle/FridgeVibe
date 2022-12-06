@@ -10,6 +10,7 @@ export default class extends Controller {
   }
 
   switch_content(event) {
+    console.log("heyhey")
     if (this.the_switchTarget.checked) {
       this.home_fridgeTarget.classList.remove("d-none")
       this.home_fridgeTarget.classList.add("d-block")

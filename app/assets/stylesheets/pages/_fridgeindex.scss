@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.title {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -45,11 +50,11 @@
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: rgb(94,123,123);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px rgb(94,123,123);
 }
 
 input:checked + .slider:before {
@@ -91,4 +96,15 @@ input:checked + .slider .off
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.fridge-image {
+  width: 160px;
+  // height: auto;
+}
+
+.fridge-ben {
+  justify-content: center;
+  margin-top: 20px;
+
 }

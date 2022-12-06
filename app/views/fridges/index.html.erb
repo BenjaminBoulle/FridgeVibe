@@ -1,4 +1,4 @@
-<h1 class="text-center">choose your fridge</h1>
+<h1 class="text-center title">choose your fridge</h1>
 
 <div class="flex-container">
   <div data-controller="switch">
@@ -10,14 +10,14 @@
       </div>
     </label>
     <div>
-      <div data-switch-target="home_fridge">
+      <div data-switch-target="home_fridge", class="fridge-ben">
         <%= link_to fridge_path(@fridges[0]), id: "home-fridge" do %>
-          HOME FRIDGE
+          <%= image_tag "home_fridge.png", class: "fridge-image" %>
         <% end %>
       </div>
-      <div data-switch-target="away_fridge" class="d-none">
+      <div data-switch-target="away_fridge" class="d-none fridge-ben">
         <%= link_to fridge_path(@fridges[1]), id: "away-fridge" do %>
-          AWAY FRIDGE
+          <%= image_tag "away_fridge.png", class: "fridge-image" %>
         <% end %>
       </div>
     </div>
