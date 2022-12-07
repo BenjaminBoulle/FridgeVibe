@@ -1,0 +1,5 @@
+meta_name: "Fridge Vibe"
+meta_title: "Fridge Vibe - Don't waste food"
+meta_description: "Relevant description"
+meta_image: "favicon.png" # should exist in `app/assets/images/`
+twitter_account: "@your_twitter_account"   # required for Twitter Cards
