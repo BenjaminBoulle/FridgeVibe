@@ -1,8 +1,5 @@
 <div class="backgroundhomefridge">
-  <%= link_to fridge_path(@fridge) do%>
-    <i class="fa-solid fa-backward" id="crimson"></i>
-  <% end %>
-  <h1 class="h2homefridge">Our suggestions:</h1>
+  <h1 class="h2homefridge">Tonight's Menu:</h1>
   <% @recipes.each do |recipe| %>
     <div class="containerhomefridge">
       <%= link_to fridge_recipe_path(@fridge, recipe), id:"edit" do %>
@@ -22,8 +19,8 @@
   <div class="addlink" >
     <div class="adding">
       <p>
-        <%= link_to new_recipe_path(@recipe), id: "jhjhjh" do%>
-          Create your own recipe +
+        <%= link_to fridge_path(@fridge) do%>
+        <i id="crimson">Back</i>
         <% end %>
       </p>
     </div>
