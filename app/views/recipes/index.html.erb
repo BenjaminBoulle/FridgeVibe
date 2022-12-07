@@ -1,6 +1,6 @@
 <div class="backgroundhomefridge">
   <h1 class="h2homefridge">Tonight's Menu:</h1>
-  <% @recipes.each do |recipe| %>
+  <% @recipes.each_with_index do |recipe, index| %>
     <div class="containerhomefridge">
       <%= link_to fridge_recipe_path(@fridge, recipe), id:"edit" do %>
         <div class="d-flex">
@@ -13,7 +13,16 @@
                   <i class="fa-solid fa-star"></i>
                 <% end %>
               </p>
-              <p> View details </p>
+              <% if @new_score[index] > 60 %>
+                <% score_color = "score-green" %>
+              <% elsif @new_score[index] > 30 &&  @new_score[index] <= 60 %>
+                <% score_color = "score-orange" %>
+              <% else %>
+                <% score_color = "score-red" %>
+              <% end %>
+                <p class="<%= score_color %>">score: <%= @new_score[index] %>%</p>
+
+              <%# <p> View details </p> %>
             </div>
           </div>
         </div>

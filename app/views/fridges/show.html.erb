@@ -1,4 +1,8 @@
-<h2 class="h2homefridge"> <%= current_user.first_name %>'s Fridge </h2>
+<% if  @fridge.my_fridge %>
+  <h2 class="h2homefridge"> Home Fridge </h2>
+<% else %>
+  <h2 class="h2homefridge"> Away Fridge </h2>
+<% end %>
 <div class="backgroundhomefridge">
   <div class="shuffle_btn">
     <div class=shuffleAll>

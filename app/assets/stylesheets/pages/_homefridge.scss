@@ -46,6 +46,27 @@
   font-family: monospace;
  }
 
+ .score-green {
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: green;
+ }
+
+ .score-orange {
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: orange;
+ }
+
+ .score-red {
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: crimson;
+ }
+
  .ingname{
   text-align: left;
   font-size: 20px;
