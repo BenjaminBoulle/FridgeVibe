@@ -30,15 +30,15 @@
     <ul class="list-group">
       <% @recipe.reviews.each do |review| %>
         <li class="list-group-item">
-            "<%= review.content %>"
-            <br>
-            By <%= review.user.first_name %> <%= review.user.last_name %>
+          "<%= review.content %>"
+          <br>
+          By <%= review.user.first_name %> <%= review.user.last_name %>
           <div class="stars_trash">
-              <p class="stars_review">
-                <% review.rating.times do %>
-                  <i class="fa-solid fa-star"></i>
-                <% end %>
-              </p>
+            <p class="stars_review">
+              <% review.rating.times do %>
+                <i class="fa-solid fa-star"></i>
+              <% end %>
+            </p>
             <div class="button_delete">
               <p>
                 <% if current_user == review.user %>
@@ -47,21 +47,26 @@
                   <% end %>
                 <% end %>
               </p>
+            </div>
           </div>
-        </div>
         </li>
       <% end %>
-      </div>
-    </div>
-
-  <div class="bothbutton">
-      <%= link_to fridge_recipes_path(@fridge), class: "backrecipes" do %>
-        Back to recipes
-      <% end %>
-      <p>
-        <%= link_to  new_fridge_recipe_review_path(@fridge, @recipe), class: "addreview" do %>
-          Add a review
-        <% end %>
-      </p>
     </ul>
   </div>
+</div>
+<div class="bothbutton">
+  <% if params[:previous_page] %>
+    <%= link_to all_recipes_path, class: "backrecipes" do %>
+      Back to recipes
+    <% end %>
+  <%else %>
+    <%= link_to fridge_recipes_path(@fridge), class: "backrecipes" do %>
+      Back to recipes
+    <% end %>
+  <% end %>
+  <p>
+    <%= link_to  new_fridge_recipe_review_path(@fridge, @recipe), class: "addreview" do %>
+      Add a review
+    <% end %>
+  </p>
+</div>

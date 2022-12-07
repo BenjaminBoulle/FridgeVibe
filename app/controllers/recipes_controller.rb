@@ -4,6 +4,10 @@ class RecipesController < ApplicationController
     @recipes = order_recipes
   end
 
+  def all_recipes
+    @recipes = Recipe.all
+  end
+
   def show
     @recipe = Recipe.find(params[:id])
     @ingredients = @recipe.ingredients.split(',')
@@ -126,7 +130,7 @@ class RecipesController < ApplicationController
     recipe_hash_sorted.each do |key, _value|
       recipe_sorted << key
     end
-    return recipe_sorted
+    return recipe_sorted.first(10)
   end
 
   # give a score to a recipe

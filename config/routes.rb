@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     end
   end
   resources :ingredients, only: :destroy
+  get "all_recipes", to: "recipes#all_recipes"
 
   resources :recipes, except: %i[index show]
   resources :reviews, only: :destroy
