@@ -1,7 +1,19 @@
 class RecipesController < ApplicationController
   def index
-    puts order_recipes
-    @recipes = order_recipes
+    # puts order_recipes
+    recipes = order_recipes
+    # puts recipes
+    # puts recipes.class
+    @recipes = []
+    scores = []
+    recipes.each do |key, value|
+      @recipes << key
+      scores << value
+    end
+    @new_score = []
+    scores.each do |score|
+      @new_score << ((score / scores.first) * 100).round
+    end
   end
 
   def all_recipes
@@ -10,6 +22,9 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    ingredients_all = all_ingredients(@recipe)
+    @ingredients_you_have = ingredients_all[0] # ["1kg", "Butter", "1kg", "Bread", "1kg", "Pasta"]
+    @ingredients_missing = ingredients_all[1] # ["1kg", "Milk", "1kg", "Salad"]
     @ingredients = @recipe.ingredients.split(',')
     @fridge = fridge
   end
@@ -63,6 +78,8 @@ class RecipesController < ApplicationController
     ingredients.each do |ingredient|
       stripped_ingredients << ingredient.strip
     end
+    # puts "stripped_ingredients"
+    # puts stripped_ingredients
     return stripped_ingredients
   end
 
@@ -74,26 +91,28 @@ class RecipesController < ApplicationController
     ingredients_sorted.each do |ingredient|
       ingredients << ingredient.name
     end
+    # puts "ingredients"
+    # puts ingredients
     return ingredients
   end
 
   # method to check if all the ingredients are in the recipe
 
-  def ingredients_in?(recipe)
-    fridge_ingr = fridge_ingredients
-    good_ingr = fridge_ingr & recipe
-    return recipe.length == good_ingr.length
-  end
+  # def ingredients_in?(recipe)
+  #   fridge_ingr = fridge_ingredients
+  #   good_ingr = fridge_ingr & recipe
+  #   return recipe.length == good_ingr.length
+  # end
 
   # verifying if all the ingredients for the recipe are in the fridge
 
   def verifying_recipe
     recipes = Recipe.all
-    good_recipes = []
-    recipes.each do |recipe|
-      recipe_ingredients = take_ingredients(recipe)
-      good_recipes << recipe if ingredients_in?(recipe_ingredients)
-    end
+    # good_recipes = []
+    # recipes.each do |recipe|
+    #   recipe_ingredients = take_ingredients(recipe)
+    #   good_recipes << recipe if ingredients_in?(recipe_ingredients)
+    # end
     # return good_recipes
     return recipes
   end
@@ -125,12 +144,12 @@ class RecipesController < ApplicationController
       recipe_hash[recipe] = score_recipe(recipe)
     end
     recipe_hash_sorted = recipe_hash.sort_by { |_key, value| -value }
-    recipe_sorted = []
-    puts recipe_hash_sorted
-    recipe_hash_sorted.each do |key, _value|
-      recipe_sorted << key
-    end
-    return recipe_sorted.first(10)
+    # recipe_sorted = []
+    return recipe_hash_sorted.first(10)
+    # recipe_hash_sorted.each do |key, _value|
+    #   recipe_sorted << key
+    # end
+    # return recipe_sorted.first(10)
   end
 
   # give a score to a recipe
@@ -141,7 +160,7 @@ class RecipesController < ApplicationController
     #######
     # p "this is my fridge mufasa"
     # fridge.ingredients.order(:expiration_date).each do |element|
-    #   p element.name
+    #   puts element.name
     # end
     ############
     score = 0
@@ -158,10 +177,33 @@ class RecipesController < ApplicationController
     end
     # p "eeeeeeeeeeeeeeeeeend"
     # p score
-    final_score = (score / ingredients.length)
+    # p ingredients.length
+    final_score = (score / ingredients.length).to_f.round(2)
     # p final_score
     return final_score
   end
+
+  # return an array of 2 arrays, one with the ingredients you have and 1 with the ingredients you are missing
+
+  def all_ingredients(recipe)
+    fridge_ingr = fridge_ingredients
+    recipe_ingr = take_ingredients(recipe)
+    p recipe_ingr
+    p fridge_ingr
+    good_ingredients = []
+    missing_ingredients = []
+    recipe_ingr.each do |ingredient|
+      if fridge_ingr.include?(ingredient.to_s)
+        good_ingredients << ingredient
+      else
+        missing_ingredients << ingredient
+      end
+    end
+    all_ingredients_recipe = [good_ingredients, missing_ingredients]
+    return all_ingredients_recipe
+  end
+
+  # just the fridge in the whole class
 
   def fridge
     @fridge ||= Fridge.find(params[:fridge_id])
