@@ -4,9 +4,14 @@
   <h3 class="h3ingredient"> What's needed ?</h3>
     <p>
       <ul>
-        <%@ingredients.each_with_index do |ingredient, index| %>
+        <%@ingredients_you_have.each_with_index do |ingredient, index| %>
           <% if index.odd? %>
-            <li> <%= @ingredients[index - 1] %> of <%= ingredient %> </li>
+            <li class="put-green"> <%= @ingredients_you_have[index - 1] %> of <%= ingredient %> </li>
+          <% end %>
+        <% end %>
+        <%@ingredients_missing.each_with_index do |ingredient, index| %>
+          <% if index.odd? %>
+            <li class="put-red"> <%= @ingredients_missing[index - 1] %> of <%= ingredient %> </li>
           <% end %>
         <% end %>
       </ul>

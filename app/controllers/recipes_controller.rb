@@ -23,10 +23,14 @@ class RecipesController < ApplicationController
   def show
     @recipe = Recipe.find(params[:id])
     ingredients_all = all_ingredients(@recipe)
-    @ingredients_you_have = ingredients_all[0] # ["1kg", "Butter", "1kg", "Bread", "1kg", "Pasta"]
-    @ingredients_missing = ingredients_all[1] # ["1kg", "Milk", "1kg", "Salad"]
     @ingredients = @recipe.ingredients.split(',')
+    @ingredients_you_have = ingredient_quantities(@ingredients, ingredients_all[0]) # ["1kg", "Butter", "1kg", "Bread", "1kg", "Pasta"]
+    @ingredients_missing = ingredient_quantities(@ingredients, ingredients_all[1]) # ["1kg", "Milk", "1kg", "Salad"]
     @fridge = fridge
+    p "ingredients i have"
+
+    p "missing ingredients"
+
   end
 
   def new
@@ -183,13 +187,11 @@ class RecipesController < ApplicationController
     return final_score
   end
 
-  # return an array of 2 arrays, one with the ingredients you have and 1 with the ingredients you are missing
+  # returns an array of 2 arrays, one with the ingredients you have and 1 with the ingredients you are missing
 
   def all_ingredients(recipe)
     fridge_ingr = fridge_ingredients
     recipe_ingr = take_ingredients(recipe)
-    p recipe_ingr
-    p fridge_ingr
     good_ingredients = []
     missing_ingredients = []
     recipe_ingr.each do |ingredient|
@@ -201,6 +203,22 @@ class RecipesController < ApplicationController
     end
     all_ingredients_recipe = [good_ingredients, missing_ingredients]
     return all_ingredients_recipe
+  end
+
+  # returns an array remodelized with the quantities
+
+  def ingredient_quantities(recipe_array, ingredients_array)
+    organized_recipe = []
+    recipe_array.each_with_index do |ingredient, index|
+     ingredients_array.each do |qty_ingredient|
+      if ingredient.strip == qty_ingredient.strip
+        organized_recipe << recipe_array[index - 1].strip
+        organized_recipe << qty_ingredient
+      end
+     end
+    end
+    p organized_recipe
+    organized_recipe
   end
 
   # just the fridge in the whole class
