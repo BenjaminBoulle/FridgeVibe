@@ -1,8 +1,8 @@
 <div class="backgroundhomefridge">
-  <h1 class="h2homefridge">Tonight's Menu:</h1>
+  <h1 class="h2homefridge">All recipes:</h1>
   <% @recipes.each do |recipe| %>
     <div class="containerhomefridge">
-      <%= link_to fridge_recipe_path(@fridge, recipe), id:"edit" do %>
+      <%= link_to fridge_recipe_path(current_user.fridges.first, recipe, previous_page: true), id:"edit" do %>
         <div class="d-flex">
         <%= cl_image_tag recipe.photo.key, height:145, width: 135, crop: :fill, class: "pictag"%>
           <div class="textnext">
@@ -18,13 +18,6 @@
           </div>
         </div>
       <% end %>
-    </div>
-  <% end %>
-  <%= link_to fridge_path(@fridge) do%>
-    <div class="adding">
-      <p>
-        <i id="crimson">Back</i>
-      </p>
     </div>
   <% end %>
 </div>
