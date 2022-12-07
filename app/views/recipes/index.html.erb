@@ -8,7 +8,11 @@
           <div class="textnext">
             <div class="littletext">
               <p class="ingname"><%= recipe.name %></p>
-              <p><%= recipe.rating %></p>
+              <p class="stars_review">
+                <% recipe.rating.to_i.times do %>
+                  <i class="fa-solid fa-star"></i>
+                <% end %>
+              </p>
               <p> View details</p>
             </div>
           </div>
