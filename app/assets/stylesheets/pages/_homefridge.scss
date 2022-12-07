@@ -87,6 +87,15 @@
   padding-top: 15px;
  }
 
+ .addingingredients{
+  border-radius: 10px;
+  background-color:  rgb(86,124,123) ;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
 
  #jhjhjh{
   color: rgb(255,255,255)
@@ -135,7 +144,7 @@
   border: 2px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
+  color: #567c7b;
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
@@ -159,7 +168,7 @@
   border: 2px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
+  color: #567c7b;
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
