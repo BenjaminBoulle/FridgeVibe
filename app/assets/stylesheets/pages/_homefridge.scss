@@ -56,8 +56,6 @@
   margin-top: -10px;
  }
 
-
-
  .addlink{
   display: flex;
   text-align: center;
@@ -83,6 +81,10 @@
   border-radius: 10px;
   background-color:  rgb(86,124,123) ;
   width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
  }
 
 
@@ -203,9 +205,9 @@
   align-items: center;
 }
 
-
 //////////////////////////////////////////////////////////
 
 #crimson {
-  color: crimson;
+  color: black;
+  font-family: monospace;
 }
