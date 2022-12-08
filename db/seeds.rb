@@ -241,7 +241,7 @@ ingredient40 = Ingredient.create(name: "Reblochon", quantity: "500 gr", expirati
 picture_ingredient40 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490153/reblechon_hymqsg.png")
 ingredient40.photo.attach(io: picture_ingredient40, filename: "reblochon.png", content_type: "image/png")
 
-ingredient41 = Ingredient.create(name: "Corn flakes", quantity: "250 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
+ingredient41 = Ingredient.create(name: "Corn flake", quantity: "250 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
 picture_ingredient41 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/cornflakes_tp4pn9.png")
 ingredient41.photo.attach(io: picture_ingredient41, filename: "cornflakes.png", content_type: "image/png")
 
@@ -253,7 +253,7 @@ ingredient43 = Ingredient.create(name: "Grated cheese", quantity: "1 kg", expira
 picture_ingredient43 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/grated_cheese_xb37lw.png")
 ingredient43.photo.attach(io: picture_ingredient43, filename: "grated_cheese.png", content_type: "image/png")
 
-ingredient44 = Ingredient.create(name: "Nuts", quantity: "250 gr", expiration_date: Date.today + 108, fridge: my_fridge_user_admin)
+ingredient44 = Ingredient.create(name: "Nut", quantity: "250 gr", expiration_date: Date.today + 108, fridge: my_fridge_user_admin)
 picture_ingredient44 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/nuts_rdavzg.png")
 ingredient44.photo.attach(io: picture_ingredient44, filename: "nuts.png", content_type: "image/png")
 
@@ -281,7 +281,7 @@ ingredient50 = Ingredient.create(name: "Gin", quantity: "1 l", expiration_date: 
 picture_ingredient50 = URI.open("https://www.ginroom.be/wp-content/uploads/2020/01/bombay_dry_gin_1761_70-522x600.png")
 ingredient50.photo.attach(io: picture_ingredient50, filename: "gin.png", content_type: "image/png")
 
-ingredient51 = Ingredient.create(name: "Mini puddings ", quantity: "500 gr", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
+ingredient51 = Ingredient.create(name: "Mini pudding ", quantity: "500 gr", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
 picture_ingredient51 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/mini_pudding_nadqiu.png")
 ingredient51.photo.attach(io: picture_ingredient51, filename: "mini_puddings.png", content_type: "image/png")
 
@@ -289,7 +289,7 @@ ingredient52 = Ingredient.create(name: "Sausage", quantity: "900 gr", expiration
 picture_ingredient52 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490153/sausage_dtt1p4.png")
 ingredient52.photo.attach(io: picture_ingredient52, filename: "sausage.png", content_type: "image/png")
 
-ingredient53 = Ingredient.create(name: "Brussels sprouts", quantity: "100 gr", expiration_date: Date.today + 11, fridge: my_fridge_user_admin)
+ingredient53 = Ingredient.create(name: "Brussels sprout", quantity: "100 gr", expiration_date: Date.today + 11, fridge: my_fridge_user_admin)
 picture_ingredient53 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490687/35681_ffx5nd.jpg")
 ingredient53.photo.attach(io: picture_ingredient53, filename: "brussels_sprout.jpg", content_type: "image/jpg")
 
@@ -297,11 +297,11 @@ ingredient54 = Ingredient.create(name: "Pork skewer", quantity: "679 gr", expira
 picture_ingredient54 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/brochette_k7itq1.png")
 ingredient54.photo.attach(io: picture_ingredient54, filename: "pork_sweker.png", content_type: "image/png")
 
-ingredient55 = Ingredient.create(name: "Grapes", quantity: "400 gr", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+ingredient55 = Ingredient.create(name: "Grape", quantity: "400 gr", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
 picture_ingredient55 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491404/35667_k8ccbh.jpg")
 ingredient55.photo.attach(io: picture_ingredient55, filename: "grape.jpg", content_type: "image/jpg")
 
-ingredient56 = Ingredient.create(name: "Pickles", quantity: "500 gr", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+ingredient56 = Ingredient.create(name: "Pickle", quantity: "500 gr", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
 picture_ingredient56 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491388/36021_vb3w1d.jpg")
 ingredient56.photo.attach(io: picture_ingredient56, filename: "pickles.jpg", content_type: "image/jpg")
 
@@ -309,7 +309,7 @@ ingredient57 = Ingredient.create(name: "Pistachio", quantity: "300 gr", expirati
 picture_ingredient57 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491378/36044_adpyek.jpg")
 ingredient57.photo.attach(io: picture_ingredient57, filename: "pistachio.jpg", content_type: "image/jpg")
 
-ingredient58 = Ingredient.create(name: "Tomatoes", quantity: "460 gr", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
+ingredient58 = Ingredient.create(name: "Tomato", quantity: "460 gr", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
 picture_ingredient58 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491372/36059_nhgqui.jpg")
 ingredient58.photo.attach(io: picture_ingredient58, filename: "tomatoes.jpg", content_type: "image/jpg")
 
@@ -397,7 +397,7 @@ ingredient79 = Ingredient.create(name: "Peach", quantity: "7", expiration_date: 
 picture_ingredient79 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492695/34635_zw3ekh.jpg")
 ingredient79.photo.attach(io: picture_ingredient79, filename: "peach.jpg", content_type: "image/jpg")
 
-ingredient80 = Ingredient.create(name: "Potatoes", quantity: "500 gr", expiration_date: Date.today + 27, fridge: my_fridge_user_admin)
+ingredient80 = Ingredient.create(name: "Potatoe", quantity: "500 gr", expiration_date: Date.today + 27, fridge: my_fridge_user_admin)
 picture_ingredient80 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492702/34634_scwx5a.jpg")
 ingredient80.photo.attach(io: picture_ingredient80, filename: "potatoes.jpg", content_type: "image/jpg")
 
@@ -486,11 +486,11 @@ recipe1 = Recipe.new(name: "Baked Mac and Cheese for One",
                      user: user_admin,
                      author: "amydoll",
                      cuisine: "american",
-                     cook_time: 20,
-                     prep_time: 10,
-                     description: "Step 1: Preheat an oven to 200 degrees C. Grease an oven-proof soup crock or 1 cup baking dish.
-                                   Step 2: Fill a small saucepan with water, and bring to a boil. Stir in the macaroni; boil until cooked but still firm to the bite, about 8 minutes. Drain well, and reserve.
-                                   Step 3: In the same saucepan, melt the butter over medium-high heat. Stir in the flour, salt, pepper, onion powder, and milk; whisk until smooth. Cook, stirring, for 2 minutes. Reduce heat to low, and whisk in 1/3 cup cheese, mustard, Worcestershire sauce, and hot sauce. Stir in the cooked macaroni. Spoon the macaroni and cheese into the prepared dish. Sprinkle with bread crumbs and 1 tablespoon cheddar cheese.
+                     cook_time: "20 min",
+                     prep_time: "10 min",
+                     description: "Step 1: Preheat an oven to 200 degrees C. Grease an oven-proof soup crock or 1 cup baking dish. |
+                                   Step 2: Fill a small saucepan with water, and bring to a boil. Stir in the macaroni; boil until cooked but still firm to the bite, about 8 minutes. Drain well, and reserve. |
+                                   Step 3: In the same saucepan, melt the butter over medium-high heat. Stir in the flour, salt, pepper, onion powder, and milk; whisk until smooth. Cook, stirring, for 2 minutes. Reduce heat to low, and whisk in 1/3 cup cheese, mustard, Worcestershire sauce, and hot sauce. Stir in the cooked macaroni. Spoon the macaroni and cheese into the prepared dish. Sprinkle with bread crumbs and 1 tablespoon cheddar cheese. |
                                    Step 4: Bake, uncovered, until the cheese is melted and the macaroni is heated through, about 10 minutes.",
                      rating: 4.4)
 picture_recipe1 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4516736.jpg")
@@ -511,9 +511,9 @@ recipe2 = Recipe.new(name: "Pesto Pasta Caprese Salad",
                      user: user_admin,
                      author: "thedailygourmet",
                      cuisine: "italian",
-                     cook_time: 10,
-                     prep_time: 10,
-                     description: "Step 1: Bring a large pot of lightly salted water to a boil; cook the rotini at a boil until tender yet firm to the bite, about 8 minutes; drain.
+                     cook_time: "10 min",
+                     prep_time: "10 min",
+                     description: "Step 1: Bring a large pot of lightly salted water to a boil; cook the rotini at a boil until tender yet firm to the bite, about 8 minutes; drain. |
                                    Step 2: Mix pesto, olive oil, salt, granulated garlic, and black pepper in a bowl; add rotini. Toss to coat. Fold in tomatoes, mozzarella, and fresh basil.",
                      rating: 4.6)
 picture_recipe2 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4794067.jpg")
@@ -534,10 +534,10 @@ recipe3 = Recipe.new(name: "Creamy Penne Pasta Primavera",
                      user: user_admin,
                      author: "gretchen",
                      cuisine: "italian",
-                     cook_time: 20,
-                     prep_time: 15,
-                     description: "Step 1: Bring a large pot of lightly salted water to a boil; add penne and cook, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain.
-                                   Step 2: Heat olive oil in a large skillet over medium heat-high heat; saute asparagus and carrots until tender yet firm to the bite, about 5 minutes. Add tomatoes and garlic; saute until garlic is fragrant, about 1 minute.
+                     cook_time: "20 min",
+                     prep_time: "15 min",
+                     description: "Step 1: Bring a large pot of lightly salted water to a boil; add penne and cook, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain. |
+                                   Step 2: Heat olive oil in a large skillet over medium heat-high heat; saute asparagus and carrots until tender yet firm to the bite, about 5 minutes. Add tomatoes and garlic; saute until garlic is fragrant, about 1 minute. |
                                    Step 3: Stir Parmesan cheese, cream, and black pepper into vegetable mixture until cheese melts and sauce is smooth, 2 to 3 minutes. Add pasta to sauce and toss to coat.",
                      rating: 4.5)
 picture_recipe3 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1126428.jpg")
@@ -558,12 +558,12 @@ recipe4 = Recipe.new(name: "Tomato and Garlic Pasta",
                      user: user_admin,
                      author: "ALMA-LOU",
                      cuisine: "italian",
-                     cook_time: 30,
-                     prep_time: 15,
-                     description: "Step 1 : Place tomatoes in a large pot and cover with cold water. Bring just to a boil. Pour off water, and cover again with cold water. Peel the skin off tomatoes and cut into small pieces.
-                                   Step 2: Bring a large pot of lightly salted water to a boil. Cook angel hair pasta in the boiling water, stirring occasionally, until tender yet firm to the bite, 4 to 5 minutes.
-                                   Step 3: Meanwhile, heat olive oil in a large skillet or pan, making sure there is enough to cover the bottom of the pan, and sauté garlic until opaque but not browned. Stir in tomato paste. Immediately stir in the tomatoes, salt, and pepper. Reduce heat, and simmer until pasta is ready, adding basil at the end.
-                                   Step 4: Drain pasta, do not rinse in cold water. Toss with a bit of olive oil, then mix into the sauce.
+                     cook_time: "30 min",
+                     prep_time: "15 min",
+                     description: "Step 1 : Place tomatoes in a large pot and cover with cold water. Bring just to a boil. Pour off water, and cover again with cold water. Peel the skin off tomatoes and cut into small pieces. |
+                                   Step 2: Bring a large pot of lightly salted water to a boil. Cook angel hair pasta in the boiling water, stirring occasionally, until tender yet firm to the bite, 4 to 5 minutes. |
+                                   Step 3: Meanwhile, heat olive oil in a large skillet or pan, making sure there is enough to cover the bottom of the pan, and sauté garlic until opaque but not browned. Stir in tomato paste. Immediately stir in the tomatoes, salt, and pepper. Reduce heat, and simmer until pasta is ready, adding basil at the end. |
+                                   Step 4: Drain pasta, do not rinse in cold water. Toss with a bit of olive oil, then mix into the sauce. |
                                    Step 5: Reduce heat as low as possible. Keep warm, uncovered, for about 10 minutes when it is ready to serve. Garnish generously with fresh Parmesan cheese.",
                      rating: 4.4)
 picture_recipe4 = URI.open("https://www.allrecipes.com/thmb/Pqd5cmqNpCSO6oqxiSzIYcZ4dFc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/837215-3fd78897006b4046a3babf9e5f05237b.jpg")
@@ -581,10 +581,10 @@ recipe5 = Recipe.new(name: "Pasta and Garlic",
                      user: user_admin,
                      author: "Josie Strazzulla",
                      cuisine: "italian",
-                     cook_time: 10,
-                     prep_time: 5,
-                     description: "Step 1: In a large pot of salted water boil pasta until al dente. Drain well.
-                                   Step 2: In a small saucepan heat oil slightly, add garlic. Saute garlic until it is lightly browned. Be careful not to burn garlic.
+                     cook_time: "10 min",
+                     prep_time: "5 min",
+                     description: "Step 1: In a large pot of salted water boil pasta until al dente. Drain well. |
+                                   Step 2: In a small saucepan heat oil slightly, add garlic. Saute garlic until it is lightly browned. Be careful not to burn garlic. |
                                    Step 3: Combine pasta and garlic, salt and pepper to taste. Top with Parmesan or Romano cheese and serve.",
                      rating: 4.32)
 picture_recipe5 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1110792.jpg")
@@ -602,9 +602,9 @@ recipe6 = Recipe.new(name: "Gourmet Grilled Cheese Sandwiches",
                      user: user_admin,
                      author: "SARAHGRETZMIER",
                      cuisine: "american",
-                     cook_time: 8,
-                     prep_time: 12,
-                     description: "Step 1: In a medium bowl, combine cream cheese, mayonnaise, shredded cheese and garlic salt. Beat until smooth.
+                     cook_time: "8 min",
+                     prep_time: "12 min",
+                     description: "Step 1: In a medium bowl, combine cream cheese, mayonnaise, shredded cheese and garlic salt. Beat until smooth. |
                                    Step 2: Preheat a large skillet over medium heat. Spread cheese mixture on 4 slices of bread, then top with the other 4 bread slices. Lightly butter both sides of each sandwich. Place sandwiches in skillet, and grill until golden brown on both sides, about 4 minutes per side.",
                      rating: 3.9)
 picture_recipe6 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081975.jpg")
@@ -621,9 +621,9 @@ recipe7 = Recipe.new(name: "Elvis' Grilled Cheese Sandwich",
                      user: user_admin,
                      author: "Ricky Cooks",
                      cuisine: "american",
-                     cook_time: 20,
-                     prep_time: 5,
-                     description: "Step 1: Place the bacon in a large, deep skillet, and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate.
+                     cook_time: "20 min",
+                     prep_time: "5 min",
+                     description: "Step 1: Place the bacon in a large, deep skillet, and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate. |
                                    Step 2: Spread peanut butter on a slice of white bread, and cover with cheese slice and bacon. Top with the other piece of bread. Spread butter on both sides of the sandwich, and pan-fry in a skillet over medium heat until the bread is golden brown and the cheese has melted, 2 to 3 minutes per side. Serve hot.",
                      rating: 4)
 picture_recipe7 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F729312.jpg")
@@ -638,10 +638,10 @@ recipe8 = Recipe.new(name: "Inside-Out Grilled Cheese Sandwich",
                      user: user_admin,
                      author: "Chef John",
                      cuisine: "american",
-                     cook_time: 10,
-                     prep_time: 5,
-                     description: "Step 1: Melt 1 1/2 tablespoons butter in a nonstick skillet over medium-low heat. Place bread slices in the skillet on top of the melted butter.
-                                   Step 2: Spread about 1/4 cup Cheddar cheese on one slice of bread; place the other slice of bread, butter-side up, on top of the cheese. Spread about 2 tablespoons of cheese on top of the sandwich.
+                     cook_time: "10 min",
+                     prep_time: "5 min",
+                     description: "Step 1: Melt 1 1/2 tablespoons butter in a nonstick skillet over medium-low heat. Place bread slices in the skillet on top of the melted butter. |
+                                   Step 2: Spread about 1/4 cup Cheddar cheese on one slice of bread; place the other slice of bread, butter-side up, on top of the cheese. Spread about 2 tablespoons of cheese on top of the sandwich. |
                                    Step 3: Melt remaining 1/2 tablespoon butter in the skillet next to the sandwich. Flip the sandwich onto the melted butter so that the cheese-side is facing down. Spread remaining cheese on top of the sandwich. Cook sandwich until cheese on the bottom is crispy and caramelized, 3 to 4 minutes. Flip sandwich and cook until cheese is crispy and caramelized on the other side, another 3 to 4 minutes.",
                      rating: 4.65)
 picture_recipe8 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4462829.jpg")
@@ -659,9 +659,9 @@ recipe9 = Recipe.new(name: "Spicy Grilled Cheese Sandwich",
                      user: user_admin,
                      author: "PATELGURL",
                      cuisine: "american",
-                     cook_time: 3,
-                     prep_time: 2,
-                     description: "Step 1: Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread.
+                     cook_time: "3 min",
+                     prep_time: "2 min",
+                     description: "Step 1: Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread. |
                                    Step 2: Place both pieces buttered side down in the skillet. Lay a slice of cheese on each one, and top with slices of tomato, onion and jalapeno. Butter one side of the remaining slices of bread, and place on top buttered side up. When the bottom of the sandwiches are toasted, flip and fry until brown on the other side.",
                      rating: 4.63)
 picture_recipe9 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081856.jpg")
@@ -676,9 +676,9 @@ recipe10 = Recipe.new(name: "Grilled Cheese Sandwich",
                       user: user_admin,
                       author: "sal",
                       cuisine: "american",
-                      cook_time: 15,
-                      prep_time: 5,
-                      description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese.
+                      cook_time: "15 min",
+                      prep_time: "5 min",
+                      description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese. |
                                     Step 2: Cook until lightly browned on one side; flip over and continue cooking until cheese is melted. Repeat with remaining 2 slices of bread, butter, and slice of cheese.",
                       rating: 4.77)
 picture_recipe10 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2016%2F10%2F2206436_Grilled-Cheese-Sandwich_Photo-by-Buckwheat-Queen.jpg")
@@ -729,8 +729,8 @@ recipe13 = Recipe.new(name: "Pasta basil",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
+                      cook_time: "15 min",
+                      prep_time: "5 min",
                       description: "cook everything good",
                       rating: 4.77)
 picture_recipe13 = URI.open("https://www.halfbakedharvest.com/wp-content/uploads/2019/05/20-Minute-Garlic-Basil-Brown-Butter-Pasta-1.jpg")
@@ -756,14 +756,14 @@ recipe14.photo.attach(io: picture_recipe14, filename: "recipe10.jpg", content_ty
 puts "creating recipe 15"
 
 recipe15 = Recipe.new(name: "Frites de Sweet Potatoes",
-                      ingredients: "1kg, Sweet potatoes,
+                      ingredients: "1kg, Sweet potatoe,
                                     1kg, Olive oil,
                                     1kg, Mayonnaise",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
+                      cook_time: "15 min",
+                      prep_time: "5 min",
                       description: "frites miam miam good",
                       rating: 4.77)
 picture_recipe15 = URI.open("https://images.radio-canada.ca/v1/alimentation/recette/16x9/patate-douce-frite.jpg")
@@ -778,8 +778,8 @@ recipe16 = Recipe.new(name: "Grilled Cheese Sandwich",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
+                      cook_time: "15 min",
+                      prep_time: "5 min",
                       description: "Miam Mial",
                       rating: 4.77)
 picture_recipe16 = URI.open("https://therecipecritic.com/wp-content/uploads/2022/08/grilledcheese-1.jpg")
@@ -798,8 +798,8 @@ recipe17 = Recipe.new(name: "Fondue un peu speciale",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
+                      cook_time: "15 min",
+                      prep_time: "5 min",
                       description: "Don't eat it, I don't think it will taste that good RIP",
                       rating: 4.77)
 picture_recipe17 = URI.open("https://assets.afcdn.com/recipe/20161130/59380_w1024h768c1cx2808cy1872.webp")
@@ -815,11 +815,11 @@ recipe18 = Recipe.new(name: "Grilled Salmon",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
-                      description: "This recipe for grilled salmon doesn’t call for fancy marinades or mercurial methods. All that’s needed is quality ingredients and a hot grill.
-                                    The main question is, which salmon is best?
-                                    I prefer wild-caught salmon because it has more flavor, but if you’re dealing with eaters who are mild fish fans, a quality farm-raised salmon will have a more mellow flavor. Like any protein, higher fat fish yields a more buttery bite. Salmon caught in the wild have to work harder than farm-raised, so they tend to be leaner and more fish-like in taste.",
+                      cook_time: "15 min",
+                      prep_time: "5 min",
+                      description: "Step 1: This recipe for grilled salmon doesn’t call for fancy marinades or mercurial methods. All that’s needed is quality ingredients and a hot grill. |
+                                    Step 2: The main question is, which salmon is best? |
+                                    Step 3: I prefer wild-caught salmon because it has more flavor, but if you’re dealing with eaters who are mild fish fans, a quality farm-raised salmon will have a more mellow flavor. Like any protein, higher fat fish yields a more buttery bite. Salmon caught in the wild have to work harder than farm-raised, so they tend to be leaner and more fish-like in taste.",
                       rating: 4.77)
 picture_recipe18 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
 recipe18.photo.attach(io: picture_recipe18, filename: "recipe10.jpg", content_type: "image/jpg")
@@ -827,7 +827,7 @@ recipe18.photo.attach(io: picture_recipe18, filename: "recipe10.jpg", content_ty
 puts "creating recipe 19"
 
 recipe19 = Recipe.new(name: "Hachis Parmentier",
-                      ingredients: "1kg, Potatoes,
+                      ingredients: "1kg, Potatoe,
                                     1kg, Minced pork and beef,
                                     1kg, Spinach,
                                     1kg, Cream,
@@ -835,13 +835,213 @@ recipe19 = Recipe.new(name: "Hachis Parmentier",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
+                      cook_time: "15 min",
+                      prep_time: "5 min",
                       description: "cook everything the wright way",
                       rating: 4.77)
 picture_recipe19 = URI.open("https://www.curiouscuisiniere.com/wp-content/uploads/2019/10/French-Hachis-Parmentier-Potato-and-Beef-Casserole-8667-450-1.jpg")
 recipe19.photo.attach(io: picture_recipe19, filename: "recipe10.jpg", content_type: "image/jpg")
 
+recipe20 = Recipe.new(name: "Carbonnade à la Flammande",
+                      ingredients: "1.4 kg, Onion,
+                                    175 g, Flour,
+                                    10 ml, Salt,
+                                    5 ml, Black pepper,
+                                    2.3 kg, Beef,
+                                    1.25 l, Dark beer,
+                                    2, Bay leaves,
+                                    5 ml, Dried thyme,
+                                    8, Parsley stems,
+                                    8, Peppercorns,
+                                    15 ml, Sugar",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "180 min",
+                      prep_time: "30 min",
+                      description: "Step 1: Peel the onions. Cut them into small dice. |
+                                    Step 2: Cook the onions in a little fat over moderate heat until golden. Remove from the heat and set aside. |
+                                    Step 3: Season the flour with salt and pepper. Dredge the meat in the flour. Shake off the excess flour. |
+                                    Step 4: Brown the meat well in a sauté pan. Do a little at a time to avoid overcrowding the pan. As each batch is browned, add it to the pot with the onions. |
+                                    Step 5: Deglaze the sauté pan with the beer and add it to the pot. Add the stock, sachet, and sugar. |
+                                    Step 6: Bring to a boil, cover, and transfer to the oven. Cook at 325°F(160°C) until very tender, 2-3 hours. |
+                                    Step 7: Degrease. Ad just the consistency of the sauce. If it is too thin, reduce over moderately high heat. If it is too thick, dilute with brown stock. |
+                                    Step 8: Taste and ad just the seasonings. Serve with plain boiled potatoes.",
+                      rating: 5)
+picture_recipe20 = URI.open("https://www.julieandrieu.com/media/cache/web_recipe_detail/uploads/2021/BH/mars/carbonnade_bh_mars.jpg")
+recipe20.photo.attach(io: picture_recipe20, filename: "carbonade_a_la_flamande.jpg", content_type: "image/jpg")
+
+recipe21 = Recipe.new(name: "Veal Curry with Mangos and Cashews",
+                      ingredients: "4.5 kg, Veal,
+                                    250 ml, Olive oil,
+                                    1.25kg, Onions,
+                                    30 ml, Garlic,
+                                    75 ml, Curry powder,
+                                    15 ml, Ground corriander,
+                                    12 ml, Paprika,
+                                    5 ml, Ground cumin,
+                                    5 ml, Black pepper,
+                                    2 ml Cinnamon,
+                                    2, Bay leaves,
+                                    10 ml, Salt,
+                                    125 g, Flour,
+                                    2 l, White stock,
+                                    300 g, Tomato concassé,
+                                    250 ml, Whipped cream,
+                                    4, Mangos,
+                                    500 gr, Rice,
+                                    120 g, Cashews,
+                                    30 ml, Parsley",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "90 min",
+                      prep_time: "30 min",
+                      description: "Step 1: Cutthevealinto1-in.(2.5-cm)cubes. |
+                                    Step 2: Heat the oil in a brazier over medium heat. Add the meat and cook it in the fat, stirring occasionally, until seared on all sides but only lightly browned. |
+                                    Step 3: Add the onions and garlic to the pan. Sauté until softened, but do not brown. |
+                                    Step 4: Add the spices and salt and stir. Cook 1 minute. |
+                                    Step 5: Stir in the flour to make a roux and cook another 2 minutes. |
+                                    Step 6: Add the stock and tomatoes. Bring to a boil while stirring. |
+                                    Step 7: Cover and simmer slowly in the oven(300°F/150°C) or on top of the range until the meat is tender, 1–11⁄2 hours. |
+                                    Step 8: Degrease, discard the bay leaf, and add the cream. Adjust the seasonings. |
+                                    Step 9: Peel the mangos with a paring knife or vegetable peeler. Cut the mango flesh from the stone in thick slices. Cut into medium dice. |
+                                    Step 10: To serve, place a bed of rice on a plate. Spoon the curry onto the center of the rice. Top with diced mango. Sprinkle with chopped cashews and chopped parsley.",
+                      rating: 3.7)
+picture_recipe21 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670499885/Screenshot_2022-12-08_at_12.44.37_tu1aty.png")
+recipe21.photo.attach(io: picture_recipe21, filename: "veal.png", content_type: "image/png")
+
+recipe22 = Recipe.new(name: "Swedish Meatballs",
+                      ingredients: "300 g, Onion,
+                                    60 ml, Olive oil,
+                                    300 g, Dry bread crumbs,
+                                    500 ml, Milk,
+                                    10, Egg,
+                                    2.5 kg, Minced pork and beef,
+                                    17 ml, Dill weed,
+                                    2 ml, Nutmeg,
+                                    2 ml, Allspice,
+                                    30 g, Salt,
+                                    2 l, Brown sauce,
+                                    625 ml, Light cream",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "30 min",
+                      prep_time: "25 min",
+                      description: "Step 1: Sauté the onions in oil until tender but not brown. Cool thoroughly. |
+                                    Step 2: Combine the bread crumbs with the milk and egg and let soak 15 minutes. |
+                                    Step 3: Add the cooked onion and the crumb mixture to the meat in a mixing bowl. Add the spices and salt and mix gently until well combined. |
+                                    Step 4: Portion the meat with a No.20 scoop into 2-oz(60-g) portions. Roll into balls and place on a sheet pan. |
+                                    Step 5: Brown in a 400°F(200°C)oven. |
+                                    Step 6: Remove meatballs from sheet pan and place in baking pans in a single layer. |
+                                    Step 7: Add the hot cream and dill to the hot brown sauce and pour over the meatballs. |
+                                    Step 8: Cover the pans and bake at 325°F(165°C) for 30 minutes, or until the meatballs are cooked. |
+                                    Step 9: Skim fat from sauce. |
+                                    Step 10: Serve 3 meatballs and 2 fl oz (60 mL) sauce per portion.",
+                      rating: 4.05)
+picture_recipe22 = URI.open("https://images.themodernproper.com/billowy-turkey/production/posts/2018/swedish-meatballs-13.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1599768329&s=e3c9c3311f2b121c90191902f31d6839")
+recipe22.photo.attach(io: picture_recipe22, filename: "swedish_meatballs.jpg", content_type: "image/jpg")
+
+recipe23 = Recipe.new(name: "Costolette di Vitello Ripiene alla Valdostana",
+                      ingredients: "800 g, Veal,
+                                    350 g, Fontina cheese,
+                                    1 pinch, Salt,
+                                    1 pinch, Black pepper,
+                                    7 ml, Rosemary,
+                                    100 g, Flour,
+                                    1, Egg,
+                                    60 g, Bread crumbs,
+                                    a bit of, Butter",
+                      user: user_admin,
+                      author: "Bob ",
+                      cuisine: "Belgian",
+                      cook_time: "40 min",
+                      prep_time: "20 min",
+                      description: "Step 1: Remove the chine and feather bones so only the rib bone is attached to each chop. |
+                                    Step 2: Cut a pocket in each. |
+                                    Step 3: Flatten the chops lightly with a cutlet pounder to increase the diameter of the eye. Be careful not to tear a hole in the meat. |
+                                    Step 4: Cut the cheese into thin slices. |
+                                    Step 5: Stuff the chops with the cheese, making sure all of the cheese is insidethe pockets, with none hanging out. Press the edges of the pockets together and pound lightly to seal. If this is done carefully, you don’t need to skewer them shut. |
+                                    Step 6: Season the chops with salt and pepper. |
+                                    Step 7: Setup a breading station. Crumble the rosemary and mix it with the bread crumbs. |
+                                    Step 8: Bread the chops. |
+                                    Step 9: Sauté the chops in butter and serve immediately.",
+                      rating: 3.2)
+picture_recipe23 = URI.open("https://www.negroni.com/sites/negroni.com/files/styles/scale__1440_x_1440_/public/cotoletta_alla_valdostana.png?itok=5vCjV8tw")
+recipe23.photo.attach(io: picture_recipe23, filename: "Costolette.jpg", content_type: "image/jpg")
+
+# recipe = Recipe.new(name: "",
+#                       ingredients: "",
+#                       user: user_admin,
+#                       author: "",
+#                       cuisine: "",
+#                       cook_time: ,
+#                       prep_time: ,
+#                       description: "",
+#                       rating: )
+# picture_recipe = URI.open("")
+# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
+
+# recipe = Recipe.new(name: "",
+#                       ingredients: "",
+#                       user: user_admin,
+#                       author: "",
+#                       cuisine: "",
+#                       cook_time: ,
+#                       prep_time: ,
+#                       description: "",
+#                       rating: )
+# picture_recipe = URI.open("")
+# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
+
+# recipe = Recipe.new(name: "",
+#                       ingredients: "",
+#                       user: user_admin,
+#                       author: "",
+#                       cuisine: "",
+#                       cook_time: ,
+#                       prep_time: ,
+#                       description: "",
+#                       rating: )
+# picture_recipe = URI.open("")
+# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
+
+# recipe = Recipe.new(name: "",
+#                       ingredients: "",
+#                       user: user_admin,
+#                       author: "",
+#                       cuisine: "",
+#                       cook_time: ,
+#                       prep_time: ,
+#                       description: "",
+#                       rating: )
+# picture_recipe = URI.open("")
+# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
+
+# recipe = Recipe.new(name: "",
+#                       ingredients: "",
+#                       user: user_admin,
+#                       author: "",
+#                       cuisine: "",
+#                       cook_time: ,
+#                       prep_time: ,
+#                       description: "",
+#                       rating: )
+# picture_recipe = URI.open("")
+# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
+
+# recipe = Recipe.new(name: "",
+#                       ingredients: "",
+#                       user: user_admin,
+#                       author: "",
+#                       cuisine: "",
+#                       cook_time: ,
+#                       prep_time: ,
+#                       description: "",
+#                       rating: )
+# picture_recipe = URI.open("")
+# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
 puts "Saving recipes"
 recipe1.save
 recipe2.save
@@ -862,3 +1062,7 @@ recipe16.save
 recipe17.save
 recipe18.save
 recipe19.save
+recipe20.save
+recipe21.save
+recipe22.save
+recipe23.save

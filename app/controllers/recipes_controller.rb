@@ -1,9 +1,6 @@
 class RecipesController < ApplicationController
   def index
-    # puts order_recipes
     recipes = order_recipes
-    # puts recipes
-    # puts recipes.class
     @recipes = []
     scores = []
     recipes.each do |key, value|
@@ -17,7 +14,7 @@ class RecipesController < ApplicationController
   end
 
   def all_recipes
-    @recipes = Recipe.all
+    @recipes = Recipe.all.order(rating: :desc)
   end
 
   def show
@@ -27,10 +24,6 @@ class RecipesController < ApplicationController
     @ingredients_you_have = ingredient_quantities(@ingredients, ingredients_all[0]) # ["1kg", "Butter", "1kg", "Bread", "1kg", "Pasta"]
     @ingredients_missing = ingredient_quantities(@ingredients, ingredients_all[1]) # ["1kg", "Milk", "1kg", "Salad"]
     @fridge = fridge
-    p "ingredients i have"
-
-    p "missing ingredients"
-
   end
 
   def new
