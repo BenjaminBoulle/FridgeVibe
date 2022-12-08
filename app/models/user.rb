@@ -8,6 +8,6 @@ class User < ApplicationRecord
   has_many :reviews
   has_many :fridges
 
-  validates :email, presence: true
+  validates :email, :photo, presence: true
   validates :email, uniqueness: true
 end
