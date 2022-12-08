@@ -1103,8 +1103,8 @@ recipe29 = Recipe.new(name: "Tomato pizzas",
                                     Step 2: Turn the dough onto a well-floured surface, flour your hands, then knead it very gently for about 2 mins until it is fairly even, soft and bouncy. Return the dough to the bowl, cover with oiled cling film, then let it rise in a warm place (or in the fridge overnight) until doubled in size. |
                                     Step 3: When ready to cook, heat oven to 240C/220C fan/gas 9 or as hot as it will go, then put a baking sheet in on a high shelf. Dust another sheet with flour. Split the dough into 8, then roll 3 balls thinly into rough circles. Lift onto the floured sheet. Smear over a thin layer of the sauce, scatter over a few slices of tomato, season, then add sliced goat’s or grated Parmesan cheese if you want to. Slide the sheet on top of the heated sheet. Bake for 12 mins or until golden and crisp and the tomatoes are starting to caramelise around the edges. Top with any fresh toppings, then drizzle with more olive oil to serve.",
                       rating: 3)
-picture_recipe29 = URI.open("")
-recipe29.photo.attach(io: picture_recipe29, filename: "", content_type: "image/jpg")
+picture_recipe29 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-424794_12-3730781.jpg?quality=90&webp=true&resize=440,400")
+recipe29.photo.attach(io: picture_recipe29, filename: "tomatopizza.jpg", content_type: "image/jpg")
 
 recipe30 = Recipe.new(name: "Oven frittata",
                       ingredients: "½ teaspoon, Olive oil,
