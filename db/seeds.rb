@@ -732,7 +732,7 @@ recipe13 = Recipe.new(name: "Pasta basil",
                       cook_time: "15 min",
                       prep_time: "5 min",
                       description: "cook everything good",
-                      rating: 4.77)
+                      rating: 3.9)
 picture_recipe13 = URI.open("https://www.halfbakedharvest.com/wp-content/uploads/2019/05/20-Minute-Garlic-Basil-Brown-Butter-Pasta-1.jpg")
 recipe13.photo.attach(io: picture_recipe13, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -749,7 +749,7 @@ recipe14 = Recipe.new(name: "Salmon Omelette ",
                       cook_time: 15,
                       prep_time: 5,
                       description: "Omelette good good",
-                      rating: 4.77)
+                      rating: 3.8)
 picture_recipe14 = URI.open("https://food-images.files.bbci.co.uk/food/recipes/smokedsalmonomelette_93229_16x9.jpg")
 recipe14.photo.attach(io: picture_recipe14, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -765,7 +765,7 @@ recipe15 = Recipe.new(name: "Frites de Sweet Potatoes",
                       cook_time: "15 min",
                       prep_time: "5 min",
                       description: "frites miam miam good",
-                      rating: 4.77)
+                      rating: 4.27)
 picture_recipe15 = URI.open("https://images.radio-canada.ca/v1/alimentation/recette/16x9/patate-douce-frite.jpg")
 recipe15.photo.attach(io: picture_recipe15, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -781,7 +781,7 @@ recipe16 = Recipe.new(name: "Grilled Cheese Sandwich",
                       cook_time: "15 min",
                       prep_time: "5 min",
                       description: "Miam Mial",
-                      rating: 4.77)
+                      rating: 3.77)
 picture_recipe16 = URI.open("https://therecipecritic.com/wp-content/uploads/2022/08/grilledcheese-1.jpg")
 recipe16.photo.attach(io: picture_recipe16, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -801,7 +801,7 @@ recipe17 = Recipe.new(name: "Fondue un peu speciale",
                       cook_time: "15 min",
                       prep_time: "5 min",
                       description: "Don't eat it, I don't think it will taste that good RIP",
-                      rating: 4.77)
+                      rating: 2.77)
 picture_recipe17 = URI.open("https://assets.afcdn.com/recipe/20161130/59380_w1024h768c1cx2808cy1872.webp")
 recipe17.photo.attach(io: picture_recipe17, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -820,7 +820,7 @@ recipe18 = Recipe.new(name: "Grilled Salmon",
                       description: "Step 1: This recipe for grilled salmon doesn’t call for fancy marinades or mercurial methods. All that’s needed is quality ingredients and a hot grill. |
                                     Step 2: The main question is, which salmon is best? |
                                     Step 3: I prefer wild-caught salmon because it has more flavor, but if you’re dealing with eaters who are mild fish fans, a quality farm-raised salmon will have a more mellow flavor. Like any protein, higher fat fish yields a more buttery bite. Salmon caught in the wild have to work harder than farm-raised, so they tend to be leaner and more fish-like in taste.",
-                      rating: 4.77)
+                      rating: 3.7)
 picture_recipe18 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
 recipe18.photo.attach(io: picture_recipe18, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -838,7 +838,7 @@ recipe19 = Recipe.new(name: "Hachis Parmentier",
                       cook_time: "15 min",
                       prep_time: "5 min",
                       description: "cook everything the wright way",
-                      rating: 4.77)
+                      rating: 4.2)
 picture_recipe19 = URI.open("https://www.curiouscuisiniere.com/wp-content/uploads/2019/10/French-Hachis-Parmentier-Potato-and-Beef-Casserole-8667-450-1.jpg")
 recipe19.photo.attach(io: picture_recipe19, filename: "recipe10.jpg", content_type: "image/jpg")
 
@@ -1102,7 +1102,7 @@ recipe29 = Recipe.new(name: "Tomato pizzas",
                       description: "Step 1: For the dough, put the flour, yeast and 2 tsp salt into a large bowl and mix. Make a well. Mix the oil and water in a jug, then tip into the bowl. Use a wooden spoon to work the liquid into the flour – it will seem pretty wet. Set the bowl aside for 15 mins. Leaving the dough like this will save you from lengthy kneading later. |
                                     Step 2: Turn the dough onto a well-floured surface, flour your hands, then knead it very gently for about 2 mins until it is fairly even, soft and bouncy. Return the dough to the bowl, cover with oiled cling film, then let it rise in a warm place (or in the fridge overnight) until doubled in size. |
                                     Step 3: When ready to cook, heat oven to 240C/220C fan/gas 9 or as hot as it will go, then put a baking sheet in on a high shelf. Dust another sheet with flour. Split the dough into 8, then roll 3 balls thinly into rough circles. Lift onto the floured sheet. Smear over a thin layer of the sauce, scatter over a few slices of tomato, season, then add sliced goat’s or grated Parmesan cheese if you want to. Slide the sheet on top of the heated sheet. Bake for 12 mins or until golden and crisp and the tomatoes are starting to caramelise around the edges. Top with any fresh toppings, then drizzle with more olive oil to serve.",
-                      rating: )
+                      rating: 3)
 picture_recipe29 = URI.open("")
 recipe29.photo.attach(io: picture_recipe29, filename: "", content_type: "image/jpg")
 
@@ -1166,3 +1166,10 @@ recipe20.save
 recipe21.save
 recipe22.save
 recipe23.save
+recipe24.save
+recipe25.save
+recipe26.save
+recipe27.save
+recipe28.save
+recipe29.save
+recipe30.save
