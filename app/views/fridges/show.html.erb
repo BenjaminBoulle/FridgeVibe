@@ -3,7 +3,9 @@
 <% else %>
   <h2 class="h2homefridge"> Away Fridge </h2>
 <% end %>
-<div class="backgroundhomefridge">
+
+<div class="d-flex flex-column align-items-center">
+
   <% unless @fridge.ingredients.empty?%>
     <div class="shuffle_btn">
       <div class=shuffleAll>
@@ -37,6 +39,11 @@
     </div>
 
   <% end %>
+
+</div>
+
+
+<div class="backgroundhomefridge">
   <% @ingredients.each do |ingredient| %>
     <div class="containerhomefridge">
       <div class="d-flex">
