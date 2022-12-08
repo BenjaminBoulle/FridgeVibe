@@ -90,10 +90,10 @@ picture_ingredient3 = URI.open("https://res.cloudinary.com/hksqkdlah/image/uploa
 ingredient3.photo.attach(io: picture_ingredient3, filename: "sweet_potatoes.png", content_type: "image/png")
 
 ingredient4 = Ingredient.create(name: "Carrot", quantity: "3", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
-picture_ingredient4 = URI.open("https://www.carotene.org/wp-content/uploads/2017/09/Retinol-Equivalents.png")
-ingredient4.photo.attach(io: picture_ingredient4, filename: "carrot.png", content_type: "image/png")
+picture_ingredient4 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495774/33382_mpflc9.jpg")
+ingredient4.photo.attach(io: picture_ingredient4, filename: "carrot.jpg", content_type: "image/jpg")
 
-ingredient5 = Ingredient.create(name: "Leak", quantity: "2", expiration_date: Date.today + 2, fridge: my_fridge_user_admin)
+ingredient5 = Ingredient.create(name: "Leak", quantity: "2", expiration_date: Date.today + 2, fridge: my_fridge_user4)
 picture_ingredient5 = URI.open("https://www.mtalmaorganics.com.au/wp-content/uploads/2020/03/kisspng-leek-vegetable-food-cooking-garlic-5a792650f2ad43.115643251517889104994-e1594687803830.png")
 ingredient5.photo.attach(io: picture_ingredient5, filename: "leak.png", content_type: "image/png")
 
@@ -101,17 +101,17 @@ ingredient6 = Ingredient.create(name: "Smoked salmon", quantity: "5 slices", exp
 picture_ingredient6 = URI.open("https://www.seacoreseafood.com/user_files/upload/images/2019/Wyse%20Bay%20Smoked%20Salmon%20web.png")
 ingredient6.photo.attach(io: picture_ingredient6, filename: "smoked_salmon.png", content_type: "image/png")
 
-ingredient7 = Ingredient.create(name: "Strawberry", quantity: "10", expiration_date: Date.today + 4, fridge: my_fridge_user1)
-picture_ingredient7 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient7.photo.attach(io: picture_ingredient7, filename: "snow.png", content_type: "image/png")
+ingredient7 = Ingredient.create(name: "Strawberry", quantity: "10", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+picture_ingredient7 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492538/35485_osngoj.jpg")
+ingredient7.photo.attach(io: picture_ingredient7, filename: "strawberry.png", content_type: "image/png")
 
-ingredient31 = Ingredient.create(name: "Beer", quantity: "200", expiration_date: Date.today + 60, fridge: my_fridge_user1)
-picture_ingredient31 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient31.photo.attach(io: picture_ingredient31, filename: "snow.png", content_type: "image/png")
+ingredient31 = Ingredient.create(name: "Barbar beer", quantity: "12", expiration_date: Date.today + 60, fridge: my_fridge_user_admin)
+picture_ingredient31 = URI.open("https://media.cdnws.com/_i/151900/3519/1113/19/103-16445-w1572-h1080-transparent.png")
+ingredient31.photo.attach(io: picture_ingredient31, filename: "barbar.png", content_type: "image/png")
 
-ingredient8 = Ingredient.create(name: "Minced pork and beef", quantity: "2.3 kg", expiration_date: Date.today + 2, fridge: my_fridge_user1)
-picture_ingredient8 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient8.photo.attach(io: picture_ingredient8, filename: "snow.png", content_type: "image/png")
+ingredient8 = Ingredient.create(name: "Minced pork and beef", quantity: "2.3 kg", expiration_date: Date.today + 2, fridge: my_fridge_user_admin)
+picture_ingredient8 = URI.open("https://global-uploads.webflow.com/60811ffeb2ff4b6d614ab4fa/60e2ae099b2e9dc301ad1d1f_pork_mince-500x500-removebg-preview.png")
+ingredient8.photo.attach(io: picture_ingredient8, filename: "minced.png", content_type: "image/png")
 
 ingredient9 = Ingredient.create(name: "Sausages", quantity: "2 kg", expiration_date: Date.today + 3, fridge: my_fridge_user1)
 picture_ingredient9 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
@@ -137,7 +137,7 @@ ingredient14 = Ingredient.create(name: "Yoghurt", quantity: "12", expiration_dat
 picture_ingredient14 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient14.photo.attach(io: picture_ingredient14, filename: "snow.png", content_type: "image/png")
 
-ingredient32 = Ingredient.create(name: "Nem", quantity: "1200", expiration_date: Date.today + 12, fridge: my_fridge_user2)
+ingredient32 = Ingredient.create(name: "Nem", quantity: "1200", expiration_date: Date.today + 12, fridge: my_fridge_user_admin)
 picture_ingredient32 = URI.open("https://chefonefoods.com/wp-content/uploads/2016/09/Pork-Egg-Roll.png")
 ingredient32.photo.attach(io: picture_ingredient32, filename: "nem.png", content_type: "image/png")
 
@@ -161,9 +161,9 @@ ingredient19 = Ingredient.create(name: "Truffle", quantity: "6", expiration_date
 picture_ingredient19 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient19.photo.attach(io: picture_ingredient19, filename: "snow.png", content_type: "image/png")
 
-ingredient20 = Ingredient.create(name: "Mushroom", quantity: "1 kg", expiration_date: Date.today + 10, fridge: my_fridge_user3)
-picture_ingredient20 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient20.photo.attach(io: picture_ingredient20, filename: "snow.png", content_type: "image/png")
+ingredient20 = Ingredient.create(name: "Mushroom", quantity: "1 kg", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient20 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495789/33487_huoh4d.jpg")
+ingredient20.photo.attach(io: picture_ingredient20, filename: "mushroom.jpg", content_type: "image/pjpgng")
 
 ingredient21 = Ingredient.create(name: "Apple", quantity: "90", expiration_date: Date.today + 10, fridge: my_fridge_user3)
 picture_ingredient21 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
@@ -193,19 +193,17 @@ ingredient27 = Ingredient.create(name: "Nem", quantity: "40", expiration_date: D
 picture_ingredient27 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient27.photo.attach(io: picture_ingredient27, filename: "snow.png", content_type: "image/png")
 
-ingredient28 = Ingredient.create(name: "Watermelon", quantity: "1", expiration_date: Date.today + 10, fridge: my_fridge_user4)
-picture_ingredient28 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient28.photo.attach(io: picture_ingredient28, filename: "snow.png", content_type: "image/png")
+ingredient28 = Ingredient.create(name: "Watermelon", quantity: "1", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient28 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492732/34544_rrgehm.jpg")
+ingredient28.photo.attach(io: picture_ingredient28, filename: "watermelon.jpg", content_type: "image/jpg")
 
-ingredient29 = Ingredient.create(name: "Avocado", quantity: "6", expiration_date: Date.today + 10, fridge: my_fridge_user4)
-picture_ingredient29 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient29.photo.attach(io: picture_ingredient29, filename: "snow.png", content_type: "image/png")
+ingredient29 = Ingredient.create(name: "Avocado", quantity: "6", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient29 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495756/33130_krtzw1.jpg")
+ingredient29.photo.attach(io: picture_ingredient29, filename: "aubergine.jpg", content_type: "image/jpg")
 
-ingredient30 = Ingredient.create(name: "Pepper", quantity: "7", expiration_date: Date.today + 40, fridge: my_fridge_user4)
-picture_ingredient30 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
-ingredient30.photo.attach(io: picture_ingredient30, filename: "snow.png", content_type: "image/png")
-
-###############################################################################################################
+ingredient30 = Ingredient.create(name: "Black pepper", quantity: "7", expiration_date: Date.today + 40, fridge: my_fridge_user_admin)
+picture_ingredient30 = URI.open("https://cdn.shopify.com/s/files/1/0532/0405/8272/products/black_pepper_PNG24.png?v=1616404323")
+ingredient30.photo.attach(io: picture_ingredient30, filename: "black_pepper.png", content_type: "image/png")
 
 ingredient32 = Ingredient.create(name: "Olive oil", quantity: "1 l", expiration_date: Date.today + 300, fridge: my_fridge_user_admin)
 picture_ingredient32 = URI.open("https://bulknaturaloils.com/media/catalog/product/cache/5b89197651ea0053483b6b3397eafb60/o/l/olive-pure-470_3_1_8.png")
@@ -239,97 +237,233 @@ ingredient39 = Ingredient.create(name: "American cheese", quantity: "1 kg", expi
 picture_ingredient39 = URI.open("https://homshop.app/wp-content/uploads/2019/04/american.png")
 ingredient39.photo.attach(io: picture_ingredient39, filename: "American cheese.png", content_type: "image/png")
 
-################################################################################################################################
+ingredient40 = Ingredient.create(name: "Reblochon", quantity: "500 gr", expiration_date: Date.today + 18, fridge: my_fridge_user_admin)
+picture_ingredient40 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490153/reblechon_hymqsg.png")
+ingredient40.photo.attach(io: picture_ingredient40, filename: "reblochon.png", content_type: "image/png")
 
-# ingredient40 = Ingredient.create(name: "Reblochon", quantity: "500 gr", expiration_date: Date.today + 18, fridge: my_fridge_user_admin)
-# picture_ingredient40 = URI.open("")
-# ingredient40.photo.attach(io: picture_ingredient40, filename: "", content_type: "image/png")
+ingredient41 = Ingredient.create(name: "Corn flakes", quantity: "250 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
+picture_ingredient41 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/cornflakes_tp4pn9.png")
+ingredient41.photo.attach(io: picture_ingredient41, filename: "cornflakes.png", content_type: "image/png")
 
-# ingredient41 = Ingredient.create(name: "Corn flakes", quantity: "250 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
-# picture_ingredient41 = URI.open("")
-# ingredient41.photo.attach(io: picture_ingredient41, filename: "", content_type: "image/png")
+ingredient42 = Ingredient.create(name: "Scampi", quantity: "500 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
+picture_ingredient42 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490153/scampi_ifqqqx.png")
+ingredient42.photo.attach(io: picture_ingredient42, filename: "scampi.png", content_type: "image/png")
 
-# ingredient42 = Ingredient.create(name: "Scampi", quantity: "500 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
-# picture_ingredient42 = URI.open("")
-# ingredient42.photo.attach(io: picture_ingredient42, filename: "", content_type: "image/png")
+ingredient43 = Ingredient.create(name: "Grated cheese", quantity: "1 kg", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+picture_ingredient43 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/grated_cheese_xb37lw.png")
+ingredient43.photo.attach(io: picture_ingredient43, filename: "grated_cheese.png", content_type: "image/png")
 
-# ingredient43 = Ingredient.create(name: "Grated cheese", quantity: "1 kg", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
-# picture_ingredient43 = URI.open("")
-# ingredient43.photo.attach(io: picture_ingredient43, filename: "", content_type: "image/png")
+ingredient44 = Ingredient.create(name: "Nuts", quantity: "250 gr", expiration_date: Date.today + 108, fridge: my_fridge_user_admin)
+picture_ingredient44 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/nuts_rdavzg.png")
+ingredient44.photo.attach(io: picture_ingredient44, filename: "nuts.png", content_type: "image/png")
 
-# ingredient44 = Ingredient.create(name: "Nuts", quantity: "250 gr", expiration_date: Date.today + 108, fridge: my_fridge_user_admin)
-# picture_ingredient44 = URI.open("")
-# ingredient44.photo.attach(io: picture_ingredient44, filename: "", content_type: "image/png")
+ingredient45 = Ingredient.create(name: "Mozzarella", quantity: "5 balls", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+picture_ingredient45 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/mozarella_vlpzcg.png")
+ingredient45.photo.attach(io: picture_ingredient45, filename: "mozzarella.png", content_type: "image/png")
 
-# ingredient45 = Ingredient.create(name: "Mozzarella", quantity: "5 balls", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
-# picture_ingredient45 = URI.open("")
-# ingredient45.photo.attach(io: picture_ingredient45, filename: "", content_type: "image/png")
+ingredient46 = Ingredient.create(name: "Cherry haribo", quantity: "500 gr", expiration_date: Date.today + 720, fridge: my_fridge_user_admin)
+picture_ingredient46 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/haribo_nan9yj.png")
+ingredient46.photo.attach(io: picture_ingredient46, filename: "haribo.png", content_type: "image/png")
 
-# ingredient46 = Ingredient.create(name: "Cherry haribo", quantity: "500 gr", expiration_date: Date.today + 720, fridge: my_fridge_user_admin)
-# picture_ingredient46 = URI.open("")
-# ingredient46.photo.attach(io: picture_ingredient46, filename: "", content_type: "image/png")
+ingredient47 = Ingredient.create(name: "Leerdammer", quantity: "300 gr", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+picture_ingredient47 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/leerdammer_dy11ap.png")
+ingredient47.photo.attach(io: picture_ingredient47, filename: "leerdammer.png", content_type: "image/png")
 
-# ingredient47 = Ingredient.create(name: "Leerdammer", quantity: "300 gr", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
-# picture_ingredient47 = URI.open("")
-# ingredient47.photo.attach(io: picture_ingredient47, filename: "", content_type: "image/png")
+ingredient48 = Ingredient.create(name: "Bread multicorn", quantity: "3", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+picture_ingredient48 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/bread_multi_sclo26.png")
+ingredient48.photo.attach(io: picture_ingredient48, filename: "bread_multicorn.png", content_type: "image/png")
 
-# ingredient48 = Ingredient.create(name: "Bread multicorn", quantity: "3", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
-# picture_ingredient48 = URI.open("")
-# ingredient48.photo.attach(io: picture_ingredient48, filename: "", content_type: "image/png")
+ingredient49 = Ingredient.create(name: "Blood orange", quantity: "20", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+picture_ingredient49 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490771/35327_gcwfk9.jpg")
+ingredient49.photo.attach(io: picture_ingredient49, filename: "blood_orange.png", content_type: "image/png")
 
-# ingredient49 = Ingredient.create(name: "Babybel", quantity: "100 gr", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
-# picture_ingredient49 = URI.open("")
-# ingredient49.photo.attach(io: picture_ingredient49, filename: "", content_type: "image/png")
+ingredient50 = Ingredient.create(name: "Gin", quantity: "1 l", expiration_date: Date.today + 1000, fridge: my_fridge_user_admin)
+picture_ingredient50 = URI.open("https://www.ginroom.be/wp-content/uploads/2020/01/bombay_dry_gin_1761_70-522x600.png")
+ingredient50.photo.attach(io: picture_ingredient50, filename: "gin.png", content_type: "image/png")
 
-# ingredient50 = Ingredient.create(name: "Gin", quantity: "1 l", expiration_date: Date.today + 1000, fridge: my_fridge_user_admin)
-# picture_ingredient50 = URI.open("")
-# ingredient50.photo.attach(io: picture_ingredient50, filename: "", content_type: "image/png")
+ingredient51 = Ingredient.create(name: "Mini puddings ", quantity: "500 gr", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
+picture_ingredient51 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/mini_pudding_nadqiu.png")
+ingredient51.photo.attach(io: picture_ingredient51, filename: "mini_puddings.png", content_type: "image/png")
 
-# ingredient51 = Ingredient.create(name: "Mini puddings ", quantity: "500 gr", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
-# picture_ingredient51 = URI.open("")
-# ingredient51.photo.attach(io: picture_ingredient51, filename: "", content_type: "image/png")
+ingredient52 = Ingredient.create(name: "Sausage", quantity: "900 gr", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+picture_ingredient52 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490153/sausage_dtt1p4.png")
+ingredient52.photo.attach(io: picture_ingredient52, filename: "sausage.png", content_type: "image/png")
 
-# ingredient52 = Ingredient.create(name: "Sausage", quantity: "900 gr", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
-# picture_ingredient52 = URI.open("")
-# ingredient52.photo.attach(io: picture_ingredient52, filename: "", content_type: "image/png")
+ingredient53 = Ingredient.create(name: "Brussels sprouts", quantity: "100 gr", expiration_date: Date.today + 11, fridge: my_fridge_user_admin)
+picture_ingredient53 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490687/35681_ffx5nd.jpg")
+ingredient53.photo.attach(io: picture_ingredient53, filename: "brussels_sprout.jpg", content_type: "image/jpg")
 
-# ingredient53 = Ingredient.create(name: "Brussels sprouts", quantity: "100 gr", expiration_date: Date.today + 11, fridge: my_fridge_user_admin)
-# picture_ingredient53 = URI.open("")
-# ingredient53.photo.attach(io: picture_ingredient53, filename: "", content_type: "image/png")
+ingredient54 = Ingredient.create(name: "Pork skewer", quantity: "679 gr", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
+picture_ingredient54 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/brochette_k7itq1.png")
+ingredient54.photo.attach(io: picture_ingredient54, filename: "pork_sweker.png", content_type: "image/png")
 
-# ingredient54 = Ingredient.create(name: "Pork skewer", quantity: "679 gr", expiration_date: Date.today + 2, fridge: my_fridge_user_admin)
-# picture_ingredient54 = URI.open("")
-# ingredient54.photo.attach(io: picture_ingredient54, filename: "", content_type: "image/png")
+ingredient55 = Ingredient.create(name: "Grapes", quantity: "400 gr", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+picture_ingredient55 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491404/35667_k8ccbh.jpg")
+ingredient55.photo.attach(io: picture_ingredient55, filename: "grape.jpg", content_type: "image/jpg")
 
-# ingredient55 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
-# picture_ingredient55 = URI.open("")
-# ingredient55.photo.attach(io: picture_ingredient55, filename: "", content_type: "image/png")
+ingredient56 = Ingredient.create(name: "Pickles", quantity: "500 gr", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+picture_ingredient56 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491388/36021_vb3w1d.jpg")
+ingredient56.photo.attach(io: picture_ingredient56, filename: "pickles.jpg", content_type: "image/jpg")
 
-# ingredient56 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
-# picture_ingredient56 = URI.open("")
-# ingredient56.photo.attach(io: picture_ingredient56, filename: "", content_type: "image/png")
+ingredient57 = Ingredient.create(name: "Pistachio", quantity: "300 gr", expiration_date: Date.today + 60, fridge: my_fridge_user_admin)
+picture_ingredient57 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491378/36044_adpyek.jpg")
+ingredient57.photo.attach(io: picture_ingredient57, filename: "pistachio.jpg", content_type: "image/jpg")
 
-# ingredient57 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
-# picture_ingredient57 = URI.open("")
-# ingredient57.photo.attach(io: picture_ingredient57, filename: "", content_type: "image/png")
+ingredient58 = Ingredient.create(name: "Tomatoes", quantity: "460 gr", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
+picture_ingredient58 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491372/36059_nhgqui.jpg")
+ingredient58.photo.attach(io: picture_ingredient58, filename: "tomatoes.jpg", content_type: "image/jpg")
 
-# ingredient58 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
-# picture_ingredient58 = URI.open("")
-# ingredient58.photo.attach(io: picture_ingredient58, filename: "", content_type: "image/png")
+ingredient59 = Ingredient.create(name: "Paprika", quantity: "3", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+picture_ingredient59 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491368/36076_jyuujf.jpg")
+ingredient59.photo.attach(io: picture_ingredient59, filename: "paprika.jpg", content_type: "image/jpg")
 
-# ingredient59 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
-# picture_ingredient59 = URI.open("")
-# ingredient59.photo.attach(io: picture_ingredient59, filename: "", content_type: "image/png")
+ingredient60 = Ingredient.create(name: "Apricot", quantity: "7", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
+picture_ingredient60 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491349/36161_uic8pt.jpg")
+ingredient60.photo.attach(io: picture_ingredient60, filename: "apricot.jpg", content_type: "image/jpg")
 
-# ingredient60 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
-# picture_ingredient60 = URI.open("")
-# ingredient60.photo.attach(io: picture_ingredient60, filename: "", content_type: "image/png")
+ingredient61 = Ingredient.create(name: "Rhum", quantity: "1 l", expiration_date: Date.today + 60, fridge: my_fridge_user_admin)
+picture_ingredient61 = URI.open("https://rhum-saintjames.com/wp-content/uploads/2020/12/CLASSIQUE_AMBRE_70CL.png")
+ingredient61.photo.attach(io: picture_ingredient61, filename: "rhum.png", content_type: "image/png")
 
-# ingredient = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+ingredient62 = Ingredient.create(name: "Apple", quantity: "6", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient62 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492483/35635_iiwse0.jpg")
+ingredient62.photo.attach(io: picture_ingredient62, filename: "apple.png", content_type: "image/png")
+
+ingredient63 = Ingredient.create(name: "Chestnut", quantity: "500 gr", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient63 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492490/35624_t3qiao.jpg")
+ingredient63.photo.attach(io: picture_ingredient63, filename: "chestnut.jpg", content_type: "image/jpg")
+
+ingredient64 = Ingredient.create(name: "Peer", quantity: "8", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
+picture_ingredient64 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492496/35603_jqxsjd.jpg")
+ingredient64.photo.attach(io: picture_ingredient64, filename: "arthur.jpg", content_type: "image/jpg")
+
+ingredient65 = Ingredient.create(name: "Lemon", quantity: "3", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
+picture_ingredient65 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492503/35563_rzpsjw.jpg")
+ingredient65.photo.attach(io: picture_ingredient65, filename: "lemon.jpg", content_type: "image/jpg")
+
+ingredient66 = Ingredient.create(name: "Onion", quantity: "4", expiration_date: Date.today + 16, fridge: my_fridge_user_admin)
+picture_ingredient66 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492509/35553_ybln5q.jpg")
+ingredient66.photo.attach(io: picture_ingredient66, filename: "onion.jpg", content_type: "image/jpg")
+
+ingredient67 = Ingredient.create(name: "Kiwi", quantity: "3", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
+picture_ingredient67 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492524/35514_vb8ced.jpg")
+ingredient67.photo.attach(io: picture_ingredient67, filename: "kiwi.jpg", content_type: "image/jpg")
+
+ingredient68 = Ingredient.create(name: "Tangerine", quantity: "8", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient68 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492529/35510_uns4tb.jpg")
+ingredient68.photo.attach(io: picture_ingredient68, filename: "tangerine.jpg", content_type: "image/jpg")
+
+ingredient69 = Ingredient.create(name: "Chinese cabbage", quantity: "1", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+picture_ingredient69 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492548/35438_jtmvpt.jpg")
+ingredient69.photo.attach(io: picture_ingredient69, filename: "chinese_cabage.jpg", content_type: "image/jpg")
+
+ingredient70 = Ingredient.create(name: "Chinese flower", quantity: "1", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+picture_ingredient70 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492567/35371_damtpc.jpg")
+ingredient70.photo.attach(io: picture_ingredient70, filename: "chiense_flower.jpg", content_type: "image/jpg")
+
+ingredient71 = Ingredient.create(name: "Shallot", quantity: "7", expiration_date: Date.today + 18, fridge: my_fridge_user_admin)
+picture_ingredient71 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492575/35317_aixaix.jpg")
+ingredient71.photo.attach(io: picture_ingredient71, filename: "shallot.jpg", content_type: "image/jpg")
+
+ingredient72 = Ingredient.create(name: "Clementine", quantity: "9", expiration_date: Date.today + 16, fridge: my_fridge_user_admin)
+picture_ingredient72 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492582/35315_yeehvz.jpg")
+ingredient72.photo.attach(io: picture_ingredient72, filename: "clementine.jpg", content_type: "image/jpg")
+
+ingredient73 = Ingredient.create(name: "Salad", quantity: "500 gr", expiration_date: Date.today + 7, fridge: my_fridge_user_admin)
+picture_ingredient73 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492601/35028_zobljb.jpg")
+ingredient73.photo.attach(io: picture_ingredient73, filename: "salad.jpg", content_type: "image/jpg")
+
+ingredient74 = Ingredient.create(name: "Black grapes", quantity: "400 gr", expiration_date: Date.today + 9, fridge: my_fridge_user_admin)
+picture_ingredient74 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492623/34929_slrqfh.jpg")
+ingredient74.photo.attach(io: picture_ingredient74, filename: "black_grapes.jpg", content_type: "image/jpg")
+
+ingredient75 = Ingredient.create(name: "Grenada", quantity: "7", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
+picture_ingredient75 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492633/34817_w31lco.jpg")
+ingredient75.photo.attach(io: picture_ingredient75, filename: "grenada.jpg", content_type: "image/jpg")
+
+ingredient76 = Ingredient.create(name: "Lime", quantity: "9", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
+picture_ingredient76 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492650/34778_b9x3th.jpg")
+ingredient76.photo.attach(io: picture_ingredient76, filename: "lime.jpg", content_type: "image/jpg")
+
+ingredient77 = Ingredient.create(name: "Pepper", quantity: "2", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient77 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492659/34767_gannfv.jpg")
+ingredient77.photo.attach(io: picture_ingredient77, filename: "pepper.jpg", content_type: "image/jpg")
+
+ingredient78 = Ingredient.create(name: "Dragon fruit", quantity: "3", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+picture_ingredient78 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492680/34699_het1hh.jpg")
+ingredient78.photo.attach(io: picture_ingredient78, filename: "dargon_fruit.jpg", content_type: "image/jpg")
+
+ingredient79 = Ingredient.create(name: "Peach", quantity: "7", expiration_date: Date.today + 8, fridge: my_fridge_user_admin)
+picture_ingredient79 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492695/34635_zw3ekh.jpg")
+ingredient79.photo.attach(io: picture_ingredient79, filename: "peach.jpg", content_type: "image/jpg")
+
+ingredient80 = Ingredient.create(name: "Potatoes", quantity: "500 gr", expiration_date: Date.today + 27, fridge: my_fridge_user_admin)
+picture_ingredient80 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492702/34634_scwx5a.jpg")
+ingredient80.photo.attach(io: picture_ingredient80, filename: "potatoes.jpg", content_type: "image/jpg")
+
+ingredient81 = Ingredient.create(name: "Ginger", quantity: "100 gr", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient81 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492707/34629_bsbgzb.jpg")
+ingredient81.photo.attach(io: picture_ingredient81, filename: "giniger.jpg", content_type: "image/jpg")
+
+ingredient82 = Ingredient.create(name: "Grapefruit", quantity: "6", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+picture_ingredient82 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492739/34509_rolx4k.jpg")
+ingredient82.photo.attach(io: picture_ingredient82, filename: "grapefruit.jpg", content_type: "image/jpg")
+
+ingredient83 = Ingredient.create(name: "Red onion", quantity: "5", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
+picture_ingredient83 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492750/34413_zdqwfd.jpg")
+ingredient83.photo.attach(io: picture_ingredient83, filename: "red_onion.jpg", content_type: "image/jpg")
+
+ingredient84 = Ingredient.create(name: "Coconut", quantity: "4", expiration_date: Date.today + 32, fridge: my_fridge_user_admin)
+picture_ingredient84 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492765/34321_ecylcw.jpg")
+ingredient84.photo.attach(io: picture_ingredient84, filename: "coconut.jpg", content_type: "image/jpg")
+
+ingredient85 = Ingredient.create(name: "Turnip", quantity: "3", expiration_date: Date.today + 7, fridge: my_fridge_user_admin)
+picture_ingredient85 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492774/34276_gf9d7l.jpg")
+ingredient85.photo.attach(io: picture_ingredient85, filename: "turnip.jpg", content_type: "image/jpg")
+
+ingredient86 = Ingredient.create(name: "Litchi", quantity: "500 gr", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+picture_ingredient86 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492787/34133_rqolzr.jpg")
+ingredient86.photo.attach(io: picture_ingredient86, filename: "litchi.jpg", content_type: "image/jpg")
+
+ingredient87 = Ingredient.create(name: "Pineapple", quantity: "1", expiration_date: Date.today + 15, fridge: my_fridge_user_admin)
+picture_ingredient87 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495749/33068_q0hwwl.jpg")
+ingredient87.photo.attach(io: picture_ingredient87, filename: "pineapple.jpg", content_type: "image/jpg")
+
+ingredient88 = Ingredient.create(name: "Artichoke", quantity: "5", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
+picture_ingredient88 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495752/33098_mguhho.jpg")
+ingredient88.photo.attach(io: picture_ingredient88, filename: "artichoke.jpg", content_type: "image/jpg")
+
+ingredient89 = Ingredient.create(name: "Aubergine", quantity: "7", expiration_date: Date.today + 9, fridge: my_fridge_user_admin)
+picture_ingredient89 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495755/33129_d5yxk9.jpg")
+ingredient89.photo.attach(io: picture_ingredient89, filename: "aubergine.jpg", content_type: "image/jpg")
+
+ingredient90 = Ingredient.create(name: "Banana", quantity: "6", expiration_date: Date.today + 8, fridge: my_fridge_user_admin)
+picture_ingredient90 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495760/33144_p41mri.jpg")
+ingredient90.photo.attach(io: picture_ingredient90, filename: "banana.jpg", content_type: "image/jpg")
+
+ingredient91 = Ingredient.create(name: "Carambola", quantity: "6", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+picture_ingredient91 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495767/33376_gkkutm.jpg")
+ingredient91.photo.attach(io: picture_ingredient91, filename: "carambola.jpg", content_type: "image/jpg")
+
+ingredient92 = Ingredient.create(name: "Cherries", quantity: "1 kg", expiration_date: Date.today + 7, fridge: my_fridge_user_admin)
+picture_ingredient92 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495778/33433_ftojyz.jpg")
+ingredient92.photo.attach(io: picture_ingredient92, filename: "cherry.jpg", content_type: "image/jpg")
+
+ingredient93 = Ingredient.create(name: "Chicory", quantity: "300 gr", expiration_date: Date.today + 9, fridge: my_fridge_user_admin)
+picture_ingredient93 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495793/33509_nobd8h.jpg")
+ingredient93.photo.attach(io: picture_ingredient93, filename: "chicory.jpg", content_type: "image/jpg")
+
+ingredient94 = Ingredient.create(name: "Purple cauliflower", quantity: "1", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+picture_ingredient94 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495799/33550_dd5fop.jpg")
+ingredient94.photo.attach(io: picture_ingredient94, filename: "purple_cauliflower.jpg", content_type: "image/jpg")
+
+ingredient95 = Ingredient.create(name: "Fig", quantity: "5", expiration_date: Date.today + 12, fridge: my_fridge_user_admin)
+picture_ingredient95 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495812/33820_ltxewj.jpg")
+ingredient95.photo.attach(io: picture_ingredient95, filename: "fig.jpg", content_type: "image/jpg")
+
+# ingredient = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
 # picture_ingredient = URI.open("")
 # ingredient.photo.attach(io: picture_ingredient, filename: "", content_type: "image/png")
-
-
 
 ### RECIPES
 puts "creating recipes..."
