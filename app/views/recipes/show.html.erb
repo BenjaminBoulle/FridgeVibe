@@ -1,4 +1,4 @@
-<%= cl_image_tag @recipe.photo.key, height:250, width: 390, crop: :fill%>
+<%= cl_image_tag @recipe.photo.key, height:250, width: 414, crop: :fill%>
 <h2 class="recipeh2"><%= @recipe.name %></h2>
 <div class="ingredients">
   <h3 class="h3ingredient"> What's needed ?</h3>
@@ -6,12 +6,12 @@
       <ul>
         <%@ingredients_you_have.each_with_index do |ingredient, index| %>
           <% if index.odd? %>
-            <li class="put-green"> <%= @ingredients_you_have[index - 1] %> of <%= ingredient %> </li>
+            <li class="put-green"> <%= @ingredients_you_have[index - 1] %>, <%= ingredient %> </li>
           <% end %>
         <% end %>
         <%@ingredients_missing.each_with_index do |ingredient, index| %>
           <% if index.odd? %>
-            <li class="put-red"> <%= @ingredients_missing[index - 1] %> of <%= ingredient %> </li>
+            <li class="put-red"> <%= @ingredients_missing[index - 1] %>, <%= ingredient %> </li>
           <% end %>
         <% end %>
       </ul>
@@ -38,7 +38,7 @@
   <p>
     <h3 class=preph3>Preparation</h3>
     <ul>
-      <% @recipe.description.split('.').each do |description| %>
+      <% @recipe.description.split('|').each do |description| %>
         <li> <%= description %> </li>
       <% end %>
     </ul>
