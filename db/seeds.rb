@@ -239,6 +239,98 @@ ingredient39 = Ingredient.create(name: "American cheese", quantity: "1 kg", expi
 picture_ingredient39 = URI.open("https://homshop.app/wp-content/uploads/2019/04/american.png")
 ingredient39.photo.attach(io: picture_ingredient39, filename: "American cheese.png", content_type: "image/png")
 
+################################################################################################################################
+
+# ingredient40 = Ingredient.create(name: "Reblochon", quantity: "500 gr", expiration_date: Date.today + 18, fridge: my_fridge_user_admin)
+# picture_ingredient40 = URI.open("")
+# ingredient40.photo.attach(io: picture_ingredient40, filename: "", content_type: "image/png")
+
+# ingredient41 = Ingredient.create(name: "Corn flakes", quantity: "250 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
+# picture_ingredient41 = URI.open("")
+# ingredient41.photo.attach(io: picture_ingredient41, filename: "", content_type: "image/png")
+
+# ingredient42 = Ingredient.create(name: "Scampi", quantity: "500 gr", expiration_date: Date.today + 360, fridge: my_fridge_user_admin)
+# picture_ingredient42 = URI.open("")
+# ingredient42.photo.attach(io: picture_ingredient42, filename: "", content_type: "image/png")
+
+# ingredient43 = Ingredient.create(name: "Grated cheese", quantity: "1 kg", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+# picture_ingredient43 = URI.open("")
+# ingredient43.photo.attach(io: picture_ingredient43, filename: "", content_type: "image/png")
+
+# ingredient44 = Ingredient.create(name: "Nuts", quantity: "250 gr", expiration_date: Date.today + 108, fridge: my_fridge_user_admin)
+# picture_ingredient44 = URI.open("")
+# ingredient44.photo.attach(io: picture_ingredient44, filename: "", content_type: "image/png")
+
+# ingredient45 = Ingredient.create(name: "Mozzarella", quantity: "5 balls", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+# picture_ingredient45 = URI.open("")
+# ingredient45.photo.attach(io: picture_ingredient45, filename: "", content_type: "image/png")
+
+# ingredient46 = Ingredient.create(name: "Cherry haribo", quantity: "500 gr", expiration_date: Date.today + 720, fridge: my_fridge_user_admin)
+# picture_ingredient46 = URI.open("")
+# ingredient46.photo.attach(io: picture_ingredient46, filename: "", content_type: "image/png")
+
+# ingredient47 = Ingredient.create(name: "Leerdammer", quantity: "300 gr", expiration_date: Date.today + 20, fridge: my_fridge_user_admin)
+# picture_ingredient47 = URI.open("")
+# ingredient47.photo.attach(io: picture_ingredient47, filename: "", content_type: "image/png")
+
+# ingredient48 = Ingredient.create(name: "Bread multicorn", quantity: "3", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+# picture_ingredient48 = URI.open("")
+# ingredient48.photo.attach(io: picture_ingredient48, filename: "", content_type: "image/png")
+
+# ingredient49 = Ingredient.create(name: "Babybel", quantity: "100 gr", expiration_date: Date.today + 10, fridge: my_fridge_user_admin)
+# picture_ingredient49 = URI.open("")
+# ingredient49.photo.attach(io: picture_ingredient49, filename: "", content_type: "image/png")
+
+# ingredient50 = Ingredient.create(name: "Gin", quantity: "1 l", expiration_date: Date.today + 1000, fridge: my_fridge_user_admin)
+# picture_ingredient50 = URI.open("")
+# ingredient50.photo.attach(io: picture_ingredient50, filename: "", content_type: "image/png")
+
+# ingredient51 = Ingredient.create(name: "Mini puddings ", quantity: "500 gr", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
+# picture_ingredient51 = URI.open("")
+# ingredient51.photo.attach(io: picture_ingredient51, filename: "", content_type: "image/png")
+
+# ingredient52 = Ingredient.create(name: "Sausage", quantity: "900 gr", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
+# picture_ingredient52 = URI.open("")
+# ingredient52.photo.attach(io: picture_ingredient52, filename: "", content_type: "image/png")
+
+# ingredient53 = Ingredient.create(name: "Brussels sprouts", quantity: "100 gr", expiration_date: Date.today + 11, fridge: my_fridge_user_admin)
+# picture_ingredient53 = URI.open("")
+# ingredient53.photo.attach(io: picture_ingredient53, filename: "", content_type: "image/png")
+
+# ingredient54 = Ingredient.create(name: "Pork skewer", quantity: "679 gr", expiration_date: Date.today + 2, fridge: my_fridge_user_admin)
+# picture_ingredient54 = URI.open("")
+# ingredient54.photo.attach(io: picture_ingredient54, filename: "", content_type: "image/png")
+
+# ingredient55 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient55 = URI.open("")
+# ingredient55.photo.attach(io: picture_ingredient55, filename: "", content_type: "image/png")
+
+# ingredient56 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient56 = URI.open("")
+# ingredient56.photo.attach(io: picture_ingredient56, filename: "", content_type: "image/png")
+
+# ingredient57 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient57 = URI.open("")
+# ingredient57.photo.attach(io: picture_ingredient57, filename: "", content_type: "image/png")
+
+# ingredient58 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient58 = URI.open("")
+# ingredient58.photo.attach(io: picture_ingredient58, filename: "", content_type: "image/png")
+
+# ingredient59 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient59 = URI.open("")
+# ingredient59.photo.attach(io: picture_ingredient59, filename: "", content_type: "image/png")
+
+# ingredient60 = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient60 = URI.open("")
+# ingredient60.photo.attach(io: picture_ingredient60, filename: "", content_type: "image/png")
+
+# ingredient = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + , fridge: my_fridge_user_admin)
+# picture_ingredient = URI.open("")
+# ingredient.photo.attach(io: picture_ingredient, filename: "", content_type: "image/png")
+
+
+
 ### RECIPES
 puts "creating recipes..."
 
@@ -296,15 +388,15 @@ recipe2.photo.attach(io: picture_recipe2, filename: "recipe2.jpg", content_type:
 puts "creating recipe 3"
 
 recipe3 = Recipe.new(name: "Creamy Penne Pasta Primavera",
-                     ingredients: "2 cups penne, pasta,
-                                   2 teaspoons, olive oil,
-                                   1 pound trimmed and cut into 2-inch pieces, asparagus,
-                                   3 cut into strips, carrots,
-                                   2 cups halved, cherry tomatoes,
-                                   1 clove minced or more to taste, garlic,
+                     ingredients: "2 cups penne, Pasta,
+                                   2 teaspoons, Olive oil,
+                                   1 pound trimmed and cut into 2-inch pieces, Asparagus,
+                                   3 cut into strips, Carrots,
+                                   2 cups halved, Cherry tomatoes,
+                                   1 clove minced or more to taste, Garlic,
                                    1 cup grated, Parmesan,
-                                   1 cup heavy, whipped cream,
-                                   ¼ teaspoon ground, pepper",
+                                   1 cup heavy, Whipped cream,
+                                   ¼ teaspoon ground, Pepper",
                      user: user_admin,
                      author: "gretchen",
                      cuisine: "italian",

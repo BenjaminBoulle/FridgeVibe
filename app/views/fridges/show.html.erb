@@ -4,14 +4,16 @@
   <h2 class="h2homefridge"> Away Fridge </h2>
 <% end %>
 <div class="backgroundhomefridge">
-  <div class="shuffle_btn">
-    <div class=shuffleAll>
-      <%= link_to fridge_recipes_path(@fridge),id:"shuffle" do %>
-        Generate Recipes
-        <i class="fa-solid fa-utensils"></i>
-      <% end %>
+  <% unless @fridge.ingredients.empty?%>
+    <div class="shuffle_btn">
+      <div class=shuffleAll>
+        <%= link_to fridge_recipes_path(@fridge),id:"shuffle" do %>
+          Generate Recipes
+          <i class="fa-solid fa-utensils"></i>
+        <% end %>
+      </div>
     </div>
-  </div>
+  <% end %>
 
   <div class="buttonsflex2">
     <div class="button-position 2">
