@@ -971,77 +971,177 @@ recipe23 = Recipe.new(name: "Costolette di Vitello Ripiene alla Valdostana",
 picture_recipe23 = URI.open("https://www.negroni.com/sites/negroni.com/files/styles/scale__1440_x_1440_/public/cotoletta_alla_valdostana.png?itok=5vCjV8tw")
 recipe23.photo.attach(io: picture_recipe23, filename: "Costolette.jpg", content_type: "image/jpg")
 
-# recipe = Recipe.new(name: "",
-#                       ingredients: "",
-#                       user: user_admin,
-#                       author: "",
-#                       cuisine: "",
-#                       cook_time: ,
-#                       prep_time: ,
-#                       description: "",
-#                       rating: )
-# picture_recipe = URI.open("")
-# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
+recipe24 = Recipe.new(name: "Chorizo & mozzarella gnocchi bake",
+                      ingredients: "1 tablespoon, Olive oil,
+                                    1, Onion,
+                                    2 crushed, Garlic cloves,
+                                    120 g, Chorizo,
+                                    800 g, Chopped Tomatoes,
+                                    1 teaspoon, Sugar,
+                                    600g, Gocchi,
+                                    125g, Mozzarella,
+                                    some, Basil,
+                                    to serve, Salad",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "25 min",
+                      prep_time: "10 min",
+                      description: "Step 1: Heat the oil in a medium pan over a medium heat. Fry the onion and garlic for 8-10 mins until soft. Add the chorizo and fry for 5 mins more. Tip in the tomatoes and sugar, and season. Bring to a simmer, then add the gnocchi and cook for 8 mins, stirring often, until soft. Heat the grill to high. |
+                                    Step 2: Stir ¾ of the mozzarella and most of the basil through the gnocchi. Divide the mixture between six ovenproof ramekins, or put in one baking dish. Top with the remaining mozzarella, then grill for 3 mins, or until the cheese is melted and golden. Season, scatter over the remaining basil and serve with green salad.",
+                      rating: 4.3)
+picture_recipe24 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/gnocchi-1d16725.jpg?quality=90&webp=true&resize=440,400")
+recipe24.photo.attach(io: picture_recipe24, filename: "chorizo.jpg", content_type: "image/jpg")
+
+recipe25 = Recipe.new(name: "Teriyaki chicken",
+                      ingredients: "2 tablespoon, Sesam oil,
+                                    6 slices, Chicken,
+                                    2, Garlic cloves,
+                                    1 thumb-sized, Ginger,
+                                    50 g, Honey,
+                                    30 ml, Soy sauce,
+                                    1 tablespoon, Rice wine vinegar,
+                                    1 tablespoon, Sesame seeds,
+                                    4, Spring onions,
+                                    300 g, Rice,
+                                    a bit, Steamed bok choi",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "15 min",
+                      prep_time: "5 min",
+                      description: "Step 1: Heat the oil in a non-stick pan over a medium heat. Add the chicken and fry for 7 mins, or until golden. Add the garlic and ginger and fry for 2 mins. Stir in the honey, soy sauce, vinegar and 100ml water. Bring to the boil and cook for 2 - 5 mins over a medium heat until the chicken is sticky and coated in a thick sauce. |
+                                    Step 2: Scatter over the spring onions and sesame seeds, then serve the chicken with the rice and steamed veg.",
+                      rating: 3.56)
+picture_recipe25 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-teriyaki-c845724.jpg?quality=90&webp=true&resize=440,400")
+recipe25.photo.attach(io: picture_recipe25, filename: "teriyaki.jpg", content_type: "image/jpg")
+
+recipe26 = Recipe.new(name: "One-pan spaghetti with nduja, fennel & olives",
+                      ingredients: "400 g, Spaghetti,
+                                    3, Garlic cloves,
+                                    ½, fennel,
+                                    75 g, Nduja,
+                                    200 g, Tomato,
+                                    75 g, Black olives,
+                                    2 teaspoon, Tomato purée,
+                                    3 tablespoon, Olive oil,
+                                    2 teaspoon, Red wine vinegar,
+                                    40 g, Pecorino,
+                                    handful, Basil",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "15 min",
+                      prep_time: "15 min",
+                      description: "Step 1: Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well. Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften. |
+                                    Step 2: Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side.",
+                      rating: 4.3)
+picture_recipe26 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/one-pan-spaghetti-with-nduja-fennel-olives-2308fb3.jpg?quality=90&webp=true&resize=440,400")
+recipe26.photo.attach(io: picture_recipe26, filename: "spaghetti.jpg", content_type: "image/jpg")
+
+recipe27 = Recipe.new(name: "Chicken fajitas",
+                      ingredients: "2 breasts, Chicken,
+                                    1, Red onion,
+                                    1, Pepper,
+                                    1, Red chilli,
+                                    1, Paprika,
+                                    1 tablespoon, Ground coriander,
+                                    some, Ground cumin,
+                                    2, Garlic cloves,
+                                    4 tablespoon, Olive oil,
+                                    1, Lime,
+                                    some, Tabasco,
+                                    8, Tortillas,
+                                    230 g, Salad,",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "1O min",
+                      prep_time: "15 min",
+                      description: "Step 1: Heat oven to 200C/180C fan/gas 6 and wrap 8 medium tortillas in foil. |
+                                    Step 2: Mix 1 heaped tbsp smoked paprika, 1 tbsp ground coriander, a pinch of ground cumin, 2 crushed garlic cloves, 4 tbsp olive oil, the juice of 1 lime and 4-5 drops Tabasco together in a bowl with a big pinch each of salt and pepper. |
+                                    Step 3: Mix 1 heaped tbsp smoked paprika, 1 tbsp ground coriander, a pinch of ground cumin, 2 crushed garlic cloves, 4 tbsp olive oil, the juice of 1 lime and 4-5 drops Tabasco together in a bowl with a big pinch each of salt and pepper. |
+                                    Step 4: Heat a griddle pan until smoking hot and add the chicken and marinade to the pan.|
+                                    Step 5: Keep everything moving over a high heat for about 5 mins using tongs until you get a nice charred effect. If your griddle pan is small you may need to do this in two batches. |
+                                    Step 6: To check the chicken is cooked, find the thickest part and tear in half – if any part is still raw cook until done. |
+                                    Step 7: Put the tortillas in the oven to heat up and serve with the cooked chicken, a bag of mixed salad and one 230g tub of fresh salsa.",
+                      rating: 4.9)
+picture_recipe27 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-fajitas-2-d7172f8.jpg?quality=90&webp=true&resize=440,400")
+recipe27.photo.attach(io: picture_recipe27, filename: "fajitas.jpg", content_type: "image/jpg")
+
+recipe28 = Recipe.new(name: "Ultimate chorizo ciabatta",
+                      ingredients: "2, Ciabatta,
+                                    150 g, Chorizo,
+                                    75 g, Pesto,
+                                    200 g, Pepper,
+                                    Handful, Rocket",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "10 min",
+                      prep_time: "5 min",
+                      description: "Step 1: Heat oven to 180C/160C fan/gas 4 and put the ciabatta in to warm up. Put a griddle pan over a medium heat and cook the chorizo for 5 mins each side or until charred and cooked through. |
+                                    Step 2: Open up the warmed ciabatta and spread the pesto on the bottom. Layer with the red peppers , then the warm chorizo. Scatter over the rocket, sandwich the ciabatta together, cut in two and serve.",
+                      rating: 4.3)
+picture_recipe28 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/ultimate-chorizo-ciabatta-c3f006e.jpg?quality=90&webp=true&resize=440,400")
+recipe28.photo.attach(io: picture_recipe28, filename: "ultimate_chorizzo_chabiata.jpg", content_type: "image/jpg")
+
+recipe29 = Recipe.new(name: "Tomato pizzas",
+                      ingredients: "450 g, Flour,
+                                    7 g, Yeast,
+                                    2 tablespoon, Olive oil,
+                                    350 ml, Water,
+                                    5 tablespoon, Tomato sauce,
+                                    8, Tomato,
+                                    some, Parmesan",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "12 min",
+                      prep_time: "10 min",
+                      description: "Step 1: For the dough, put the flour, yeast and 2 tsp salt into a large bowl and mix. Make a well. Mix the oil and water in a jug, then tip into the bowl. Use a wooden spoon to work the liquid into the flour – it will seem pretty wet. Set the bowl aside for 15 mins. Leaving the dough like this will save you from lengthy kneading later. |
+                                    Step 2: Turn the dough onto a well-floured surface, flour your hands, then knead it very gently for about 2 mins until it is fairly even, soft and bouncy. Return the dough to the bowl, cover with oiled cling film, then let it rise in a warm place (or in the fridge overnight) until doubled in size. |
+                                    Step 3: When ready to cook, heat oven to 240C/220C fan/gas 9 or as hot as it will go, then put a baking sheet in on a high shelf. Dust another sheet with flour. Split the dough into 8, then roll 3 balls thinly into rough circles. Lift onto the floured sheet. Smear over a thin layer of the sauce, scatter over a few slices of tomato, season, then add sliced goat’s or grated Parmesan cheese if you want to. Slide the sheet on top of the heated sheet. Bake for 12 mins or until golden and crisp and the tomatoes are starting to caramelise around the edges. Top with any fresh toppings, then drizzle with more olive oil to serve.",
+                      rating: )
+picture_recipe29 = URI.open("")
+recipe29.photo.attach(io: picture_recipe29, filename: "", content_type: "image/jpg")
+
+recipe30 = Recipe.new(name: "Oven frittata",
+                      ingredients: "½ teaspoon, Olive oil,
+                                    85, Fusili,
+                                    1 Leek,
+                                    85 g, Sweetcorn,
+                                    85 g, Peas,
+                                    1, Pepper,
+                                    2, Egg,
+                                    150 ml, Milk,
+                                    1 tablespoon, Thyme,
+                                    50 g, Cheddar,
+                                    2 tablespoon, Parmsean",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: "40 min",
+                      prep_time: "20 min",
+                      description: "Step 1: Heat oven to 190C/fan 170C/gas 5. Grease a 1.2 litre baking dish with the olive oil. |
+                                    Step 2: Cook the pasta in salted boiling water in a large pan for 8 mins. Add all the vegetables and cook for another 2-3 mins until the pasta is tender and the vegetables slightly softened. Drain, then tip into the baking dish and mix well. |
+                                    Step 3: Beat together the eggs and milk in a jug and add the thyme. Mix the two cheeses together and add most of it to the egg mixture, then season. Pour into the baking dish, stir gently, then scatter the rest of the cheese on top. Bake for 35-40 mins until set and golden. Cool for a few mins, then serve with a green salad.",
+                      rating: 4.7)
+picture_recipe30 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-327939_12-7d9a10f.jpg?quality=90&webp=true&resize=440,400")
+recipe30.photo.attach(io: picture_recipe30, filename: "fritatat.jpg", content_type: "image/jpg")
 
 # recipe = Recipe.new(name: "",
 #                       ingredients: "",
 #                       user: user_admin,
 #                       author: "",
 #                       cuisine: "",
-#                       cook_time: ,
-#                       prep_time: ,
+#                       cook_time: "",
+#                       prep_time: "",
 #                       description: "",
 #                       rating: )
 # picture_recipe = URI.open("")
 # recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
 
-# recipe = Recipe.new(name: "",
-#                       ingredients: "",
-#                       user: user_admin,
-#                       author: "",
-#                       cuisine: "",
-#                       cook_time: ,
-#                       prep_time: ,
-#                       description: "",
-#                       rating: )
-# picture_recipe = URI.open("")
-# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
-
-# recipe = Recipe.new(name: "",
-#                       ingredients: "",
-#                       user: user_admin,
-#                       author: "",
-#                       cuisine: "",
-#                       cook_time: ,
-#                       prep_time: ,
-#                       description: "",
-#                       rating: )
-# picture_recipe = URI.open("")
-# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
-
-# recipe = Recipe.new(name: "",
-#                       ingredients: "",
-#                       user: user_admin,
-#                       author: "",
-#                       cuisine: "",
-#                       cook_time: ,
-#                       prep_time: ,
-#                       description: "",
-#                       rating: )
-# picture_recipe = URI.open("")
-# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
-
-# recipe = Recipe.new(name: "",
-#                       ingredients: "",
-#                       user: user_admin,
-#                       author: "",
-#                       cuisine: "",
-#                       cook_time: ,
-#                       prep_time: ,
-#                       description: "",
-#                       rating: )
-# picture_recipe = URI.open("")
-# recipe.photo.attach(io: picture_recipe, filename: "", content_type: "image/jpg")
 puts "Saving recipes"
 recipe1.save
 recipe2.save
