@@ -1,4 +1,5 @@
 .recipeh2{
+  text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -92,4 +93,28 @@
 
 .put-red {
   color: crimson;
+}
+
+.backrecipes2{
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
