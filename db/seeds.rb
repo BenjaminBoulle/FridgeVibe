@@ -19,10 +19,10 @@ benjamin = URI.open("https://avatars.githubusercontent.com/u/115448260?v=4")
 arthur = URI.open("https://avatars.githubusercontent.com/u/115412551?v=4")
 gideon = URI.open("https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1665405360/o1pmr1f0uw7zalu3gb3h.jpg")
 arda = URI.open("https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1665238104/pf4ty3lwz2de1fs45ltw.jpg")
-admin = URI.open("https://i.pinimg.com/originals/e8/3e/fc/e83efc660ae1fd1d420dacb58d00d953.jpg")
+admin = URI.open("https://avatars.githubusercontent.com/u/70776288?v=4")
 
-user_admin = User.create(first_name: 'Bob',
-                         last_name: 'The King',
+user_admin = User.create(first_name: 'Pedro ',
+                         last_name: 'Vilarinho',
                          email: 'bob@gmail.com',
                          password: 'azerty')
 
@@ -85,7 +85,7 @@ ingredient2 = Ingredient.create(name: "Salmon", quantity: "1.5 kg", expiration_d
 picture_ingredient2 = URI.open("https://www.curtze.com/images/salmon-hero.png")
 ingredient2.photo.attach(io: picture_ingredient2, filename: "salmon.png", content_type: "image/jpeg")
 
-ingredient3 = Ingredient.create(name: "Sweet potatoes", quantity: "3", expiration_date: Date.today + 25, fridge: my_fridge_user_admin)
+ingredient3 = Ingredient.create(name: "Sweet potato", quantity: "3", expiration_date: Date.today + 25, fridge: my_fridge_user_admin)
 picture_ingredient3 = URI.open("https://res.cloudinary.com/hksqkdlah/image/upload/37117_sil-sweetpotato-hannah-1.png")
 ingredient3.photo.attach(io: picture_ingredient3, filename: "sweet_potatoes.png", content_type: "image/png")
 
@@ -148,6 +148,8 @@ ingredient15.photo.attach(io: picture_ingredient15, filename: "snow.png", conten
 ingredient16 = Ingredient.create(name: "Mozarella", quantity: "6 balls", expiration_date: Date.today + 5, fridge: my_fridge_user2)
 picture_ingredient16 = URI.open("https://cdn-icons-png.flaticon.com/512/95/95899.png")
 ingredient16.photo.attach(io: picture_ingredient16, filename: "snow.png", content_type: "image/png")
+
+puts "Crearting ingredient 17"
 
 ingredient17 = Ingredient.create(name: "Basil", quantity: "1 plant", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
 picture_ingredient17 = URI.open("https://cdn.shopify.com/s/files/1/0245/1010/3615/products/Basil_1c9cb179-248a-46ce-b153-b22a84de5f92_1080x.png?v=1582011356")
@@ -217,6 +219,8 @@ ingredient34 = Ingredient.create(name: "Bread", quantity: "4", expiration_date: 
 picture_ingredient34 = URI.open("https://panamarbakery.com/public/Image/2021/3/161547107712959normal_Galeria.png")
 ingredient34.photo.attach(io: picture_ingredient34, filename: "Bread.png", content_type: "image/png")
 
+puts "Crearting ingredient 35"
+
 ingredient35 = Ingredient.create(name: "Mayonnaise", quantity: "750 ml", expiration_date: Date.today + 80, fridge: my_fridge_user_admin)
 picture_ingredient35 = URI.open("https://www.belgian-sauces.com/uploads/2015/02/mayonnaise-oeuf-belgium-550ml-full.png")
 ingredient35.photo.attach(io: picture_ingredient35, filename: "Mayonnaise.png", content_type: "image/png")
@@ -229,9 +233,9 @@ ingredient37 = Ingredient.create(name: "Parmesan", quantity: "278 gr", expiratio
 picture_ingredient37 = URI.open("https://www.nzmp.com/content/dam/nzmp/global/images/product-shots/product-page-master/product-images-grey-background/tile-800x600-_0007_Parmesan-Block-large-shaving.png")
 ingredient37.photo.attach(io: picture_ingredient37, filename: "Parmesan.png", content_type: "image/png")
 
-ingredient38 = Ingredient.create(name: "Cheddar", quantity: "969 gr", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
-picture_ingredient38 = URI.open("https://www.kaas.nl/wp-content/uploads/2020/03/130778_Cheddar-Rood-1.png")
-ingredient38.photo.attach(io: picture_ingredient38, filename: "Cheddar.png", content_type: "image/png")
+# ingredient38 = Ingredient.create(name: "Cheddar", quantity: "969 gr", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
+# picture_ingredient38 = URI.open("https://www.kaas.nl/wp-content/uploads/2020/03/130778_Cheddar-Rood-1.png")
+# ingredient38.photo.attach(io: picture_ingredient38, filename: "Cheddar.png", content_type: "image/png")
 
 ingredient39 = Ingredient.create(name: "American cheese", quantity: "1 kg", expiration_date: Date.today + 6, fridge: my_fridge_user_admin)
 picture_ingredient39 = URI.open("https://homshop.app/wp-content/uploads/2019/04/american.png")
@@ -260,6 +264,8 @@ ingredient44.photo.attach(io: picture_ingredient44, filename: "nuts.png", conten
 ingredient45 = Ingredient.create(name: "Mozzarella", quantity: "5 balls", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
 picture_ingredient45 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/mozarella_vlpzcg.png")
 ingredient45.photo.attach(io: picture_ingredient45, filename: "mozzarella.png", content_type: "image/png")
+
+puts "Crearting ingredient 46"
 
 ingredient46 = Ingredient.create(name: "Cherry haribo", quantity: "500 gr", expiration_date: Date.today + 720, fridge: my_fridge_user_admin)
 picture_ingredient46 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670490152/haribo_nan9yj.png")
@@ -321,6 +327,8 @@ ingredient60 = Ingredient.create(name: "Apricot", quantity: "7", expiration_date
 picture_ingredient60 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670491349/36161_uic8pt.jpg")
 ingredient60.photo.attach(io: picture_ingredient60, filename: "apricot.jpg", content_type: "image/jpg")
 
+puts "Crearting ingredient 61"
+
 ingredient61 = Ingredient.create(name: "Rhum", quantity: "1 l", expiration_date: Date.today + 60, fridge: my_fridge_user_admin)
 picture_ingredient61 = URI.open("https://rhum-saintjames.com/wp-content/uploads/2020/12/CLASSIQUE_AMBRE_70CL.png")
 ingredient61.photo.attach(io: picture_ingredient61, filename: "rhum.png", content_type: "image/png")
@@ -361,6 +369,8 @@ ingredient70 = Ingredient.create(name: "Chinese flower", quantity: "1", expirati
 picture_ingredient70 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492567/35371_damtpc.jpg")
 ingredient70.photo.attach(io: picture_ingredient70, filename: "chiense_flower.jpg", content_type: "image/jpg")
 
+puts "Crearting ingredient 71"
+
 ingredient71 = Ingredient.create(name: "Shallot", quantity: "7", expiration_date: Date.today + 18, fridge: my_fridge_user_admin)
 picture_ingredient71 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492575/35317_aixaix.jpg")
 ingredient71.photo.attach(io: picture_ingredient71, filename: "shallot.jpg", content_type: "image/jpg")
@@ -381,7 +391,7 @@ ingredient75 = Ingredient.create(name: "Grenada", quantity: "7", expiration_date
 picture_ingredient75 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492633/34817_w31lco.jpg")
 ingredient75.photo.attach(io: picture_ingredient75, filename: "grenada.jpg", content_type: "image/jpg")
 
-ingredient76 = Ingredient.create(name: "Lime", quantity: "9", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
+ingredient76 = Ingredient.create(name: "Lime", quantity: "9", expiration_date: Date.today + 4, fridge: my_fridge_user_admin)
 picture_ingredient76 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492650/34778_b9x3th.jpg")
 ingredient76.photo.attach(io: picture_ingredient76, filename: "lime.jpg", content_type: "image/jpg")
 
@@ -397,13 +407,15 @@ ingredient79 = Ingredient.create(name: "Peach", quantity: "7", expiration_date: 
 picture_ingredient79 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492695/34635_zw3ekh.jpg")
 ingredient79.photo.attach(io: picture_ingredient79, filename: "peach.jpg", content_type: "image/jpg")
 
-ingredient80 = Ingredient.create(name: "Potatoe", quantity: "500 gr", expiration_date: Date.today + 27, fridge: my_fridge_user_admin)
+ingredient80 = Ingredient.create(name: "Potato", quantity: "500 gr", expiration_date: Date.today + 27, fridge: my_fridge_user_admin)
 picture_ingredient80 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492702/34634_scwx5a.jpg")
 ingredient80.photo.attach(io: picture_ingredient80, filename: "potatoes.jpg", content_type: "image/jpg")
 
 ingredient81 = Ingredient.create(name: "Ginger", quantity: "100 gr", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
 picture_ingredient81 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492707/34629_bsbgzb.jpg")
 ingredient81.photo.attach(io: picture_ingredient81, filename: "giniger.jpg", content_type: "image/jpg")
+
+puts "Crearting ingredient 82"
 
 ingredient82 = Ingredient.create(name: "Grapefruit", quantity: "6", expiration_date: Date.today + 5, fridge: my_fridge_user_admin)
 picture_ingredient82 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670492739/34509_rolx4k.jpg")
@@ -461,14 +473,46 @@ ingredient95 = Ingredient.create(name: "Fig", quantity: "5", expiration_date: Da
 picture_ingredient95 = URI.open("https://res.cloudinary.com/dlvtxz1vv/image/upload/v1670495812/33820_ltxewj.jpg")
 ingredient95.photo.attach(io: picture_ingredient95, filename: "fig.jpg", content_type: "image/jpg")
 
+ingredient96 = Ingredient.create(name: "Flour", quantity: "1.5 kg", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient96 = URI.open("https://vestkorn.com/wp-content/uploads/2019/10/Vestkorn-Faba-Bean-Flour.png")
+ingredient96.photo.attach(io: picture_ingredient96, filename: "flour.png", content_type: "image/png")
+
+puts "Crearting ingredient 97"
+
+ingredient97 = Ingredient.create(name: "Beef", quantity: "3 kg", expiration_date: Date.today, fridge: my_fridge_user_admin)
+picture_ingredient97 = URI.open("https://cdn.shopify.com/s/files/1/0096/3162/9359/collections/beef-image.png?v=1657175044")
+ingredient97.photo.attach(io: picture_ingredient97, filename: "beef.png", content_type: "image/png")
+
+ingredient98 = Ingredient.create(name: "Sugar", quantity: "1.3 kg", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient98 = URI.open("https://cdn.shopify.com/s/files/1/0504/5600/2723/products/organic-cane-sugar-bulk_1440x1600.png?v=1628024083")
+ingredient98.photo.attach(io: picture_ingredient98, filename: "sugar.png", content_type: "image/png")
+
+ingredient99 = Ingredient.create(name: "Mint", quantity: "1 plant", expiration_date: Date.today + 3, fridge: my_fridge_user_admin)
+picture_ingredient99 = URI.open("https://www.wildflavors.com/EMEA-EN/assets/Image/C_Innovations/Duftkal2019-Minze.png")
+ingredient99.photo.attach(io: picture_ingredient99, filename: "mint.png", content_type: "image/png")
+
+ingredient100 = Ingredient.create(name: "Sparkling water", quantity: "6 bottles", expiration_date: Date.today + 90, fridge: my_fridge_user_admin)
+picture_ingredient100 = URI.open("https://www.perrier.com/sites/g/files/xknfdk331/files/074780000703_FR%20%282%29.png")
+ingredient100.photo.attach(io: picture_ingredient100, filename: "sparklingwater.png", content_type: "image/png")
+
+ingredient101 = Ingredient.create(name: "Salt", quantity: "100 ml", expiration_date: Date.today + 100, fridge: my_fridge_user_admin)
+picture_ingredient101 = URI.open("https://bulknaturaloils.com/media/catalog/product/cache/5b89197651ea0053483b6b3397eafb60/s/e/sea_salt_-_coarse.png")
+ingredient101.photo.attach(io: picture_ingredient101, filename: "salt.png", content_type: "image/png")
+
+ingredient102 = Ingredient.create(name: "Peppercorn", quantity: "400 ml", expiration_date: Date.today + 30, fridge: my_fridge_user_admin)
+picture_ingredient102 = URI.open("https://cdn.shopify.com/s/files/1/0410/4300/1504/products/blackpepperwhole-706949.png?v=1615459515")
+ingredient102.photo.attach(io: picture_ingredient102, filename: "peppercorn.png", content_type: "image/png")
+
+ingredient103 = Ingredient.create(name: "Dark beer", quantity: "6", expiration_date: Date.today + 50, fridge: my_fridge_user_admin)
+picture_ingredient103 = URI.open("https://lakefrontbrewery.com/wp-content/uploads/2021/04/eastside-bg.png")
+ingredient103.photo.attach(io: picture_ingredient103, filename: "dark_beer.png", content_type: "image/png")
+
 # ingredient = Ingredient.create(name: "", quantity: "", expiration_date: Date.today + 1, fridge: my_fridge_user_admin)
 # picture_ingredient = URI.open("")
 # ingredient.photo.attach(io: picture_ingredient, filename: "", content_type: "image/png")
 
 ### RECIPES
 puts "creating recipes..."
-
-puts "creating recipe 1"
 
 recipe1 = Recipe.new(name: "Baked Mac and Cheese for One",
                      ingredients: "3 tablespoons uncooked macaroni, Pasta,
@@ -496,18 +540,16 @@ recipe1 = Recipe.new(name: "Baked Mac and Cheese for One",
 picture_recipe1 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4516736.jpg")
 recipe1.photo.attach(io: picture_recipe1, filename: "recipe1.jpg", content_type: "image/jpg")
 
-puts "creating recipe 2"
-
 recipe2 = Recipe.new(name: "Pesto Pasta Caprese Salad",
-                     ingredients: "1 ½ cups rotini, pasta,
-                                   3 tablespoons, pesto,
-                                   1 tablespoon extra-virgin, olive oil,
-                                   ¼ teaspoon, salt,
-                                   ¼ teaspoon granulated, garlic,
-                                   ⅛ teaspoon, pepper,
-                                   ½ cup halved, grape tomatoes,
-                                   ½ cup small (pearlini) fresh balls, mozzarella ,
-                                   2 leaves fresh finely shredded leaves, basil",
+                     ingredients: "1 ½ cups rotini, Spaghetti,
+                                   3 tablespoons, Pesto,
+                                   1 tablespoon extra-virgin, Olive oil,
+                                   ¼ teaspoon, Salt,
+                                   ¼ teaspoon granulated, Garlic,
+                                   ⅛ teaspoon, Pepper,
+                                   ½ cup halved, Grape tomatoes,
+                                   ½ cup small (pearlini) fresh balls, Mozzarella balls,
+                                   2 leaves fresh finely shredded leaves, Basil",
                      user: user_admin,
                      author: "thedailygourmet",
                      cuisine: "italian",
@@ -518,8 +560,6 @@ recipe2 = Recipe.new(name: "Pesto Pasta Caprese Salad",
                      rating: 4.6)
 picture_recipe2 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4794067.jpg")
 recipe2.photo.attach(io: picture_recipe2, filename: "recipe2.jpg", content_type: "image/jpg")
-
-puts "creating recipe 3"
 
 recipe3 = Recipe.new(name: "Creamy Penne Pasta Primavera",
                      ingredients: "2 cups penne, Pasta,
@@ -542,8 +582,6 @@ recipe3 = Recipe.new(name: "Creamy Penne Pasta Primavera",
                      rating: 4.5)
 picture_recipe3 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1126428.jpg")
 recipe3.photo.attach(io: picture_recipe3, filename: "recipe3.jpg", content_type: "image/jpg")
-
-puts "creating recipe 4"
 
 recipe4 = Recipe.new(name: "Tomato and Garlic Pasta",
                      ingredients: "2 pounds, Tomatoes,
@@ -569,8 +607,6 @@ recipe4 = Recipe.new(name: "Tomato and Garlic Pasta",
 picture_recipe4 = URI.open("https://www.allrecipes.com/thmb/Pqd5cmqNpCSO6oqxiSzIYcZ4dFc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/837215-3fd78897006b4046a3babf9e5f05237b.jpg")
 recipe4.photo.attach(io: picture_recipe4, filename: "recipe4.jpg", content_type: "image/jpg")
 
-puts "creating recipe 5"
-
 recipe5 = Recipe.new(name: "Pasta and Garlic",
                      ingredients: "1 ½ pounds, Pasta,
                                    ¼ cup, Olive oil,
@@ -586,11 +622,9 @@ recipe5 = Recipe.new(name: "Pasta and Garlic",
                      description: "Step 1: In a large pot of salted water boil pasta until al dente. Drain well. |
                                    Step 2: In a small saucepan heat oil slightly, add garlic. Saute garlic until it is lightly browned. Be careful not to burn garlic. |
                                    Step 3: Combine pasta and garlic, salt and pepper to taste. Top with Parmesan or Romano cheese and serve.",
-                     rating: 4.32)
+                     rating: 2.32)
 picture_recipe5 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1110792.jpg")
 recipe5.photo.attach(io: picture_recipe5, filename: "recipe5.jpg", content_type: "image/jpg")
-
-puts "creating recipe 6"
 
 recipe6 = Recipe.new(name: "Gourmet Grilled Cheese Sandwiches",
                      ingredients: "1 (3 ounce) package, Cream cheese,
@@ -610,8 +644,6 @@ recipe6 = Recipe.new(name: "Gourmet Grilled Cheese Sandwiches",
 picture_recipe6 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081975.jpg")
 recipe6.photo.attach(io: picture_recipe6, filename: "recipe6.jpg", content_type: "image/jpg")
 
-puts "creating recipe 7"
-
 recipe7 = Recipe.new(name: "Elvis' Grilled Cheese Sandwich",
                      ingredients: "2 slices, Bacon,
                                    1 tablespoon smooth, Peanut butter,
@@ -629,8 +661,6 @@ recipe7 = Recipe.new(name: "Elvis' Grilled Cheese Sandwich",
 picture_recipe7 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F729312.jpg")
 recipe7.photo.attach(io: picture_recipe7, filename: "recipe7.jpg", content_type: "image/jpg")
 
-puts "creating recipe 8"
-
 recipe8 = Recipe.new(name: "Inside-Out Grilled Cheese Sandwich",
                      ingredients: "2 tablespoons divided, Butter,
                                    2 slices, Bread,
@@ -646,8 +676,6 @@ recipe8 = Recipe.new(name: "Inside-Out Grilled Cheese Sandwich",
                      rating: 4.65)
 picture_recipe8 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4462829.jpg")
 recipe8.photo.attach(io: picture_recipe8, filename: "recipe8.jpg", content_type: "image/jpg")
-
-puts "creating recipe 9"
 
 recipe9 = Recipe.new(name: "Spicy Grilled Cheese Sandwich",
                      ingredients: "2 tablespoons, Butter,
@@ -667,22 +695,20 @@ recipe9 = Recipe.new(name: "Spicy Grilled Cheese Sandwich",
 picture_recipe9 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5081856.jpg")
 recipe9.photo.attach(io: picture_recipe9, filename: "recipe9.jpg", content_type: "image/jpg")
 
-puts "creating recipe 10"
-
-recipe10 = Recipe.new(name: "Grilled Cheese Sandwich",
-                      ingredients: "4 slices, Bread,
-                                    3 tablespoons, Butter,
-                                    2 slices, Cheddar",
-                      user: user_admin,
-                      author: "sal",
-                      cuisine: "american",
-                      cook_time: "15 min",
-                      prep_time: "5 min",
-                      description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese. |
-                                    Step 2: Cook until lightly browned on one side; flip over and continue cooking until cheese is melted. Repeat with remaining 2 slices of bread, butter, and slice of cheese.",
-                      rating: 4.77)
-picture_recipe10 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2016%2F10%2F2206436_Grilled-Cheese-Sandwich_Photo-by-Buckwheat-Queen.jpg")
-recipe10.photo.attach(io: picture_recipe10, filename: "recipe10.jpg", content_type: "image/jpg")
+# recipe10 = Recipe.new(name: "Grilled Cheese Sandwich",
+#                       ingredients: "4 slices, Bread,
+#                                     3 tablespoons, Butter,
+#                                     2 slices, Cheddar",
+#                       user: user_admin,
+#                       author: "sal",
+#                       cuisine: "american",
+#                       cook_time: "15 min",
+#                       prep_time: "5 min",
+#                       description: "Step 1: Preheat a nonstick skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side down in the hot skillet; add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side up on top of cheese. |
+#                                     Step 2: Cook until lightly browned on one side; flip over and continue cooking until cheese is melted. Repeat with remaining 2 slices of bread, butter, and slice of cheese.",
+#                       rating: 4.77)
+# picture_recipe10 = URI.open("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2016%2F10%2F2206436_Grilled-Cheese-Sandwich_Photo-by-Buckwheat-Queen.jpg")
+# recipe10.photo.attach(io: picture_recipe10, filename: "recipe10.jpg", content_type: "image/jpg")
 
 # recipe11 = Recipe.new!(name: "Hachis Parmentier",
 #                           ingredients: "1kg, Potatoes,
@@ -720,124 +746,162 @@ recipe10.photo.attach(io: picture_recipe10, filename: "recipe10.jpg", content_ty
 
 # testing recipes
 
-puts "creating recipe 13"
-
-recipe13 = Recipe.new(name: "Pasta basil",
-                      ingredients: "1kg, Pasta,
-                                    1kg, Olive oil,
-                                    1kg, Basil",
+recipe13 = Recipe.new(name: "Garlic Basil Brown Butter Pasta",
+                      ingredients: "1 pound, Pasta,
+                                    6 tabkespoons, Butter,
+                                    2, Garlic clove,
+                                    1½ teaspoon, Black pepper,
+                                    ½ cup, Pecorino,
+                                    1 cup, Basil,
+                                    2 cuos, Cherry Tomato,
+                                    2 tablespoons, Olive oil,
+                                    some, Red Pepper,
+                                    some, Salt",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
                       cook_time: "15 min",
                       prep_time: "5 min",
-                      description: "cook everything good",
+                      description: "Step 1:  Bring a large pot of salted water to a boil and cook pasta according to package directions until al dente. Just before draining, reserve 1 cup of the pasta cooking water. Drain. |
+                                    Step 2: Melt 4 tablespoons butter in a large skillet over medium heat. Add the garlic and pepper and cook 1-2 minutes, until the butter is browning and the garlic is golden and fragrant. Reduce the heat to low and add 1/2 cup pasta water, the pasta, remaining butter, and pecorino. Tossing until melted. Remove from the heat, add 3/4 cup basil and toss, adding in more pasta water if needed to thin the sauce. |
+                                    Step 3: In a bowl, combine the tomatoes, remaining 1/4 cup basil, olive oil, red pepper flakes, and a pinch of salt. |
+                                    Step 4: To serve, divide the pasta among bowls and serve topped with tomatoes. Eat and ENJOY.",
                       rating: 3.9)
 picture_recipe13 = URI.open("https://www.halfbakedharvest.com/wp-content/uploads/2019/05/20-Minute-Garlic-Basil-Brown-Butter-Pasta-1.jpg")
 recipe13.photo.attach(io: picture_recipe13, filename: "recipe10.jpg", content_type: "image/jpg")
 
-puts "creating recipe 14"
-
 recipe14 = Recipe.new(name: "Salmon Omelette ",
-                      ingredients: "1kg, Egg,
-                                    1kg, Olive oil,
-                                    1kg, Salmon,
-                                    1kg, Butter",
+                      ingredients: "3, Egg,
+                                    some, Black pepper,
+                                    40 g, Smoked salmon,
+                                    15g, Butter,
+                                    some, Salt,
+                                    ½ teaspoon, Olive oil",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: 15,
-                      prep_time: 5,
-                      description: "Omelette good good",
+                      cook_time: 8,
+                      prep_time: 25,
+                      description: "Step 1: Gently beat the eggs together in a mixing bowl and season, to taste, with salt and freshly ground black pepper. |
+                                    Step 2: Heat the butter in an omelette pan until foaming. Pour in the beaten eggs and cook for a few seconds, until the bottom of the omelette is lightly set. |
+                                    Step 3: Push the set parts of the omelette into the uncooked centre of the omelette. Cook again, until the omelette has set further, then push the set parts into the centre of the omelette again. |
+                                    Step 4: Repeat the process until the eggs have just set but the omelette is still soft in the centre. |
+                                    Step 5: Place the smoked salmon into the centre of the omelette and cook for 30 seconds. |
+                                    Step 6: Remove from the heat and tilt the pan slightly to move the omelette to the edge of the pan. Slide the omelette onto a serving plate, then shape it into a neat roll. Brush the omelette with olive oil and serve.",
                       rating: 3.8)
 picture_recipe14 = URI.open("https://food-images.files.bbci.co.uk/food/recipes/smokedsalmonomelette_93229_16x9.jpg")
 recipe14.photo.attach(io: picture_recipe14, filename: "recipe10.jpg", content_type: "image/jpg")
 
-puts "creating recipe 15"
-
-recipe15 = Recipe.new(name: "Frites de Sweet Potatoes",
-                      ingredients: "1kg, Sweet potatoe,
-                                    1kg, Olive oil,
-                                    1kg, Mayonnaise",
+recipe15 = Recipe.new(name: "Sweet Potato Fries",
+                      ingredients: "7, Sweet potato,
+                                    2 tablespoon, Olive oil,
+                                    1 teaspoon, Garlic powder,
+                                    1 teaspoon, Paprika,
+                                    1 teaspoon, Salt,
+                                    ½ teaspoon, Black pepper",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: "15 min",
-                      prep_time: "5 min",
-                      description: "frites miam miam good",
+                      cook_time: "25 min",
+                      prep_time: "10 min",
+                      description: "Step 1: Heat the oven to 400. |
+                                    Step 2: Cut the sweet potatoes into sticks ¼ to ½ inch wide and 3 inches long, and toss them with the oil. |
+                                    Step 3: Mix the spices, salt and pepper in a small bowl, and toss them with the sweet potatoes. Spread them out on 2 rimmed baking sheets. |
+                                    Step 4: Bake until brown and crisp on the bottom, about 15 minutes, then flip and cook until the other side is crisp, about 10 minutes. Serve hot.",
                       rating: 4.27)
 picture_recipe15 = URI.open("https://images.radio-canada.ca/v1/alimentation/recette/16x9/patate-douce-frite.jpg")
 recipe15.photo.attach(io: picture_recipe15, filename: "recipe10.jpg", content_type: "image/jpg")
 
-puts "creating recipe 16"
+# recipe16 = Recipe.new(name: "Grilled Cheese Sandwich",
+#                       ingredients: "1kg, Bread,
+#                                     1kg, Butter,
+#                                     1kg, Cheddar",
+#                       user: user_admin,
+#                       author: "bob",
+#                       cuisine: "don't know",
+#                       cook_time: "15 min",
+#                       prep_time: "5 min",
+#                       description: "Miam Mial",
+#                       rating: 3.77)
+# picture_recipe16 = URI.open("https://therecipecritic.com/wp-content/uploads/2022/08/grilledcheese-1.jpg")
+# recipe16.photo.attach(io: picture_recipe16, filename: "recipe10.jpg", content_type: "image/jpg")
 
-recipe16 = Recipe.new(name: "Grilled Cheese Sandwich",
-                      ingredients: "1kg, Bread,
-                                    1kg, Butter,
-                                    1kg, Cheddar",
+recipe17 = Recipe.new(name: "Fondue savoyarde",
+                      ingredients: "1, Garlic clove,
+                                    2½ cups, White wine
+                                    1 tablespoon, Cornstarch,
+                                    7 oucnes, Compté,
+                                    7 ounces, Beafort,
+                                    7 ounces, Reblochon,
+                                    1 pinch, Ground nutmeg,
+                                    1 pinch, Black pepper,
+                                    1 pinch, Paprika,
+                                    3 tablespoons, Kirch,
+                                    1 loaf, Bread",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: "15 min",
-                      prep_time: "5 min",
-                      description: "Miam Mial",
-                      rating: 3.77)
-picture_recipe16 = URI.open("https://therecipecritic.com/wp-content/uploads/2022/08/grilledcheese-1.jpg")
-recipe16.photo.attach(io: picture_recipe16, filename: "recipe10.jpg", content_type: "image/jpg")
-
-puts "creating recipe 17"
-
-recipe17 = Recipe.new(name: "Fondue un peu speciale",
-                      ingredients: "1kg, Cheddar,
-                                    1kg, Parmesan,
-                                    1kg, American cheese,
-                                    1kg, Butter,
-                                    1kg, Mayonnaise,
-                                    1kg, Bread,
-                                    1kg, Pasta",
-                      user: user_admin,
-                      author: "bob",
-                      cuisine: "don't know",
-                      cook_time: "15 min",
-                      prep_time: "5 min",
-                      description: "Don't eat it, I don't think it will taste that good RIP",
-                      rating: 2.77)
+                      cook_time: 20,
+                      prep_time: 5,
+                      description: "Step 1: Rub the inside of a saucepan with the cut side of the garlic, doing so thoroughly to transfer the flavor of the garlic on to the pan. Discard the garlic. |
+                                    Step 2: In a small bowl, whisk together the wine and cornstarch. Add it to the saucepan and bring it to a gentle, rolling boil. Reduce the heat, so that the wine is just simmering. |
+                                    Step 3: Add the cheeses, followed by the nutmeg, black pepper, and paprika. Using a wooden spoon, stir constantly until the fondue is melted and smooth. If you find the cheese is sticking, lower the heat. |
+                                    Step 4: Keeping the heat low to medium, continue cooking—never boiling—the fondue for 15 minutes until it has thickened. |
+                                    Step 5: Once thickened, add the Kirsch, stir, and cook for 1 minute longer. |
+                                    Step 6: Transfer the fondue by pouring into a fondue pot set over a flame. Provide each guest with a long fork and serve your hot, thick fondue with the cubed bread.",
+                      rating: 4.9)
 picture_recipe17 = URI.open("https://assets.afcdn.com/recipe/20161130/59380_w1024h768c1cx2808cy1872.webp")
 recipe17.photo.attach(io: picture_recipe17, filename: "recipe10.jpg", content_type: "image/jpg")
 
-puts "creating recipe 18"
-
 recipe18 = Recipe.new(name: "Grilled Salmon",
-                      ingredients: "1kg, Salmon,
-                                    1kg, Olive oil,
-                                    1kg, Salt,
-                                    1kg, Pepper",
+                      ingredients: "1 filet, Salmon,
+                                    some, Olive oil,
+                                    1 pinch, Salt,
+                                    1 pinch, Black pepper,
+                                    1, Lemon",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
-                      cook_time: "15 min",
-                      prep_time: "5 min",
-                      description: "Step 1: This recipe for grilled salmon doesn’t call for fancy marinades or mercurial methods. All that’s needed is quality ingredients and a hot grill. |
-                                    Step 2: The main question is, which salmon is best? |
-                                    Step 3: I prefer wild-caught salmon because it has more flavor, but if you’re dealing with eaters who are mild fish fans, a quality farm-raised salmon will have a more mellow flavor. Like any protein, higher fat fish yields a more buttery bite. Salmon caught in the wild have to work harder than farm-raised, so they tend to be leaner and more fish-like in taste.",
+                      cook_time: 20,
+                      prep_time: 20,
+                      description: "Step 1: Prepare the grill for direct cooking over high heat, 450°F-550°F. Brush the cooking grates clean and close the lid to heat. |
+                                    Step 2: Generously coat the flesh side of the salmon fillets with oil and season evenly with kosher salt and black pepper. Grill the salmon skin side down over direct high heat with the lid closed, for about 6-8 minutes or until the fish lightens in color, becomes more firm to the touch and you can lift the fillets off the cooking grates without them sticking.  |
+                                    Step 3: Turn the salmon over, close the lid, and cook to 130°F or about 2-4 minutes for medium rare or longer to desired doneness. Transfer to a platter to rest for 1-2 minutes. Slide the salmon skin from the fillets and serve with wedges of lemon and tartar or cucumber dill sauce.",
                       rating: 3.7)
 picture_recipe18 = URI.open("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg")
 recipe18.photo.attach(io: picture_recipe18, filename: "recipe10.jpg", content_type: "image/jpg")
 
-puts "creating recipe 19"
-
 recipe19 = Recipe.new(name: "Hachis Parmentier",
-                      ingredients: "1kg, Potatoe,
-                                    1kg, Minced pork and beef,
-                                    1kg, Spinach,
-                                    1kg, Cream,
-                                    1kg, Cheese",
+                      ingredients: "15, Potato,
+                                    700 g, Minced pork and beef,
+                                    300 g, Spinach,
+                                    4 tablespoon, Butter,
+                                    ½ l, Milk,
+                                    some, Salt,
+                                    some, Pepper,
+                                    1, Onion,
+                                    1, Garlic clove,
+                                    2 teaspoon, Parsley,
+                                    ½, Beef broth,
+                                    1, Egg,
+                                    ¾ c fresh grated, Parmesan",
                       user: user_admin,
                       author: "bob",
                       cuisine: "don't know",
                       cook_time: "15 min",
                       prep_time: "5 min",
-                      description: "cook everything the wright way",
+                      description: "Step 1: In a medium pot over medium high heat, bring the potatoes to a boil in lightly salted water. Boil until very tender, roughly 15 minutes. |
+                                    Step 2: Once the potatoes are tender, drain the water and mash them with the warm milk and 3 Tbsp of butter. |
+                                    Step 3: While the potatoes are boiling, heat 1 Tbsp of butter in a large sauté pan. Add the onion and garlic and sauté over medium heat until softened, 3-5 minutes. |
+                                    Step 4: Add the chopped beef** to the onion and garlic mixture. Mix well. Season with parsley and salt and pepper as needed. (The seasoning level here will depend on your roast’s flavor.) Add a splash or two of beef broth if the meat mixture looks dry. |
+                                    Step 5: Remove the pan from the heat and add the beaten egg. Mix well. |
+                                    Step 6: Preheat your oven to 400F. |
+                                    Step 7: Spoon roughly 1 c of mashed potatoes into bottom of greased 8x8 baking dish. Spread to cover the bottom of the dish. |
+                                    Step 8: Add the meat mixture, spreading to make it even. |
+                                    Step 9: Top with the remaining mashed potatoes. |
+                                    Step 10: Sprinkle with Parmesan cheese. |
+                                    Step 11: Bake the dish for 20-25 minutes, until the cheese is golden and you can see little bubbles coming up the sides (if using a glass baking dish). |
+                                    Step 12: Let stand for 10 minutes before serving.",
                       rating: 4.2)
 picture_recipe19 = URI.open("https://www.curiouscuisiniere.com/wp-content/uploads/2019/10/French-Hachis-Parmentier-Potato-and-Beef-Casserole-8667-450-1.jpg")
 recipe19.photo.attach(io: picture_recipe19, filename: "recipe10.jpg", content_type: "image/jpg")
@@ -1130,6 +1194,26 @@ recipe30 = Recipe.new(name: "Oven frittata",
 picture_recipe30 = URI.open("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-327939_12-7d9a10f.jpg?quality=90&webp=true&resize=440,400")
 recipe30.photo.attach(io: picture_recipe30, filename: "fritatat.jpg", content_type: "image/jpg")
 
+recipe31 = Recipe.new(name: "Mojito",
+                      ingredients: "1, Lime,
+                                    2 tablespoon, Sugar,
+                                    1 plant, Mint,
+                                    1 big shot, Rhum,
+                                    some, Sparkling water,
+                                    some, Crushed ice",
+                      user: user_admin,
+                      author: "Bob",
+                      cuisine: "Belgian",
+                      cook_time: 0,
+                      prep_time: 15,
+                      description: "Step 1: Place mint leaves and 1 lime wedge into a sturdy glass. Use a muddler and crush to release mint oils and lime juice. |
+                                    Step 2: Add remaining lime wedges and 2 tablespoons sugar, and muddle again to release the lime juice. Do not strain the mixture. |
+                                    Step 3: Fill the glass almost to the top with ice. Pour in rum and fill the glass with sparkling water. |
+                                    Step 4: Stir, taste, and add more sugar if desired.",
+                      rating: 4.89)
+picture_recipe31 = URI.open("https://thebigmansworld.com/wp-content/uploads/2021/06/keto-mojito4.jpeg")
+recipe31.photo.attach(io: picture_recipe31, filename: "mojito.jpg", content_type: "image/jpg")
+
 # recipe = Recipe.new(name: "",
 #                       ingredients: "",
 #                       user: user_admin,
@@ -1152,13 +1236,13 @@ recipe6.save
 recipe7.save
 recipe8.save
 recipe9.save
-recipe10.save
+# recipe10.save
 # recipe11.save
 # recipe12.save
 recipe13.save
 recipe14.save
 recipe15.save
-recipe16.save
+# recipe16.save
 recipe17.save
 recipe18.save
 recipe19.save
@@ -1173,3 +1257,4 @@ recipe27.save
 recipe28.save
 recipe29.save
 recipe30.save
+recipe31.save
