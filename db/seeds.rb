@@ -906,7 +906,7 @@ recipe19 = Recipe.new(name: "Hachis Parmentier",
 picture_recipe19 = URI.open("https://www.curiouscuisiniere.com/wp-content/uploads/2019/10/French-Hachis-Parmentier-Potato-and-Beef-Casserole-8667-450-1.jpg")
 recipe19.photo.attach(io: picture_recipe19, filename: "recipe10.jpg", content_type: "image/jpg")
 
-recipe20 = Recipe.new(name: "Carbonnade à la Flammande",
+recipe20 = Recipe.new(name: "Carbonnade à la Flamande",
                       ingredients: "1.4 kg, Onion,
                                     175 g, Flour,
                                     10 ml, Salt,
