@@ -99,6 +99,7 @@ class RecipesController < ApplicationController
   #   fridge_ingr = fridge_ingredients
   #   good_ingr = fridge_ingr & recipe
   #   return recipe.length == good_ingr.length
+  #
   # end
 
   # verifying if all the ingredients for the recipe are in the fridge
@@ -203,7 +204,7 @@ class RecipesController < ApplicationController
   def ingredient_quantities(recipe_array, ingredients_array)
     organized_recipe = []
     recipe_array.each_with_index do |ingredient, index|
-     ingredients_array.each do |qty_ingredient|
+    ingredients_array.each do |qty_ingredient|
       if ingredient.strip == qty_ingredient.strip
         organized_recipe << recipe_array[index - 1].strip
         organized_recipe << qty_ingredient
